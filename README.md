@@ -6,8 +6,12 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### [...]
 
+[...]
+
 ### 3 sept - [Workshop]
 
-### 1 sept - Kickoff
+[...]
+
+### 31 aug - Kickoff
 
 Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving.
