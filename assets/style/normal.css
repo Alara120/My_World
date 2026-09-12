@@ -8,8 +8,63 @@
 
 body {
   font-family: "Comic Relief", system-ui;
-  background-color: Canvas;
   color: CanvasText;
   color-scheme: light dark;
-  background-color: pink;
+
+  background-image: url("../images/Achtergrond.jpg");
+  background-size: cover; /* vult het hele scherm */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* blijft staan tijdens scrollen, optioneel */
+}
+
+.homepage-illustratie {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+}
+
+.doodle-garden-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 1em auto 0;
+}
+
+.doodle-garden {
+  max-width: 900px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto 0;
+}
+
+.doodle-garden-tekst {
+  position: absolute;
+  top: 50%;
+  left: 150px; /* schuift de tekst voorbij het bloempje */
+  transform: translateY(-50%); /* verticaal centreren t.o.v. de balk */
+  margin: 0;
+  font-family: "Comic Relief", system-ui;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+.mijn-art-map {
+  position: absolute;
+  left: 1px;
+  bottom: 580px;
+  max-width: 390px;
+  width: 100%;
+  height: auto;
+}
+
+.mijn-art-map-tekst {
+  position: absolute;
+  left: 140px;
+  bottom: 605px;
+  width: 100%;
+  height: auto;
+  font-size: 1.5em;
 }
