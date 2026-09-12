@@ -31,6 +31,7 @@ In images ---> MMD folder.png zie je het eindresultaat gemaakt in Figma
 ### 7 sept - Sprintplanning - WS1 + Checkout
 
 OPDRACHT 1: RANGSCHIKKEN
+De werkvelden zitten bij het mapje images. Bij deze werkgroep gingen we in groepjes van 4 kijken naar verschillende websites en het was leuk om te zien dat elke website zijn eigen thema heeft
 
 OPDRACHT 2: EIGEN VERKENNING
 De inventaristatie: Ik zat te denken om mijn digital garden te visualiseren in illustraties. Ik hou zelf veel van tekenen, maar heb dat ook een tijdje niet meer gedaan, dus het zou me leuk lijken om daar weer verder mee bezig te zijn. Ik vond de nuel website ook interessant. Elke afbeelding heeft zijn eigen interactie. Dat vond ik best een webby webiste.
@@ -38,7 +39,9 @@ De inventaristatie: Ik zat te denken om mijn digital garden te visualiseren in i
 De toon: Ik zat te denken om soort tips te geven over illustraties. Het kleurgebruik, welke technieken het handigst is etc.
 Mijn doel is om de gebruiker van mijn digital garden een leerzame, goed gevoel te geven. Het combineren met wat ik leuk vind als hobby en iets leerzamer ook voor mij kan zijn.
 
-Mijn content:
+Mijn content: Vroeger kon ik uren tekenen. Tegenwoordig doe ik het minder, maar mijn liefde voor tekenen is gebleven. In mijn digital garden wil ik ontdekken wat mij hierin blijft inspireren. Hoe het echt mijn eigen content wordt is door mijn eigen werk te laten zien, zoals tekeningen en mijn ervaringen deel.
+
+OPDRACHT 3: VERZAMELEN VAN INSPIRATIE
 
 CHECKOUT:
 
@@ -54,9 +57,13 @@ Een website is voor mij ‘webby’ als hij creatief, interactief en anders is d
 
 Ik zat te denken om mijn digital garden te visualiseren in illustraties. Omdat tekenen mijn hobby is die ik tijdje niet heb uitgevoerd.
 
-OPDRACHT 3: VERZAMELEN VAN INSPIRATIE
-
 ### 9 sept - WS2 + Checkout
+
+PRESENTEREN EIGEN ONDERWERP:
+VISUAL RESEARCH
+CRAZY 8
+
+CHECKOUT:
 
 1. Leg uit waar het Visual Research in 3 stappen naartoe werkt
    Het Visual Research werkt toe naar een duidelijk concept voor mijn Digital Garden. Je verzamelt eerst inspiratie en daarmee doe je onderzoek en uiteindelijk combineer je je ideeen
@@ -66,3 +73,29 @@ OPDRACHT 3: VERZAMELEN VAN INSPIRATIE
 
 3. Vertel kort welk idee van de Crazy 8 je het liefst zou willen uitvoeren/ verder zou willen onderzoeken.
    Ik zou graag iets interactiefs willen maken, in plaats van dat bezoekers alleen maar naar tekeningen bekijken. Het proces vind ik ook vooral belangerijk, want het gaat niet alleen maar om perfectie. Dus ik denk dat ik graag me verder zou in willen verdiepen met nummer 5 (2de rij - 1ste)
+
+### 11 sept - WS3 + Voortgang
+
+Feedback alara:
+Je moet je er toe gaan zetten. Als je code niet leuk vindt schuif je het vooruit.
+Ga dingen doen waar je van moet leren. Ga ze doen.
+
+Je haalt het blok door veel code te schrijven.
+Ineens kan je op een anderen manier denken.
+
+Ga zelfs, anders mensen zoeken die dit ook hebben (niet willen). En dan mischien samen zitten en werken.
+Volgende week vrijdag moet er een website staan.
+
+Alle afbeeldingen in een img tag neerzetten op de juiste plek zodat je het goed en duidelijk kan terug vinden.
+Als iets nieuwe schrijf in de read me, schrijf het boven aan, anti chronologisch.
+
+Schrijf er ook bij wat heb je geleerd. Schrijf erbij wat je nu weet wat je dan nog niet wist.
+Niet alleen over wat moest, maar wat je had geleerd.
+
+Vergeet de competenties niet. Op die manier leer je het best.
+Je maakt gehelen tijd allemaal kleine onderzoekjes, En kleine feedback momentjes ect ect voor een prototype.
+
+Probeer ook veel meer feedback te vragen,
+Omdat je met feedback het via iemand ander hun ogen ziet. Van die onverwachtse dingen kan je veel nieuwe dingen krijgen en leren.
+
+De genen die heel erg veel beweegt of interacteerdt zijn belangrijk.
