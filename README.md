@@ -6,15 +6,17 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### 31 aug - Kickoff + Checkout
 
-Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving.
-
 Leg uit wat een source hosting platform is en voor welke jij gekozen hebt.
 
 1. Source hosting platform = Online opslagplek voor programmeercode
 
-Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina. 2. Ik heb mijn domeinnaam vernoemd naar “Kirazz” dat is een online username die ik gebruik. Ik heb het gekoppeld via transit.nl en via Github met behulp van DNS
+Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina.
 
-Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden. 3.
+2. Ik heb mijn domeinnaam vernoemd naar “Kirazz” dat is een online username die ik gebruik. Ik heb het gekoppeld via transit.nl en via Github met behulp van DNS
+
+Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden.
+
+3.
 
 ### 2 sept - Deepdive
 
@@ -99,3 +101,22 @@ Probeer ook veel meer feedback te vragen,
 Omdat je met feedback het via iemand ander hun ogen ziet. Van die onverwachtse dingen kan je veel nieuwe dingen krijgen en leren.
 
 De genen die heel erg veel beweegt of interacteerdt zijn belangrijk.
+
+### 14 sept - WS4 + Bi-weekly geek 1
+
+Feedback van Barbara:
+-Sfeerwoorden terug verbinden met je website
+-Als je erop klikt waar gaat het naartoe? Staat je tekeningen in een overzichts vakjes?
+-Als je op een tekening klikt, wordt het vergroot? Werk met responsive Design
+
+Checkout:
+
+1. Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?
+
+wanneer het bijvoorbeeld veel verschillende kleuren heeft, lettertypes die niet passen en afbeeldingen die niet goed staan. Best een onrustige vibe geven en geen samenhang heeft met het stijl
+
+2. Vertel welke volgende stap je neemt om je website responsive te maken.
+   Ik ga ervoor zorgen dat de website goed werkt op verschillende apparaten zoals een laptop, tablet en telefoon door vooral er naar te kijken naar de grootte van afbeeldingen, tekst en knoppen etc.
+
+3. Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen in Webby vocabulair?
+   Ik ga ervoor zorgen dat mijn website aan de volgende voorwaardes voldoen, zodat het webby mogelijk is

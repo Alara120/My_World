@@ -12,10 +12,14 @@ body {
   color-scheme: light dark;
 
   background-image: url("../images/Achtergrond.jpg");
-  background-size: cover; /* vult het hele scherm */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* blijft staan tijdens scrollen, optioneel */
+  background-attachment: fixed;
+}
+
+html {
+  color-scheme: light dark;
 }
 
 .homepage-illustratie {
@@ -43,8 +47,8 @@ body {
 .doodle-garden-tekst {
   position: absolute;
   top: 50%;
-  left: 150px; /* schuift de tekst voorbij het bloempje */
-  transform: translateY(-50%); /* verticaal centreren t.o.v. de balk */
+  left: 150px;
+  transform: translateY(-50%);
   margin: 0;
   font-family: "Comic Relief", system-ui;
   font-size: 1.5em;
