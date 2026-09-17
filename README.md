@@ -116,7 +116,9 @@ Checkout:
 wanneer het bijvoorbeeld veel verschillende kleuren heeft, lettertypes die niet passen en afbeeldingen die niet goed staan. Best een onrustige vibe geven en geen samenhang heeft met het stijl
 
 2. Vertel welke volgende stap je neemt om je website responsive te maken.
+
    Ik ga ervoor zorgen dat de website goed werkt op verschillende apparaten zoals een laptop, tablet en telefoon door vooral er naar te kijken naar de grootte van afbeeldingen, tekst en knoppen etc.
 
 3. Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen in Webby vocabulair?
+
    Ik ga ervoor zorgen dat mijn website aan de volgende voorwaardes voldoen, zodat het webby mogelijk is
