@@ -43,7 +43,7 @@ S0 - Interactie: MMD, micro-interacties, forms (Nicky)
 Opdracht/ Huiswerk (~ 2 uur):
 Maak een bruikbaar, online formulier van het Wok to Walk menu voor middelgrote schermen (laptop/tablet). Denk hierbij aan de context (waarom kijken mensen er naar?), de verdeling van de content, en mogelijke toepassingen van micro-interacties.
 
-![DeepDive folder](assets/Images/MMDfolder.png)
+![DeepDive folder](assets/images-voor-readme/MMDfolder.png)
 
 ### 4 sept - Deepdive
 
