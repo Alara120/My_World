@@ -75,6 +75,10 @@ Je maakt gehelen tijd allemaal kleine onderzoekjes, En kleine feedback momentjes
 Probeer ook veel meer feedback te vragen,
 Omdat je met feedback het via iemand ander hun ogen ziet. Van die onverwachtse dingen kan je veel nieuwe dingen krijgen en leren. De genen die heel erg veel beweegt of interacteerdt zijn belangrijk.
 
+# Huiswerk voor 11 sept
+
+![Opdracht](assets/images-voor-readme/mobile-schets.jpg)
+
 ### 9 sept - WS2 + Checkout
 
 Deze les werd online uitgevoerd.
@@ -115,10 +119,6 @@ Ik vond het soms lastig om te bepalen welk idee ik verder wilde uitwerken. Ook m
 # Volgende stap
 
 Ik wil mijn gekozen Crazy 8 idee verder uitwerken en onderzoeken hoe ik het tekenproces op een interactieve manier kan laten zien in mijn digital Garden
-
-# Huiswerk voor 11 sept
-
-![Opdracht](assets/images-voor-readme/mobile-schets.jpg)
 
 ### 7 sept - Sprintplanning - WS1 + Checkout
 
