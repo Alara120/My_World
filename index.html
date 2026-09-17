@@ -1,105 +1,115 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="[jouw naam]" />
-    <meta name="color-scheme" content="dark light" />
+    <meta name="author" content="Alara Durmaz" />
 
-    <title>[Digitaal Tuintje van ...]</title>
+    <title>Digitaal Tuintje van Alara</title>
+
     <link rel="stylesheet" href="./assets/style/normal.css" />
 
-    <!-- Importeer het webring component, voeg jouw eigen domein toe in data-page -->
+    <!-- Webring -->
     <script
-      data-page="[http://kirazz.nl]"
+      data-page="http://kirazz.nl"
       src="https://digitaaltuintje.nl/webring.js"
       defer
     ></script>
   </head>
- 
+
   <body>
-    <main>
+    <!-- Header -->
+    <header>
       <div class="doodle-garden-wrapper">
-  <img
-    src="./assets/images/doodlegarden.svg"
-    alt="Doodle Garden"
-    class="doodle-garden"
-  />
+        <img
+          class="doodle-garden"
+          src="./assets/Images/doodlegarden.svg"
+          alt="My Doodle Garden"
+        />
 
-  <h1 class="doodle-garden-tekst">My Doodle Garden</h1>
+        <p class="doodle-garden-tekst">My Doodle Garden</p>
 
-  <nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="log.html">Logboek</a>
-    <a href="story.html">Story</a>
-  </nav>
-</div>
-
-<div class="welkom-container">
-  <img
-    src="./assets/images/welkom.svg"
-    alt="Illustratie van een computerscherm en bureau"
-    class="homepage-illustratie"
-  />
-
-  <div class="introtekst">
-    <h2>Welkom bij mijn Doodle Garden!</h2>
-
-    <p>
-      Tekenen is altijd een hobby geweest
-      waar ik veel plezier uit haalde,
-      maar de laatste tijd teken ik 
-      helaas minder dan vroeger. Met 
-      deze website wil ik mijn liefde
-      voor tekenen weer terugvinden en 
-      anderen inspireren om hun 
-      creativiteit te ontdekken.
-    </p>
-  </div>
-</div>
-
-
-      <div class="map-en-tekst">
-      <a href="art.html">
-  <img src="./assets/images/mapart.svg" alt="art map" class="mijn-art-map" />
-</a>
-<p class="mijn-art-map-tekst">Mijn art</p>
-    <a href="tips.html">
-        <img src="./assets/images/tips.svg" alt="Tekentips" class="tips" />
-        </a>
-        <p class="mijn-tips-map-tekst">Tips</p>
+        <nav class="menu" aria-label="Hoofdnavigatie">
+          <a href="index.html">Home</a>
+          <a href="log.html">Logboek</a>
+          <a href="contact.html">Story</a>
+        </nav>
       </div>
+    </header>
 
-<div class="map-en-tekst">
-  <a href="proces.html">
-        <img
-          src="./assets/images/process.svg"
-          alt="process map"
-          class="mijn-process-map"
-        />
-        </a>
-        <p class="mijn-process-map-tekst">Proces</p>
- </div>
-        
-<div class="map-en-tekst">
-        <img
-          src="./assets/images/prullenbak.svg"
-          alt="prullenbak"
-          class="mijn-prullenbak"
-        />
+    <!-- Hoofdinhoud -->
+    <main>
+      <section class="garden-layout" aria-label="Mijn digitale tuin">
+        <!-- Linkerkant -->
+        <div class="garden-links">
+          <a class="garden-item mijn-art" href="art.html">
+            <img
+              class="mijn-art-map"
+              src="./assets/Images/mapart.svg"
+              alt="Mijn art"
+            />
+            <p>Mijn art</p>
+          </a>
 
-<div class="map-en-tekst">
-        <img
-          src="./assets/images/music.svg"
-          alt="music"
-          class="music-list"
-        />
+          <a class="garden-item" href="tips.html">
+            <img class="tips" src="./assets/Images/tips.svg" alt="Tekentips" />
+            <p>Teken tips</p>
+          </a>
 
+          <a class="garden-item" href="proces.html">
+            <img
+              class="mijn-process-map"
+              src="./assets/Images/process.svg"
+              alt="Mijn tekenproces"
+            />
+            <p>Teken proces</p>
+          </a>
+        </div>
 
+        <!-- Midden -->
+        <section class="welkom-container" aria-labelledby="welkom-titel">
+          <img
+            class="homepage-illustratie"
+            src="./assets/Images/welkom.svg"
+            alt="Illustratie voor de welkomstpagina"
+          />
+
+          <div class="introtekst">
+            <h1 id="welkom-titel">Welkom!</h1>
+
+            <p>
+              Tekenen is altijd een hobby geweest waar ik veel plezier uit
+              haalde, maar de laatste tijd teken ik helaas minder dan vroeger.
+              Met deze website wil ik mijn liefde voor tekenen weer terugvinden
+              en anderen inspireren om hun creativiteit te ontdekken.
+            </p>
+          </div>
+        </section>
+
+        <!-- Rechterkant -->
+        <div class="garden-rechts">
+          <div class="garden-item">
+            <img
+              class="music-list"
+              src="./assets/Images/music.svg"
+              alt="Mijn muzieklijst"
+            />
+          </div>
+
+          <div class="garden-item">
+            <img
+              class="mijn-prullenbak"
+              src="./assets/Images/prullenbak.svg"
+              alt="Prullenbak"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <p>[Copyleft 2026, all wrongs reversed]</p>
+      <p>Copyleft 2026, all wrongs reversed</p>
     </footer>
   </body>
 </html>

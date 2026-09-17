@@ -1,144 +1,168 @@
 @font-face {
   font-family: "Comic Relief";
-  src: url(../type/ComicRelief-Regular.woff2);
+  src: url("../type/ComicRelief-Regular.woff2");
   font-weight: 400;
   font-style: normal;
 }
 
-body {
-  font-family: "Comic Relief", system-ui;
-  color: CanvasText;
-  color-scheme: light dark;
+/* MARK: Algemene styling */
 
-  background-image: url("../images/Achtergrond.jpg");
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  font-family: "Comic Relief", system-ui, sans-serif;
+  color: CanvasText;
+  background-image: url("../Images/Achtergrond.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
-html {
-  color-scheme: light dark;
+/* MARK: Digital Garden layout */
+
+.garden-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  width: min(1200px, 92%);
+  margin: 1em auto 3em;
+  padding: 1em;
+  box-sizing: border-box;
 }
 
-.homepage-illustratie {
-  max-width: 600px;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 1em auto;
+.garden-links,
+.garden-rechts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
 }
+
+.garden-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.garden-item img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.garden-item p {
+  margin: 0.3em 0 0;
+  font-size: 1em;
+}
+
+/* MARK: Homepage illustratie */
+
+.homepage-illustratie {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* MARK: Doodle Garden header */
 
 .doodle-garden-wrapper {
   position: relative;
-  max-width: 900px;
+  width: min(900px, 95%);
   margin: 1em auto 0;
 }
 
 .doodle-garden {
-  max-width: 900px;
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
   margin: 1em auto 0;
 }
 
 .doodle-garden-tekst {
   position: absolute;
   top: 50%;
-  left: 150px;
-  transform: translateY(-50%);
+  left: 17%;
   margin: 0;
-  font-family: "Comic Relief", system-ui;
-  font-size: 1.5em;
-  font-weight: normal;
+  transform: translateY(-50%);
+  font-family: "Comic Relief", system-ui, sans-serif;
+  font-size: clamp(1em, 2vw, 1.5em);
+  font-weight: 400;
 }
+
+/* MARK: Menu */
 
 .menu {
   position: absolute;
   top: 50%;
-  right: 80px;
-  transform: translateY(-50%);
-
+  right: 9%;
   display: flex;
   gap: 10px;
+  transform: translateY(-50%);
 }
 
 .menu a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   min-width: 70px;
   height: 35px;
   padding: 0 12px;
-
   border: 2px solid black;
   border-radius: 50px;
-
   background-color: #b2c2e5;
   color: black;
-
-  text-decoration: none;
-  font-family: "Comic Relief", system-ui;
+  font-family: "Comic Relief", system-ui, sans-serif;
   font-size: 0.9em;
+  text-decoration: none;
 }
 
 .menu a:hover {
   background-color: #dce7f8;
 }
 
+/* MARK: Mijn art */
+
 .mijn-art-map {
-  position: absolute;
-  left: -40px;
-  bottom: 470px;
-  max-width: 390px;
-  width: 100%;
+  width: clamp(260px, 22vw, 450px);
   height: auto;
+  margin-bottom: -2.5em;
   transition: transform 0.15s ease;
 }
+
 .mijn-art-map:hover {
   transform: scale(1.05);
 }
 
-.mijn-art-map-tekst {
-  position: absolute;
-  left: 100px;
-  bottom: 490px;
-  width: 100%;
-  height: auto;
-  font-size: 1.5em;
-}
+/* MARK: Mijn tips */
 
 .tips {
-  position: absolute;
-  left: 10px;
-  bottom: 310px;
-  max-width: 250px;
-  width: 100%;
+  width: clamp(200px, 16vw, 320px);
   height: auto;
+  margin-bottom: -2.5em;
   transition: transform 0.15s ease;
 }
+
 .tips:hover {
   transform: scale(1.05);
 }
 
-.mijn-tips-map-tekst {
-  position: absolute;
-  left: 110px;
-  bottom: 285px;
-  width: 100%;
-  height: auto;
-  font-size: 1.5em;
-}
+/* MARK: Mijn proces */
 
 .mijn-process-map {
-  position: absolute;
-  left: 10px;
-  bottom: 100px;
-  max-width: 250px;
-  width: 100%;
+  width: clamp(210px, 17vw, 340px);
   height: auto;
+  margin-bottom: -2.5em;
   transition: transform 0.15s ease;
 }
 
@@ -146,35 +170,26 @@ html {
   transform: scale(1.05);
 }
 
-.mijn-process-map-tekst {
-  position: absolute;
-  left: 105px;
-  bottom: 80px;
-  width: 100%;
-  height: auto;
-  font-size: 1.5em;
-}
+/* MARK: Prullenbak */
 
 .mijn-prullenbak {
-  position: absolute;
-  right: 70px;
-  bottom: 400px;
-  max-width: 250px;
-  width: 100%;
+  width: clamp(190px, 15vw, 300px);
   height: auto;
 }
+
+/* MARK: Muziek */
+
+.music-list {
+  width: clamp(210px, 17vw, 340px);
+  height: auto;
+}
+
+/* MARK: Welkom */
 
 .welkom-container {
   position: relative;
-  width: 600px;
-  max-width: 90%;
-  margin: 40px auto;
-}
-
-.homepage-illustratie {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: min(600px, 100%);
+  margin: 10px auto 40px;
 }
 
 .introtekst {
@@ -185,23 +200,159 @@ html {
   text-align: center;
 }
 
-.introtekst h2 {
-  font-size: 20px;
-  font-weight: normal;
+.introtekst h1 {
   margin: 0 0 20px;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 400;
 }
 
 .introtekst p {
-  font-size: 16px;
-  line-height: 1.4;
   margin: 0;
+  font-size: clamp(12px, 1.5vw, 16px);
+  line-height: 1.4;
 }
 
-.music-list {
-  position: absolute;
-  right: 70px;
-  bottom: 100px;
-  max-width: 250px;
+/* MARK: Tablet */
+
+@media (width >= 40em) {
+  .garden-layout {
+    grid-template-columns:
+      minmax(240px, 1fr)
+      minmax(400px, 2fr)
+      minmax(240px, 1fr);
+    align-items: start;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+
+  .garden-links,
+  .garden-rechts {
+    gap: 0;
+  }
+
+  .garden-links {
+    transform: translate(-2em, -10em);
+  }
+}
+
+/* MARK: Groot scherm */
+
+@media (width >= 70em) {
+  .garden-layout {
+    width: min(1400px, 94%);
+    grid-template-columns:
+      minmax(280px, 1fr)
+      minmax(500px, 2fr)
+      minmax(280px, 1fr);
+    align-items: start;
+    gap: 1.5em;
+    margin: 1em auto 3em;
+  }
+
+  .garden-links {
+    transform: translate(-2em, -10em);
+  }
+
+  .mijn-art-map {
+    width: clamp(320px, 24vw, 500px);
+  }
+
+  .tips {
+    width: clamp(230px, 17vw, 350px);
+  }
+
+  .mijn-process-map {
+    width: clamp(240px, 18vw, 360px);
+  }
+
+  .mijn-prullenbak {
+    width: clamp(210px, 16vw, 320px);
+  }
+
+  .music-list {
+    width: clamp(240px, 18vw, 360px);
+  }
+
+  .mijn-art p {
+    transform: translateY(-2em);
+  }
+}
+
+/* MARK: Klein scherm */
+
+@media (width < 40em) {
+  .doodle-garden-wrapper {
+    width: 95%;
+  }
+
+  .doodle-garden-tekst {
+    left: 10%;
+    font-size: 1em;
+  }
+
+  .menu {
+    right: 5%;
+    gap: 5px;
+  }
+
+  .menu a {
+    min-width: auto;
+    height: 30px;
+    padding: 0 8px;
+    font-size: 0.75em;
+  }
+
+  .garden-layout {
+    grid-template-columns: 1fr;
+    gap: 2em;
+    margin-top: 1em;
+  }
+
+  .garden-links,
+  .garden-rechts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    gap: 1em;
+  }
+
+  .garden-links {
+    transform: translate(-0.5em, -1em);
+  }
+
+  .mijn-art-map,
+  .tips,
+  .mijn-process-map {
+    margin-bottom: -1em;
+  }
+
+  .welkom-container {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto 30px;
+    order: -1;
+  }
+
+  .introtekst {
+    right: 10%;
+    width: 35%;
+  }
+
+  .introtekst h1 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .introtekst p {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+
+/* MARK: Digitaaltuintje Webring */
+
+footer {
   width: 100%;
-  height: auto;
+  margin: 3em auto 2em;
+  text-align: center;
 }
