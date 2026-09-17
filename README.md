@@ -2,31 +2,48 @@
 
 Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door studenten worden gemaakt.
 
-## Learning Log
+## Mijn Learning Log
 
 ### 31 aug - Kickoff + Checkout
 
-Leg uit wat een source hosting platform is en voor welke jij gekozen hebt.
+1. Leg uit wat een source hosting platform is en voor welke jij gekozen hebt.
 
-1. Source hosting platform = Online opslagplek voor programmeercode
+Source hosting platform = Online opslagplek voor programmeercode
 
-Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina.
+2. Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina.
 
-2. Ik heb mijn domeinnaam vernoemd naar “Kirazz” dat is een online username die ik gebruik. Ik heb het gekoppeld via transit.nl en via Github met behulp van DNS
+Ik heb mijn domeinnaam vernoemd naar “Kirazz” dat is een online username die ik gebruik. Ik heb het gekoppeld via transit.nl en via Github met behulp van DNS
 
-Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden.
+3. Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden.
 
-3.
+Je kunt je pagina aanpassen in VSCodium en het uploaden door: Commit - Comment - Sync changes en het te pushen naar je GitHub.
+
+# Wat heb ik geleerd?
+
+Vandaag was de eerste dag van school wat best spannend was.. We zijn begonnen met de kickoff en checkout van het project. Ik heb geleerd wat een source hosting platform is en hoe GitHub gebruikt kan worden om mijn code online te bewaren en te publiceren. Ook heb ik geleerd hoe ik mijn domeinnaam via DNS aan mijn website kan koppelen.
+
+Het project is erg gericht op HTML en CSS. Dit vind ik zelf best lastig, maar ik heb altijd al interesse gehad om hier beter in te worden.
+
+# Wat ging goed?
+
+Ik heb mijn domeinnaam kunnen koppelen en mijn website online kunnen zetten. Ook begrijp ik nu beter hoe mijn lokale bestanden in VSCodium uiteindelijk online op mijn website terecht komen.
+
+# Wat vond ik lastig?
+
+Nog echt te begrijpen waar het project over gaat en wat er van ons verwacht wordt.
+
+# Volgende stap
+
+Mij verdiepen in het project en informatie uit halen.
 
 ### 2 sept - Deepdive
 
 S0 - Interactie: MMD, micro-interacties, forms (Nicky)
 
 Opdracht/ Huiswerk (~ 2 uur):
-
 Maak een bruikbaar, online formulier van het Wok to Walk menu voor middelgrote schermen (laptop/tablet). Denk hierbij aan de context (waarom kijken mensen er naar?), de verdeling van de content, en mogelijke toepassingen van micro-interacties.
 
-In images ---> MMD folder.png zie je het eindresultaat gemaakt in Figma
+![DeepDive folder](assets/Images/MMDfolder.png)
 
 ### 4 sept - Deepdive
 
