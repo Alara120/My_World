@@ -214,10 +214,10 @@ Mij verdiepen in het project en informatie uit halen.
 # S1 - Light & Dark theme
 
 Oefening 1 - Light & Dark 101
-[Images](assets/Deepdives/Oefening-1-Light-Dark-101/)
+[Oefening-1](assets/Deepdives/Oefening-1-Light-Dark-101/)
 
 Oefening 2 - Twee thema's
-[Images](assets/Deepdives/Oefening-2-Twee-themas/)
+[Oefening-2](assets/Deepdives/Oefening-2-Twee-themas/)
 
 Oefening 3 - Responsive afbeelding
 Heb ik niet af kunnen maken, ben er mee bezig!
@@ -227,10 +227,10 @@ Heb ik niet af kunnen maken, ben er mee bezig!
 ![Opdracht](assets/images-voor-readme/spelletje.png)
 
 Oefening 1 - De zes gradients
-[Images](assets/Deepdives/Oefening1-De-zes-gradients/)
+[Oefening-1](assets/Deepdives/Oefening1-De-zes-gradients/)
 
 Oefening 2 - Vlaggen en co
-[Images](assets/Deepdives/Oefening-2-Vlaggen-en-Co/)
+[Oefening-2](assets/Deepdives/Oefening-2-Vlaggen-en-Co/)
 
 Oefening 3 - Gradients animeren
 Heb ik niet af kunnen maken, ben er mee bezig!
