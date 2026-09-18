@@ -211,6 +211,20 @@ Mij verdiepen in het project en informatie uit halen.
 
 ## DEEPDIVES
 
+# S0 - CSS: fonts met kleur en effecten
+
+Oefening 1 - font properties
+[Oefening-1](assets/Deepdives/oefening-1/)
+
+Oefening 2 - fonts, kleur en effecten
+[Oefening-2](assets/Deepdives/oefening-2/)
+
+Oefening 3 - mini-posters
+Heb ik niet af kunnen maken, ben er mee bezig!
+
+Oefening 4 - transitions
+Heb ik niet af kunnen maken, ben er mee bezig!
+
 # S1 - Light & Dark theme
 
 Oefening 1 - Light & Dark 101
@@ -236,3 +250,9 @@ Oefening 3 - Gradients animeren
 Heb ik niet af kunnen maken, ben er mee bezig!
 
 # S1 - Grid 101 + Media queries
+
+Voorbereiding + Notities:
+
+# S1 - Responsive grid + Grid-areas
+
+Voorbereiding:
