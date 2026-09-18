@@ -1,0 +1,75 @@
+/**************/
+/* @FONT-FACE */
+/**************/
+
+/* alle fonts hier */
+
+
+
+
+
+
+/*****************************/
+/* JOUW CODE VOOR DE BLOKJES */
+/*****************************/
+
+/* met deze selector selecteer je de eerste li */
+li:nth-of-type(1) {
+	rotate:2deg;
+	
+	display:grid;
+	place-items:center;
+
+	/* je kunt css selectors nesten */
+	/* zo kun je makkelijker zien wat bij elkaar hoort */
+	/* met deze selector selecteer je de h2 in de eerste li */
+	h2 {
+		color:deeppink;
+	}
+}
+
+
+
+
+/* met deze selector selecteer je de tweede li */
+li:nth-of-type(2) {
+
+	background-color:limegreen;
+	
+	h2 {
+		color:white;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************/
+/* BASIS - HOEF JE NIETS MEE TE DOEN */
+/*************************************/
+
+@layer basis {
+  *, *::after, *::before {
+    box-sizing:border-box;  
+  }
+
+	:root * {
+		--template-size-blokje:min(calc(12em + 8vw), 16em);
+		--template-number-blokjes:3;
+	}
+}

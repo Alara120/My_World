@@ -1,0 +1,118 @@
+/***********************************/
+/* CODE VOOR DE FONTS - @FONT-FACE */
+/***********************************/
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-Thin.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "saira condensed";
+  src: url("../fonts/SairaCondensed-Bold.ttf");
+  font-weight: 700;
+}
+
+/* jouw code hier */
+/* alle fonts (@font-face's) zet je bovenaan je css */
+/* kijk even naar oefening 1 hoe je @font-face gebruikt */
+
+/*******************************/
+/* CODE VOOR HET EERSTE BLOKJE */
+/*******************************/
+
+/* hiermee selecteer je de eerste li */
+li:nth-of-type(1) {
+  /* h2 in het midden van de li */
+  /* hoef je nu nog niet te snappen - mag wel ;-) */
+  display: grid;
+  place-items: center;
+
+  /* jouw code hier */
+  background-color: rgb(0 24 54);
+}
+
+/* hiermee selecteer je de h2 in de eerste li */
+li:nth-of-type(1) h2 {
+  /* de h2 wordt zo smal als het langste woord */
+  /* daardoor staat elk woord op een nieuwe regel */
+  width: min-content;
+  /* en dan gecentreerd */
+  text-align: center;
+
+  font-family: "montserrat";
+  font-size: 3em;
+  font-weight: 100;
+  color: white hsl(0%, 0%, 100%);
+  line-height: normal;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px cyan;
+}
+
+/*******************************/
+/* CODE VOOR HET TWEEDE BLOKJE */
+/*******************************/
+
+li:nth-of-type(2) {
+  /* h2 in het midden van de li */
+  display: grid;
+  place-items: center;
+
+  /* jouw code hier */
+  background-color: rgb(230, 127, 138);
+}
+
+li:nth-of-type(2) h2 {
+  width: min-content;
+  text-align: center;
+
+  font-family: "saira condensed";
+  font-size: large;
+  line-height: normal;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  text-align: center;
+  text-shadow: rgb (0 0 0 / 0.5);
+  color: white;
+  transform: skewY();
+}
+
+/*************************************/
+/* BASIS - HOEF JE NIETS MEE TE DOEN */
+/*************************************/
+
+@layer basis {
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+
+  header,
+  main {
+    width: min(100%, 30rem);
+    margin-inline: auto;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: "";
+    display: grid;
+    gap: var(--template-size-whitespace);
+  }
+
+  li {
+    height: clamp(14em, 80vw, 18em);
+    background-color: white;
+    border-radius: 1em;
+    color: black;
+  }
+}

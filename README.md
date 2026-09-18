@@ -208,3 +208,31 @@ Nog echt te begrijpen waar het project over gaat en wat er van ons verwacht word
 # Volgende stap
 
 Mij verdiepen in het project en informatie uit halen.
+
+## DEEPDIVES
+
+# S1 - Light & Dark theme
+
+Oefening 1 - Light & Dark 101
+[Images](assets/Deepdives/Oefening-1-Light-Dark-101/)
+
+Oefening 2 - Twee thema's
+[Images](assets/Deepdives/Oefening-2-Twee-themas/)
+
+Oefening 3 - Responsive afbeelding
+Heb ik niet af kunnen maken, ben er mee bezig!
+
+# S1 - Mooie kleuren en gradients
+
+![Opdracht](assets/images-voor-readme/spelletje.png)
+
+Oefening 1 - De zes gradients
+[Images](assets/Deepdives/Oefening1-De-zes-gradients/)
+
+Oefening 2 - Vlaggen en co
+[Images](assets/Deepdives/Oefening-2-Vlaggen-en-Co/)
+
+Oefening 3 - Gradients animeren
+Heb ik niet af kunnen maken, ben er mee bezig!
+
+# S1 - Grid 101 + Media queries

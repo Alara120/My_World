@@ -1,0 +1,158 @@
+:root {
+	--rood: crimson;
+	--oranje: darkorange;
+	--geel: gold;
+	--blauw: dodgerblue;
+}
+
+
+/* 1. linear-gradient */
+[aria-label="linear-gradient"] {
+	background-image:
+		linear-gradient(var(--blauw),
+			var(--geel));
+}
+
+
+/* 2. radial-gradient */
+[aria-label="radial-gradient"] {
+	background-image:
+		radial-gradient(var(--blauw),
+			var(--geel));
+}
+
+
+/* 3. conic-gradient */
+[aria-label="conic-gradient"] {
+	background-image:
+		conic-gradient(var(--blauw),
+			var(--geel),
+			var(--blauw));
+}
+
+
+/* 4. schuine-gradient */
+/* met een angle van 45deg */
+[aria-label="schuine-gradient"] {
+	background-image:
+		linear-gradient(45deg,
+			var(--blauw),
+			var(--geel));
+}
+
+
+/* 5. harde-lijn */
+/* radial-gradient */
+/* met color-stops op 50% */
+[aria-label="harde-lijn"] {
+	background-image:
+		radial-gradient(var(--blauw) 50%,
+			var(--geel) 50%);
+}
+
+
+/* 6. meer-kleuren */
+/* conic-gradient */
+/* geen komma na de laatste kleur */
+[aria-label="meer-kleuren"] {
+	background-image:
+		conic-gradient(var(--blauw),
+			var(--geel),
+			var(--oranje),
+			var(--rood),
+			var(--blauw));
+}
+
+
+/* 7. herhalend-patroon */
+/* repeating-linear-gradient */
+[aria-label="herhalend-patroon"] {
+	background-image:
+		repeating-linear-gradient(45deg,
+			var(--blauw) 0 20px,
+			var(--geel) 20px 40px);
+}
+
+
+/* 8. background-size */
+/* 50% 50% */
+[aria-label="background-size"] {
+	background-image:
+		linear-gradient(45deg,
+			var(--blauw),
+			var(--geel));
+
+	background-size: 50% 50%;
+}
+
+
+/* 9. background-position */
+/* center center */
+[aria-label="background-position"] {
+	background-image:
+		linear-gradient(45deg,
+			var(--blauw),
+			var(--geel));
+
+	background-size: 50% 50%;
+	background-position: center center;
+}
+
+
+/* 10. background-repeat */
+/* no-repeat (niet none) */
+[aria-label="background-repeat"] {
+	background-image:
+		linear-gradient(45deg,
+			var(--blauw),
+			var(--geel));
+
+	background-size: 50% 50%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+/* 11. twee-gradients */
+/* komma na elke gradient */
+/* puntkomma na de laatste gradient */
+[aria-label="twee-gradients"] {
+	background-image:
+		linear-gradient(to right,
+			var(--oranje),
+			var(--rood)),
+		linear-gradient(45deg,
+			var(--blauw),
+			var(--geel));
+
+	background-size: 100% 100%, 50% 50%;
+	background-position: center center, center center;
+	background-repeat: no-repeat, no-repeat;
+}
+
+
+/* 12. alles-dubbel */
+/* background-image, -size, -position en -repeat*/
+/* komma na elke value */
+/* puntkomma na elke laatste value */
+[aria-label="alles-dubbel"] {
+	background-image:
+		linear-gradient(to right,
+			var(--oranje),
+			var(--rood)),
+		linear-gradient(45deg,
+			var(--blauw),
+			var(--geel));
+
+	background-size:
+		100% 100%,
+		50% 50%;
+
+	background-position:
+		center center,
+		center center;
+
+	background-repeat:
+		no-repeat,
+		no-repeat;
+}

@@ -1,0 +1,11 @@
+{
+  "head": "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n<link href=\"https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap\" rel=\"stylesheet\">",
+  "htmlClasses": "",
+  "scripts": [
+    "/script.js"
+  ],
+  "styles": [
+    "https://codepen.io/shooft/pen/qBoLajP.css",
+    "/style.css"
+  ]
+}

@@ -1,0 +1,61 @@
+html {
+	color-scheme:light dark;
+
+	--background:light-dark(#A9C0D7, #001435);
+}
+
+
+body {
+	background-color:var(--background);
+}
+
+img {
+		width:min(100%, 70em);
+		height:clamp(24em, 100vw, 40em);
+		object-fit:cover;
+		object-position: 60% 50%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************************/
+/* BASIS - HOEF JE NIETS MEE TE DOEN */
+/*************************************/
+
+@layer basis {
+  *, *::after, *::before {
+    box-sizing:border-box;  
+  }
+	
+	body {
+		min-height:100dvh;
+		margin:0;
+		display:grid;
+		align-items:center;
+		align-content:center;
+	}
+}

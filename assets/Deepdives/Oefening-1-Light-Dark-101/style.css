@@ -1,0 +1,114 @@
+html {
+	/* color-scheme */
+	color-scheme: light dark;
+
+	/* custom properties */
+	--background: light-dark(#f5f7fa, #1e293b);
+	--color: light-dark(#1e293b, #f1f5f9);
+	--border-color: light-dark(#2563eb, #60a5fa);
+	--color-h1: light-dark(#1d4ed8, #93c5fd);
+}
+
+body {
+	/* background voor de body */
+	background-color: var(--background);
+
+	/* color voor alle tekst */
+	color: var(--color);
+
+	/* border-color voor de body */
+	border-color: var(--border-color);
+
+	/* andere border properties */
+	border-style: double;
+	border-width: .3em;
+}
+
+h1 {
+	/* color voor de h1 */
+	color: var(--color-h1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************************************/
+/*******************************************/
+/***                                     ***/
+/***  algemene styling voor de articles  ***/
+/***                                     ***/
+/*******************************************/
+/*******************************************/
+
+@layer basis {
+
+	/* Simpele CSS Remedy */
+	/* naar een idee van Jen Simmons */
+	/* github.com/jensimmons/cssremedy */
+	*,
+	*::after,
+	*::before {
+		box-sizing: border-box;
+	}
+
+	html {
+		min-height: 100dvh;
+
+		display: grid;
+		place-content: safe center;
+		place-items: safe center;
+	}
+
+	body {
+		width: min(100% - 2em, 26em);
+		margin: 0 auto;
+		padding: 2em;
+
+		display: grid;
+		place-content: center;
+		gap: .5em;
+
+		border-radius: 1em;
+		corner-shape: bevel;
+	}
+
+	h1 {
+		margin: 0;
+		line-height: 1.2;
+	}
+
+	p {
+		margin: 0;
+	}
+}

@@ -1,0 +1,152 @@
+/* KLEURTJES */
+
+:root {
+	--rood: crimson;
+	--oranje: darkorange;
+	--geel: gold;
+	--groen: #3a0;
+	--blauw: dodgerblue;
+	--donkerblauw: #048;
+	--paars: purple;
+	--bruin: brown;
+	--zwart: black;
+	--grijs: darkgray;
+	--wit: white;
+
+	/* extra kleuren voor de vlaggen */
+	--japan-rood: #bc002d;
+	--oostenrijk-rood: #ed2939;
+	--nigeria-groen: #008751;
+	--colombia-geel: #fcd116;
+	--colombia-blauw: #003893;
+	--engeland-rood: #cf142b;
+	--zweden-geel: #ffcd00;
+	--schotland-blauw: #005eb8;
+	--ijsland-rood: #d72828;
+	--ijsland-blauw: #02529c;
+}
+
+
+/* EERSTE BLOKJE */
+/* JAPAN */
+
+li:nth-of-type(1) {
+	background:
+		radial-gradient(circle,
+			var(--japan-rood) 0 28%,
+			transparent 29%),
+		var(--wit);
+}
+
+
+/* TWEEDE BLOKJE */
+/* OOSTENRIJK */
+
+li:nth-of-type(2) {
+	background:
+		linear-gradient(to bottom,
+			var(--oostenrijk-rood) 0 33.33%,
+			var(--wit) 33.33% 66.66%,
+			var(--oostenrijk-rood) 66.66% 100%);
+}
+
+
+/* DERDE BLOKJE */
+/* NIGERIA */
+
+li:nth-of-type(3) {
+	background:
+		linear-gradient(to right,
+			var(--nigeria-groen) 0 33.33%,
+			var(--wit) 33.33% 66.66%,
+			var(--nigeria-groen) 66.66% 100%);
+}
+
+
+/* VIERDE BLOKJE */
+/* COLOMBIA */
+
+li:nth-of-type(4) {
+	background:
+		linear-gradient(to bottom,
+			var(--colombia-geel) 0 50%,
+			var(--colombia-blauw) 50% 75%,
+			var(--rood) 75% 100%);
+}
+
+
+/* VIJFDE BLOKJE */
+/* ENGELAND */
+
+li:nth-of-type(5) {
+	background:
+		linear-gradient(to right,
+			transparent 0 40%,
+			var(--engeland-rood) 40% 60%,
+			transparent 60% 100%),
+		linear-gradient(to bottom,
+			transparent 0 40%,
+			var(--engeland-rood) 40% 60%,
+			transparent 60% 100%),
+		var(--wit);
+}
+
+
+/* ZESDE BLOKJE */
+/* ZWEDEN */
+
+li:nth-of-type(6) {
+	background:
+		linear-gradient(to right,
+			transparent 0 30%,
+			var(--zweden-geel) 30% 42%,
+			transparent 42% 100%),
+		linear-gradient(to bottom,
+			transparent 0 42%,
+			var(--zweden-geel) 42% 58%,
+			transparent 58% 100%),
+		var(--schotland-blauw);
+}
+
+
+/* ZEVENDE BLOKJE */
+/* SCHOTLAND */
+
+li:nth-of-type(7) {
+	background:
+		linear-gradient(35deg,
+			transparent 0 43%,
+			var(--wit) 43% 49%,
+			transparent 49% 51%,
+			var(--wit) 51% 57%,
+			transparent 57% 100%),
+		linear-gradient(145deg,
+			transparent 0 43%,
+			var(--wit) 43% 49%,
+			transparent 49% 51%,
+			var(--wit) 51% 57%,
+			transparent 57% 100%),
+		var(--schotland-blauw);
+}
+
+
+/* ACHTSTE BLOKJE */
+/* IJSLAND */
+
+li:nth-of-type(8) {
+	background:
+		linear-gradient(to right,
+			transparent 0 30%,
+			var(--wit) 30% 40%,
+			var(--ijsland-rood) 40% 50%,
+			var(--ijsland-rood) 50% 60%,
+			var(--wit) 60% 70%,
+			transparent 70% 100%),
+		linear-gradient(to bottom,
+			transparent 0 35%,
+			var(--wit) 35% 45%,
+			var(--ijsland-rood) 45% 55%,
+			var(--wit) 55% 65%,
+			transparent 65% 100%),
+		var(--ijsland-blauw);
+}

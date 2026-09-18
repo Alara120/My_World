@@ -1,0 +1,77 @@
+/**************/
+/* @font-face */
+/**************/
+
+/* voor deze oefening maak je een font-family met @font-face */
+/* - de de family de naam expletus */
+/* - de font-bestanden die je nodig hebt staan in de map fonts */
+/* - je hebt twee varianten nodig: 400/regular en 700/bold */
+
+@font-face {
+  font-family: "Expletus";
+  src: url("../fonts/ExpletusSans-Regular.ttf");
+  font-weight: 400;
+}
+/* 400/regular */
+
+@font-face {
+  font-family: "Expletus";
+  src: url(../fonts/ExpletusSans-Bold.ttf);
+  font-weight: 700;
+}
+
+/*700/regular */
+
+/*************/
+/* JOUW CODE */
+/*************/
+
+/* hiermee selecteer je de main */
+/* nb. html elementen erven de font-family van hun parent */
+/* dus als je de main een font-family geeft erven alle kinderen van de main */
+
+main {
+  /* jouw code hier */
+  font-family: "explectus";
+}
+
+/* hiermee selecteer je de p in de main */
+main p {
+  /* jouw code hier */
+  line-height: 1em;
+}
+
+/* hiermee selecteer je de eerste letter van de p */
+main p::first-letter {
+  /* jouw code hier */
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #f09;
+}
+
+/*************************************/
+/* BASIS - HOEF JE NIETS MEE TE DOEN */
+/*************************************/
+
+@layer basis {
+  /* Simpele CSS Remedy */
+  /* naar een idee van Jen Simmons */
+  /* github.com/jensimmons/cssremedy */
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+
+  header,
+  main {
+    width: min(100%, 30rem);
+    margin-inline: auto;
+  }
+
+  main {
+    background: white;
+    color: black;
+    padding: var(--template-size-whitespace);
+  }
+}

@@ -1,0 +1,200 @@
+:root {
+	--geel: yellow;
+	--blauw: dodgerblue;
+}
+
+/* 1. move it */
+
+/* om de browser te leren wat --p is */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@property */
+@property --p {
+	syntax: "<percentage>";
+	inherits: true;
+	initial-value: 0%;
+}
+
+[aria-label="move-it"] {
+	background-image:
+		linear-gradient(in oklch,
+			var(--geel) var(--p),
+			var(--blauw) calc(100% - var(--p)));
+
+	transition: --p 1s;
+}
+
+[aria-label="move-it"]:hover {
+	--p: 50%;
+}
+
+
+
+
+
+/* 2. een rondje */
+
+/* om de browser te leren wat --q is */
+@property --q {
+	syntax: "<percentage>";
+	inherits: true;
+	initial-value: 0%;
+}
+
+[aria-label="een-rondje"] {
+	background-image:
+		conic-gradient(in oklch,
+			var(--blauw) var(--q),
+			var(--geel) var(--q));
+
+	transition: --q 1s;
+}
+
+[aria-label="een-rondje"]:hover {
+	--q: 100%;
+}
+
+
+
+
+
+/* 3. animate it */
+
+@property --r {
+	/* leer de browser dat --r een percentage is */
+	syntax: "<percentage>";
+	inherits: true;
+	initial-value: 0%;
+}
+
+[aria-label="animate-it"] {
+	background-image:
+		radial-gradient(in oklch,
+			var(--geel) var(--r, 0%),
+			var(--blauw) calc(100% - var(--r, 0%)));
+}
+
+[aria-label="animate-it"]:hover {
+	animation: --r-ani 2s ease-in-out infinite alternate;
+}
+
+/* @keyframes voor --r */
+/* van 0% naar 50% */
+@keyframes --r-ani {
+	0% {
+		--r: 0%;
+	}
+
+	100% {
+		--r: 50%;
+	}
+}
+
+
+
+
+
+/* 4. nu het centerpunt */
+
+@property --s {
+	/* leer de browser dat --s een percentage is */
+	syntax: "<percentage>";
+	inherits: true;
+	initial-value: 0%;
+}
+
+[aria-label="nu-het-centerpunt"] {
+	background-image:
+		radial-gradient(in oklch at var(--s, 0%) var(--s, 0%),
+			var(--geel),
+			var(--blauw));
+}
+
+[aria-label="nu-het-centerpunt"]:hover {
+	/* rustig heen en weer */
+	animation: --s-ani 2s ease-in-out infinite alternate;
+}
+
+/* @keyframes voor --s */
+/* van 0% naar 100% */
+@keyframes --s-ani {
+	0% {
+		--s: 0%;
+	}
+
+	100% {
+		--s: 100%;
+	}
+}
+
+
+
+
+
+/* 5. de starthoek */
+
+@property --t {
+	/* leer de browser dat --t een hoek is */
+	syntax: "<angle>";
+	inherits: true;
+	initial-value: 0deg;
+}
+
+[aria-label="de-starthoek"] {
+	background-image:
+		repeating-conic-gradient(in oklch from var(--t),
+			var(--blauw) 0 2%,
+			var(--geel) 0 3%,
+			var(--blauw) 0 5%);
+}
+
+[aria-label="de-starthoek"]:hover {
+	animation: --t-ani 2s ease-in-out infinite alternate;
+}
+
+/* @keyframes voor --t */
+/* van 0deg naar 360deg */
+@keyframes --t-ani {
+	0% {
+		--t: 0deg;
+	}
+
+	100% {
+		--t: 360deg;
+	}
+}
+
+
+
+
+
+/* 6. moeilijk */
+
+@property --u {
+	/* leer de browser wat --u is */
+	/* percentage */
+	syntax: "<percentage>";
+	inherits: true;
+	initial-value: 0%;
+}
+
+[aria-label="moeilijk"] {
+	background-image:
+		repeating-radial-gradient(in oklch,
+			var(--blauw) 0% calc(var(--u) - 10%),
+			var(--geel) calc(var(--u) - 10%) var(--u),
+			var(--blauw) calc(0% + var(--u)) min(calc(10% + var(--u)), 20%),
+			var(--geel) min(calc(10% + var(--u)), 20%) 20%);
+
+	animation: --u-ani .5s ease-in-out infinite paused;
+}
+
+[aria-label="moeilijk"]:hover {
+	animation-play-state: running;
+}
+
+/* @keyframes voor --u */
+/* naar 20% */
+@keyframes --u-ani {
+	100% {
+		--u: 20%;
+	}
+}

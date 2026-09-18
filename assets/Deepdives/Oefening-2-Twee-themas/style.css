@@ -1,0 +1,146 @@
+/**********/
+/* THEMES */
+/**********/
+
+html {
+  color-scheme: light dark;
+
+  /* jouw thema's - light en dark */
+
+  --background: light-dark(#f5f5f5, #222);
+  --text: light-dark(#222, #f5f5f5);
+
+  --header-background: light-dark(#ffffffcc, #111111cc);
+  --header-text: light-dark(#222, #fff);
+
+  --card-background: light-dark(#fff, #333);
+  --card-border: light-dark(#ddd, #555);
+
+  --accent: light-dark(#d65a9e, #ff9bd0);
+  --accent-text: light-dark(#fff, #222);
+
+  --button-background: light-dark(#333, #eee);
+  --button-text: light-dark(#fff, #222);
+
+}
+
+/* om de radio buttons te laten werken */
+/* dan moet je wel voor de methode met light-dark() kiezen :) */
+
+html:has([value="light"]:checked) {
+  color-scheme: light;
+}
+
+html:has([value="dark"]:checked) {
+  color-scheme: dark;
+}
+
+
+/********************/
+/* ALGEMENE STIJLEN */
+/********************/
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+h1,
+h2 {
+  color: var(--accent);
+}
+
+
+/**********/
+/* HEADER */
+/**********/
+
+header {
+  background-color: var(--header-background);
+  color: var(--header-text);
+}
+
+/* TITLE */
+header h1 {
+  color: var(--accent);
+}
+
+
+/***********/
+/* OPTIONS */
+/***********/
+
+/* voor de label waarvan de input checked is */
+header label:has(:checked) {
+  background-color: var(--accent);
+  color: var(--accent-text);
+}
+
+/* voor de label waarover je hovert */
+header label:hover {
+  background-color: var(--accent);
+  color: var(--accent-text);
+}
+
+/* voor de label waarvan de input focus heeft */
+header label:has(:focus-visible) {
+  outline: 2px solid var(--accent);
+}
+
+/* de input zelf */
+header input {
+  accent-color: var(--accent);
+}
+
+
+/************/
+/* THE CATS */
+/************/
+
+main {
+  background-color: var(--background);
+}
+
+
+/******************/
+/* A CAT / A CARD */
+/******************/
+
+article {
+  background-color: var(--card-background);
+  border: 1px solid var(--card-border);
+}
+
+/* cat name */
+article h2 {
+  color: var(--accent);
+}
+
+/* cat image */
+article img {
+  border-radius: .5em;
+}
+
+/* cat description */
+article p {
+  color: var(--text);
+}
+
+/* button */
+article button {
+  background-color: var(--button-background);
+  color: var(--button-text);
+}
+
+/* hover + focus */
+article button:hover,
+article button:focus-visible {
+  background-color: var(--accent);
+  color: var(--accent-text);
+}
+
+/* active */
+article button:active {
+  background-color: var(--accent);
+  color: var(--accent-text);
+}
