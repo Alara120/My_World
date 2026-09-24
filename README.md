@@ -69,9 +69,14 @@ Voor mijn Digital Garden wil ik de manier van toestemming vragen uitvoeren volge
 
 # CHECKOUT:
 
-1. Wat is een wireflow en wat heb je er aan?
-1. Wat zijn dark UX patterns? Geef drie voorbeelden...
-1. Waar moet je als ontwerper rekening mee houden bij het maken van een human consent component?
+**1. Wat is een wireflow en wat heb je er aan?**
+Een wireflow is een combinatie van een wireframe en een flowchart. Het laat zien hoe verschillende schermen van een website of app met elkaar verbonden zijn en welke stappen een gebruiker doorloopt
+
+**2. Wat zijn dark UX patterns? Geef drie voorbeelden**
+Darkpatterns zijn technieken die een website of app die je stuurt naar een keuze die je niet bewust zou maken. Bijvoorbeeld: Hidden Costs, misdirection en hard to cancel
+
+**3. Waar moet je als ontwerper rekening mee houden bij het maken van een human consent component?**
+Bij een human consent component moet je ervoor zorgen dat de gebruiker begrijpt waar die toestemming voor geeft en zelf een vrije keuze kan maken
 
 # HUISWERK:
 
@@ -83,11 +88,19 @@ Ik kies voor deze vorm omdat ik het kort en krachtig wil houden. Dus je kan zelf
 
 # Wat heb ik geleerd?
 
+ik heb geleerd wat een Human Consent Component is en waarom het belangrijk is om gebruikers duidelijk te informeren over hun privacy.
+
 # Wat ging goed?
+
+Het ging goed met het herontwerpen van een darkpattern en van wireflows maken met mijn groepje.
 
 # Wat vond ik lastig?
 
+ik vond het lastig om te bepalen welke informatie ik precies aan de gebruiker moet geven. Ik wist bijvoorbeeld al dat ik GitHub Pages en de Digitaaltuintje Webring gebruik, maar ik moest verder nadenken over wat dit betekent voor de privacy van de gebruikers voor mijn website.
+
 # Volgende stap
+
+Mijn volgende stap is om de schets verder uit te werken en de HTML structuur van mijn Human Consent Component te maken op mijn garden (als het lukt en tijd voor heb..)
 
 ### 21 sept - Sprintplanning 2 + WS1
 
