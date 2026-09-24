@@ -12,19 +12,74 @@ Opdracht: Dark Pattern Herontwerp
 Opdracht: Hoe teken je wireflows
 ![Opdracht](assets/images-voor-readme/wireflow.jpg)
 
-Opdracht: Human Consent Component
+**Opdracht: Human Consent Component**
 
-1. Informeren van gebruikers is een plicht die je hebt als websitemaker: Hoe kan je gebruikers informeren over het gebruik van hun gegevens op jouw website?
+**1. welke gegevens op jouw digital garden van gebruikers worden verwerkt? Houdt daarbij in de gaten welke diensten je allemaal gebruikt. Zelfs als je alles zelf geschreven hebt zijn dat er al twee: GitHub pages hosting én het digitaaltuintje component.**
 
-2. Op welke manier kan je instemming vragen? Doe desk-research en zoek tenminste 10 verschillende manieren van het vragen van consent op het web.
+Tijdens het controleren van mijn Digital Garden via inspecteren, heb ik gekeken naar de cookies die mijn website heeft. Op dit moment worden er door mijn eigen website geen cookies gepbruikt. maar toch zijn er twee externe onderdelen waarmee ik rekening moet houden:
 
-3. Denk na over een manier van werken die past binnen de layout van jouw digital garden?
+-GitHub Pages: wordt gebruikt om mijn website te hosten. Ook zonder cookies kan een hostingdienst technische gegevens van bezoekers verwerken, zoals informatie die nodig is om een webpagina te leveren.
+-Digitaaltuintje Webring: mijn website maakt gebruik van de Digitaaltuintje Webring. Deit zorgt ervoor dat mijn Digital Garden onderdeel is van een netwerk van andere Digital Gardens.
+
+**2. Informeren van gebruikers is een plicht die je hebt als websitemaker: Hoe kan je gebruikers informeren over het gebruik van hun gegevens op jouw website?**
+
+ik moet mijn gebruikers duidelijk informeren over welke gegevens op mijn website worden verwerkt en waarvoor deze gegevens worden gebruikt, dus ik kan ze informeren door bijvoorbeeld:
+
+- eenprivacy melding op de website
+- een aparte privacyverklaring
+- informatie over externe diensten die mijn website gebruikt
+- duidelijk te vermelden wanneer gegevens met een andere dienst worden gedeeld.
+
+Voor mijn Digital Garden wil ik dit op een makkelijke manier doen die past bij mijn ontwerp en het niet te ingewikkeld maken, maar kort en krachtig. Ik vind het belangrijk dat mijn bezoeker duidelijk kunnen vinden welke gegevens er precies worden verwerkt en door welke diensten.
+
+**3. Op welke manier kan je instemming vragen? Doe desk-research en zoek tenminste 10 verschillende manieren van het vragen van consent op het web.**
+
+Ik heb onderzocht op welke verschillende manieren websites toestemming vragen:
+
+-Cookiebanners: Een melding verschijnt op de website met bijvoorbeeld de keuzes accepteren en weigeren.
+
+-Checkbox: Je kan zelf een vakje aanvinken om toestemming te geven.
+
+-Toggle / schuifknopjes: Je kan het aan of uitzetten.
+
+-Accept en Reject knopjes: Je krijgt gelijk twee duidelijke keuzes, bijvoorbeeld accepteren of weigeren.
+
+-Instellingen / preference: Je kan per categorie aangeven waar jij wel of geen toestemming voor geeft.
+
+-Pop-up: Er verschijnt een venster met informatie over de gegevensverwerking en een keuze om toestemming te geven of te weigeren.
+
+-Click-to-activate: Een functie wordt pas geactiveerd nadat jij er bewust op klikt.
+
+-Click to load: content, zoals een video of social media element, wordt pas geladen nadat jij hiervoor kiest.
+
+-Formulier: Toestemming kan onderdeel zijn van een formulier, bijvoorbeeld door een aparte keuze voor het verwerken van gegevens.
+
+-Privacy instellingen: Je kan via een privacy of instellingenpagina later toestemming geven, aanpassen of intrekken.
+
+### Bronnen voor mijn deskresearch:
+
+- [Autoriteit Persoonsgegevens - Heldere cookiebanners](https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/heldere-en-misleidende-cookiebanners)
+- [Autoriteit Persoonsgegevens - Cookies](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/internet-telefoon-tv-en-post/cookies)
+- [Autoriteit Persoonsgegevens - Tracking cookies](https://autoriteitpersoonsgegevens.nl/themas/internet-slimme-apparaten/cookies/tracking-cookies)
+- [European Data Protection Board - Toestemming onder de AVG](https://www.edpb.europa.eu/sme/find-practical-info/faq_nl?page=1)
+
+**4. Denk na over een manier van werken die past binnen de layout van jouw digital garden?**
+
+Voor mijn Digital Garden wil ik de manier van toestemming vragen uitvoeren volgens mijn website stijl. Ik wil daarom geen grote standaard cookie pop-up gebruiken die over mijn ontwerp heen komt, want dat is niet echt nodig. Ik een icoontje kunnen toevoegen en wanneer je hierop klikt, verschijnt er een klein venster met informatie over welke gegevens worden verwerkt en welke externe diensten mijn website gebruikt. Omdat mijn website op dit moment geen cookies gebruikt, wil ik vooral de gebruiker informeren in plaats van onnodig om toestemming te vragen. Als ik later een functie toevoeg waarvoor wel toestemming nodig is, kan ik binnen hetzelfde venster duidelijke keuzes toevoegen, zoals accepteren, weigeren en instellingen.
 
 # CHECKOUT:
 
 1. Wat is een wireflow en wat heb je er aan?
 1. Wat zijn dark UX patterns? Geef drie voorbeelden...
 1. Waar moet je als ontwerper rekening mee houden bij het maken van een human consent component?
+
+# HUISWERK:
+
+**Schets je human consent component. Welke vorm krijgt deze? En waarom kies je hier specifiek voor?**
+Wanneer je op de button klikt, verschijnt er een kleine informatiekaart met uitleg over privacy en gegevensverwerking. Vanuit deze kaart kan je doorklikken naar meer informatie.
+Ik kies voor deze vorm omdat ik het kort en krachtig wil houden. Dus je kan zelf kiezen om de informatie te openen + de privacy informatie is ook makkelijk te vinden!
+
+![Opdracht](assets/images-voor-readme/humanschets.jpg)
 
 # Wat heb ik geleerd?
 
