@@ -4,6 +4,59 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Mijn Learning Log
 
+### 23 sept - WS2 + CHECKOUT
+
+Opdracht: Dark Pattern Herontwerp
+![Opdracht](assets/images-voor-readme/temu.jpg)
+
+Opdracht: Hoe teken je wireflows
+![Opdracht](assets/images-voor-readme/wireflow.jpg)
+
+Opdracht: Human Consent Component
+
+1. Informeren van gebruikers is een plicht die je hebt als websitemaker: Hoe kan je gebruikers informeren over het gebruik van hun gegevens op jouw website?
+
+2. Op welke manier kan je instemming vragen? Doe desk-research en zoek tenminste 10 verschillende manieren van het vragen van consent op het web.
+
+3. Denk na over een manier van werken die past binnen de layout van jouw digital garden?
+
+# CHECKOUT:
+
+1. Wat is een wireflow en wat heb je er aan?
+1. Wat zijn dark UX patterns? Geef drie voorbeelden...
+1. Waar moet je als ontwerper rekening mee houden bij het maken van een human consent component?
+
+# Wat heb ik geleerd?
+
+# Wat ging goed?
+
+# Wat vond ik lastig?
+
+# Volgende stap
+
+### 21 sept - Sprintplanning 2 + WS1
+
+![Opdracht](assets/images-voor-readme/cookie-consent.png)
+
+# CHECKOUT:
+
+1. Wat zijn HTML landmark role elements?
+   HTML elementen die belangrijke onderdelen van een webpagina aangeven. Zoals, header,nav, main etc.
+
+2. Wat zijn heading elementen en hoe horen deze 'genest' te worden?
+   Het zijn HTMLelementen waarmee je de titels en tussenkopjes van je pagina aangeeft. Ze lopen van <h1> tot en met <h6>
+
+3. Hoe ga jij met cookies om? Beschrijf jouw beweegreden en of die zijn veranderd na het volgen van dit college.
+   Ik lees nooit de cookies en klik snel op "accepteer" omdat het me allemaal niet echt boeit. maar wanneer ik het eenmaal lees boeit het me deels best wel. Na het volgen van dit college zal ik meer op letten om een beetje ervan te lezen.
+
+# Wat heb ik geleerd?
+
+# Wat ging goed?
+
+# Wat vond ik lastig?
+
+# Volgende stap
+
 ### 18 sept - Voortgang + Retrospect
 
 Helaas ben ik ziek en was ik niet aanwezig in de les.., deze stof ga ik inhalen.
