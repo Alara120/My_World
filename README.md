@@ -4,6 +4,26 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Mijn Learning Log
 
+### 25 sept - WS3 - VOORTGANG + CHECKOUT
+
+**Opdracht compliance / Valide HTML**
+Ik heb 2 mappen voor mijn website: een oude versie (Hier heb ik niet volgende de richtlijnen gewerkt van het coderen) en een nieuwe versie (Hier werk ik met correcte code volgens de voorwaardes dat wordt gevraagd: waar ik nu mee bezig ben) Ik heb besloten om beide mappen te checken.
+
+**Oude versie map**
+![Opdracht](assets/images-voor-readme/error1.png)
+![Opdracht](assets/images-voor-readme/error2.png)
+![Opdracht](assets/images-voor-readme/error3.png)
+
+**Nieuwe versie map**
+![Opdracht](assets/images-voor-readme/error4.png)
+![Opdracht](assets/images-voor-readme/error5.png)
+
+Ik ben hier vergeten om ALTS toe te voegen bij mijn images
+
+**Verbetering**
+Voor mijn nieuwe map heb ik de ALTS toegevoegd in mijn code.
+![Opdracht](assets/images-voor-readme/alt.png)
+
 ### 23 sept - WS2 + CHECKOUT
 
 Opdracht: Dark Pattern Herontwerp
