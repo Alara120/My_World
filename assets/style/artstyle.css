@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Outfit", sans-serif;
+  src: url("assets/type/Outfit-VariableFont_wght.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* MARK: Light en dark theme*/
+html {
+  color-scheme: light dark;
+}
+
+/* MARK: styling van de body */
+body {
+  background-image: url("../images/achtergrond.jpg");
+  background-size: 100%;
+
+  /* MARK: Body gebruiken als CSS Grid */
+  display: grid;
+
+  /* MARK: Grid indeling voor kleine schermen */
+  grid-template-areas:
+    "header"
+    "left-colum"
+    "middle-colum"
+    "right-colum"
+    "footer";
+
+  grid-template-columns: 1fr; /* Een kolom op kleine schermen */
+
+  gap: 1rem; /* Ruimte tussen de grid onderdelen */
+
+  max-width: 80rem; /* Maximale breedte van de website */
+  min-height: 100vh;
+  margin: 0 auto; /*Website horizontaal centreren */
+  padding: 0 1em 0 1em;
+}
+
+body > header {
+  grid-area: header;
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 -1rem 1rem -1rem; /*0 = boven 1= rechts 1=onder -1=links*/
+  background-color: #dce7f8;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+body > header > header {
+  /*blauwe balk bovenkant*/
+  width: calc(100% + 1.5rem);
+  height: 2rem;
+  background-color: #b2c2e5;
+  border-bottom: 0.2rem solid black;
+  margin: 0 -1rem 1rem -1rem;
+}
+
+/*bloem*/
+body > header figure {
+  width: 4rem;
+  margin: 0;
+  flex-shrink: 0; /*zorgt ervoor dat hij zelfde size blijft*/
+}
+
+body > header figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* MARK: Navigatie als Flexbox */
+nav {
+  text-decoration: none;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+/* MARK: Styling van de navigatielinks */
+nav a {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  border: 0.2em solid black; /* Zwarte rand om de links */
+  border-radius: 2rem; /* Ronde hoeken */
+  padding: 0.5rem 1rem 0.5rem 1rem; /* Ruimte binnen de link */
+  background-color: #b2c2e5; /* Achtergrondkleur van de link */
+  text-decoration: none; /* Onderstreping van de link verwijderen */
+  color: black; /* Tekstkleur */
+  margin-right: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* MARK: Hover-effect voor navigatielinks */
+nav a:hover {
+  background-color: #dce7f8; /* Achtergrondkleur verandert wanneer je eroverheen gaat */
+}
+
+/* HTMLs koppelen aan grid areas */
+aside:first-of-type {
+  grid-area: left-colum;
+}
+
+main {
+  grid-area: middle-colum;
+}
+
+aside:last-of-type {
+  grid-area: right-colum;
+}
+
+/* Footer onderaan de page */
+footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 0.1rem 0;
+  font-size: 0.9rem;
+}
