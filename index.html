@@ -1,115 +1,93 @@
 <!doctype html>
-<html lang="nl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Alara Durmaz" />
-
-    <title>Digitaal Tuintje van Alara</title>
-
+    <title>Document</title>
     <link rel="stylesheet" href="./assets/style/normal.css" />
-
-    <!-- Webring -->
-    <script
-      data-page="http://kirazz.nl"
-      src="https://digitaaltuintje.nl/webring.js"
-      defer
-    ></script>
   </head>
-
   <body>
-    <!-- Header -->
     <header>
-      <div class="doodle-garden-wrapper">
-        <img
-          class="doodle-garden"
-          src="./assets/Images/doodlegarden.svg"
-          alt="My Doodle Garden"
-        />
+      <header></header>
+      <!-- MARK: Mijn hoofdtitel van mijn website -->
+      <figure>
+        <img src="assets/images/doodlegarden.svg" />
+      </figure>
 
-        <p class="doodle-garden-tekst">My Doodle Garden</p>
+      <h1>My doodle garden</h1>
 
-        <nav class="menu" aria-label="Hoofdnavigatie">
-          <a href="index.html">Home</a>
-          <a href="log.html">Logboek</a>
-          <a href="contact.html">Story</a>
-        </nav>
-      </div>
+      <!-- MARK: Navigatie op het balk -->
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Logboek</a>
+        <a href="#">Story</a>
+      </nav>
     </header>
 
-    <!-- Hoofdinhoud -->
     <main>
-      <section class="garden-layout" aria-label="Mijn digitale tuin">
-        <!-- Linkerkant -->
-        <div class="garden-links">
-          <a class="garden-item mijn-art" href="art.html">
-            <img
-              class="mijn-art-map"
-              src="./assets/Images/mapart.svg"
-              alt="Mijn art"
-            />
-            <p>Mijn art</p>
-          </a>
+      <!--De welkom blok-->
+      <header>
+        <p></p>
+      </header>
+      <figure>
+        <img src="assets/images/welkom.svg" alt="Welkom afbeelding" />
+      </figure>
 
-          <a class="garden-item" href="tips.html">
-            <img class="tips" src="./assets/Images/tips.svg" alt="Tekentips" />
-            <p>Teken tips</p>
-          </a>
-
-          <a class="garden-item" href="proces.html">
-            <img
-              class="mijn-process-map"
-              src="./assets/Images/process.svg"
-              alt="Mijn tekenproces"
-            />
-            <p>Teken proces</p>
-          </a>
-        </div>
-
-        <!-- Midden -->
-        <section class="welkom-container" aria-labelledby="welkom-titel">
-          <img
-            class="homepage-illustratie"
-            src="./assets/Images/welkom.svg"
-            alt="Illustratie voor de welkomstpagina"
-          />
-
-          <div class="introtekst">
-            <h1 id="welkom-titel">Welkom!</h1>
-
-            <p>
-              Tekenen is altijd een hobby geweest waar ik veel plezier uit
-              haalde, maar de laatste tijd teken ik helaas minder dan vroeger.
-              Met deze website wil ik mijn liefde voor tekenen weer terugvinden
-              en anderen inspireren om hun creativiteit te ontdekken.
-            </p>
-          </div>
-        </section>
-
-        <!-- Rechterkant -->
-        <div class="garden-rechts">
-          <div class="garden-item">
-            <img
-              class="music-list"
-              src="./assets/Images/music.svg"
-              alt="Mijn muzieklijst"
-            />
-          </div>
-
-          <div class="garden-item">
-            <img
-              class="mijn-prullenbak"
-              src="./assets/Images/prullenbak.svg"
-              alt="Prullenbak"
-            />
-          </div>
-        </div>
+      <!-- MARK: Tekst op welkom afbeelding -->
+      <section>
+        <h2>Welkom!</h2>
+        <p>
+          Tekenen is altijd een hobby geweest waar ik veel plezier uit haalde,
+          maar de laatste tijd teken ik helaas minder dan vroeger. Met deze
+          website wil ik mijn liefde voor tekenen weer terugvinden en anderen
+          inspireren om hun creativiteit te ontdekken.
+        </p>
       </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-      <p>Copyleft 2026, all wrongs reversed</p>
-    </footer>
+    <!-- MARK: afbeeldingen voor de linkerkant van website -->
+    <aside>
+      <a href="art.html">
+        <figure>
+          <img src="assets/images/art.svg" alt="map van tekeningen" />
+          <figcaption>Bla bla</figcaption>
+        </figure>
+      </a>
+
+      <a href="tips.html">
+        <figure>
+          <img src="assets/images/tips.svg" alt="map van tips" />
+          <figcaption>Bla bla</figcaption>
+        </figure>
+      </a>
+      <a href="proces.html">
+        <figure>
+          <img src="assets/images/process.svg" alt="map van het proces" />
+          <figcaption>Bla bla</figcaption>
+        </figure>
+      </a>
+    </aside>
+    <aside>
+      <!-- MARK: afbeeldingen voor de rechterkant van website-->
+      <a href="Google.com">
+        <figure>
+          <img
+            src="assets/images/prullenbak.svg"
+            alt="afbeelding van een prullenbak"
+          />
+          <figcaption>Bla bla</figcaption>
+        </figure>
+      </a>
+      <a href="Google.com">
+        <figure>
+          <img
+            src="assets/images/music.svg"
+            alt="afbeelding van een muziekspeler"
+          />
+          <figcaption>Bla bla</figcaption>
+        </figure>
+      </a>
+    </aside>
+    <footer>&copy; 2026 My Doodle Garden</footer>
   </body>
 </html>

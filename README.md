@@ -4,9 +4,31 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Mijn Learning Log
 
-### 25 sept - WS3 - VOORTGANG + CHECKOUT
+## 28 sept - WS 4 + Bi-weekly geek 2
 
-**Opdracht compliance / Valide HTML**
+![Opdracht](assets/images-voor-readme/bigeek2.png)
+![Opdracht](assets/images-voor-readme/bigees22.png)
+
+**Opdracht: werken met alleen-het-toetsenbord en screenreader**
+
+## CHECKOUT
+
+**1. Wat bedoelt Vasilis met de uitspraak: Semantiek doet mij niet zo veel, ik ben liever bezig met de UX van HTML?**
+
+Hij bedoelt dat hij niet alleen kijkt naar of HTML technisch en semantisch correct is, maar vooral naar hoe prettig en makkelijk een website te gebruiken is.
+
+**2. Wat voor type beperkingen hebben invloed op het gebruiken van websites?**
+visueel (blind, tunnelvisie)
+Motorisch (verlamt, parkison)
+Cognitief (Taalbeheersing, ADHD)
+Auditief (doof, misofomie)
+
+**3. Noem drie manieren om door een website te navigeren met jouw screenreader**
+Met headings, links en landmarks
+
+### 25 sept - WS3 + VOORTGANG
+
+**Opdracht: compliance / Valide HTML**
 Ik heb 2 mappen voor mijn website: een oude versie (Hier heb ik niet volgende de richtlijnen gewerkt van het coderen) en een nieuwe versie (Hier werk ik met correcte code volgens de voorwaardes dat wordt gevraagd: waar ik nu mee bezig ben) Ik heb besloten om beide mappen te checken.
 
 **Oude versie map**
@@ -31,6 +53,33 @@ Opdracht: Dark Pattern Herontwerp
 
 Opdracht: Hoe teken je wireflows
 ![Opdracht](assets/images-voor-readme/wireflow.jpg)
+
+**Voortgangsgesprek - Feedback**
+Algemene feedback voor de groep:
+-Het toevoegen van Ja en nee knoppen voor doorverwijzing van de webring. Hoef je niet persee te accepteren, maar dat je alleen op JOUW website wilt blijven.
+
+-Je kan er in zetten wat github pages doet met je data
+
+-Diverse schetsen maken van je human consent component en dat uitwerken
+
+-Verschillende vormen: door als je bijvoorbeeld: "nee" klikt dat er "jammer.. blabla" tekst krijgt en werk ook met kleuren/ ontwerp dat bij je website past.
+
+-Flexbox kan handig zijn voor de cookie pop-up op je website
+
+Peroonlijke feedback:
+-Voor je pop-up kan je je ontwerp meer "gevaar" designen. Je hebt een kleurrijke, zachte website als ontwerp en het vragen van consent is een vorm van een waarschuwing.
+
+-Je kunt op je website een icoontje toevoegen voor je consent. Misschien een "bedankje" toevoegen nadat de gebruiker bijvoorbeeld op "Ja" heeft geklikt.
+
+-Tof dat alles zelf is gemaakt. Zou leuk zijn als er helemaal geen gebruik wordt gemaakt van cookies.
+
+# Wat heb ik geleerd?
+
+# Wat ging goed?
+
+# Wat vond ik lastig?
+
+# Volgende stap
 
 **Opdracht: Human Consent Component**
 
@@ -352,7 +401,7 @@ Mij verdiepen in het project en informatie uit halen.
 
 ## DEEPDIVES
 
-# S0 - CSS: fonts met kleur en effecten
+**S0 - CSS: fonts met kleur en effecten**
 
 Oefening 1 - font properties
 [Oefening-1](assets/Deepdives/oefening-1/)
@@ -366,7 +415,7 @@ Heb ik niet af kunnen maken, ben er mee bezig!
 Oefening 4 - transitions
 Heb ik niet af kunnen maken, ben er mee bezig!
 
-# S1 - Light & Dark theme
+**S1 - Light & Dark theme**
 
 Oefening 1 - Light & Dark 101
 [Oefening-1](assets/Deepdives/Oefening-1-Light-Dark-101/)
@@ -377,7 +426,7 @@ Oefening 2 - Twee thema's
 Oefening 3 - Responsive afbeelding
 Heb ik niet af kunnen maken, ben er mee bezig!
 
-# S1 - Mooie kleuren en gradients
+**S1 - Mooie kleuren en gradients**
 
 ![Opdracht](assets/images-voor-readme/spelletje.png)
 
@@ -390,10 +439,10 @@ Oefening 2 - Vlaggen en co
 Oefening 3 - Gradients animeren
 Heb ik niet af kunnen maken, ben er mee bezig!
 
-# S1 - Grid 101 + Media queries
+**S1 - Grid 101 + Media queries**
 
 Voorbereiding + Notities:
 
-# S1 - Responsive grid + Grid-areas
+**S1 - Responsive grid + Grid-areas**
 
 Voorbereiding:

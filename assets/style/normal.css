@@ -1,256 +1,477 @@
 @font-face {
-  font-family: "Comic Relief";
-  src: url("../type/ComicRelief-Regular.woff2");
+  font-family: "Outfit", sans-serif;
+  src: url("assets/type/Outfit-VariableFont_wght.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
-/* MARK: Algemene styling */
-
+/* MARK: Light en dark theme*/
 html {
   color-scheme: light dark;
 }
 
+/* MARK: styling van de body */
 body {
-  margin: 0;
-  font-family: "Comic Relief", system-ui, sans-serif;
-  color: CanvasText;
-  background-image: url("../Images/Achtergrond.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+  background-image: url("../images/achtergrond.jpg");
+  background-size: 100%;
 
-/* MARK: Digital Garden layout */
-
-.garden-layout {
+  /* MARK: Body gebruiken als CSS Grid */
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2em;
-  width: min(1200px, 92%);
-  margin: 1em auto 3em;
-  padding: 1em;
-  box-sizing: border-box;
+
+  /* MARK: Grid indeling voor kleine schermen */
+  grid-template-areas:
+    "header"
+    "main"
+    "left-colum"
+    "right-colum"
+    "footer";
+
+  grid-template-columns: 1fr; /* Een kolom op kleine schermen */
+
+  gap: 1rem; /* Ruimte tussen de grid onderdelen */
+
+  max-width: 80rem; /* Maximale breedte van de website */
+  min-height: 100vh;
+  margin: 0 auto; /*Website horizontaal centreren */
+  padding: 0 1em 0 1em;
 }
 
-.garden-links,
-.garden-rechts {
+body > header {
+  grid-area: header;
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 0;
+  padding: 0 -1rem 1rem -1rem; /*0 = boven 1= rechts 1=onder -1=links*/
+  background-color: #dce7f8;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
-.garden-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: inherit;
-  text-align: center;
-  text-decoration: none;
+body > header > header {
+  /*blauwe balk bovenkant*/
+  width: calc(100% + 1.5rem);
+  height: 2rem;
+  background-color: #b2c2e5;
+  border-bottom: 0.2rem solid black;
+  margin: 0 -1rem 1rem -1rem;
 }
 
-.garden-item img {
-  max-width: 100%;
+/*bloem*/
+body > header figure {
+  width: 4rem;
+  margin: 0;
+  flex-shrink: 0; /*zorgt ervoor dat hij zelfde size blijft*/
+}
+
+body > header figure img {
+  width: 100%;
   height: auto;
+  display: block;
+}
+
+header h1 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.5rem;
+  width: auto;
+  text-align: left;
+  margin: 0;
+  white-space: nowrap;
+}
+
+/* MARK: Eerste aside in de linker kolom plaatsen */
+aside:first-of-type {
+  grid-area: left-colum;
+}
+
+/* MARK: Main - mobile */
+
+main {
+  grid-area: main;
+
+  width: 100%;
+  min-height: 25rem;
+
+  border: 0.2rem solid black;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background-color: #faf9ec;
+}
+
+main > header {
+  width: 100%;
+  height: 2rem;
+  background-color: #f8d7e0;
+  border-bottom: 0.2rem solid black;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main > header > p {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin: 0;
+  background-color: rgb(255, 110, 110);
+  border: 0.15rem solid black;
+
+  box-shadow:
+    1.8rem 0 0 -0.15rem rgb(251, 251, 139),
+    1.8rem 0 0 0 black,
+    3.6rem 0 0 -0.15rem rgb(170, 251, 170),
+    3.6rem 0 0 0 black;
+}
+
+/* MARK: Afbeelding mobile */
+
+main > figure {
+  width: 100%;
+
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+main > figure img {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
   object-fit: contain;
 }
 
-.garden-item p {
-  margin: 0.3em 0 0;
-  font-size: 1em;
-}
+/* MARK: Tekst mobile */
 
-/* MARK: Homepage illustratie */
-
-.homepage-illustratie {
-  display: block;
+main > section {
   width: 100%;
-  max-width: 600px;
-  height: auto;
-  margin: 0 auto;
-}
 
-/* MARK: Doodle Garden header */
-
-.doodle-garden-wrapper {
-  position: relative;
-  width: min(900px, 95%);
-  margin: 1em auto 0;
-}
-
-.doodle-garden {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 1em auto 0;
-}
-
-.doodle-garden-tekst {
-  position: absolute;
-  top: 50%;
-  left: 17%;
-  margin: 0;
-  transform: translateY(-50%);
-  font-family: "Comic Relief", system-ui, sans-serif;
-  font-size: clamp(1em, 2vw, 1.5em);
-  font-weight: 400;
-}
-
-/* MARK: Menu */
-
-.menu {
-  position: absolute;
-  top: 50%;
-  right: 9%;
   display: flex;
-  gap: 10px;
-  transform: translateY(-50%);
-}
+  flex-direction: column;
 
-.menu a {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  min-width: 70px;
-  height: 35px;
-  padding: 0 12px;
-  border: 2px solid black;
-  border-radius: 50px;
-  background-color: #b2c2e5;
-  color: black;
-  font-family: "Comic Relief", system-ui, sans-serif;
-  font-size: 0.9em;
-  text-decoration: none;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 1.5rem;
+
+  box-sizing: border-box;
 }
 
-.menu a:hover {
-  background-color: #dce7f8;
-}
-
-/* MARK: Mijn art */
-
-.mijn-art-map {
-  width: clamp(260px, 22vw, 450px);
-  height: auto;
-  margin-bottom: -2.5em;
-  transition: transform 0.15s ease;
-}
-
-.mijn-art-map:hover {
-  transform: scale(1.05);
-}
-
-/* MARK: Mijn tips */
-
-.tips {
-  width: clamp(200px, 16vw, 320px);
-  height: auto;
-  margin-bottom: -2.5em;
-  transition: transform 0.15s ease;
-}
-
-.tips:hover {
-  transform: scale(1.05);
-}
-
-/* MARK: Mijn proces */
-
-.mijn-process-map {
-  width: clamp(210px, 17vw, 340px);
-  height: auto;
-  margin-bottom: -2.5em;
-  transition: transform 0.15s ease;
-}
-
-.mijn-process-map:hover {
-  transform: scale(1.05);
-}
-
-/* MARK: Prullenbak */
-
-.mijn-prullenbak {
-  width: clamp(190px, 15vw, 300px);
-  height: auto;
-}
-
-/* MARK: Muziek */
-
-.music-list {
-  width: clamp(210px, 17vw, 340px);
-  height: auto;
-}
-
-/* MARK: Welkom */
-
-.welkom-container {
-  position: relative;
-  width: min(600px, 100%);
-  margin: 10px auto 40px;
-}
-
-.introtekst {
-  position: absolute;
-  top: 25%;
-  right: 10%;
-  width: 35%;
+main > section h2,
+main > section p {
   text-align: center;
 }
 
-.introtekst h1 {
-  margin: 0 0 20px;
-  font-size: clamp(16px, 2vw, 20px);
+main > section h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+/*broodtekst*/
+main > section p {
+  margin: 0;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
 }
 
-.introtekst p {
+/*welkom tekst */
+main h2 {
+  font-size: medium;
+  font-weight: 800;
+  font-family: "Outfit", sans-serif;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 0.1rem 0;
+  font-size: 0.9rem;
+}
+
+/* MARK: Laatste aside in de rechter kolom plaatsen */
+aside:last-of-type {
+  grid-area: right-colum;
+}
+
+/* MARK: Navigatie als Flexbox */
+nav {
+  text-decoration: none;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+/* MARK: Styling van de navigatielinks */
+nav a {
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  border: 0.2em solid black; /* Zwarte rand om de links */
+  border-radius: 2rem; /* Ronde hoeken */
+  padding: 0.5rem 1rem 0.5rem 1rem; /* Ruimte binnen de link */
+  background-color: #b2c2e5; /* Achtergrondkleur van de link */
+  text-decoration: none; /* Onderstreping van de link verwijderen */
+  color: black; /* Tekstkleur */
+  margin-right: 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* MARK: Hover-effect voor navigatielinks */
+nav a:hover {
+  background-color: #dce7f8; /* Achtergrondkleur verandert wanneer je eroverheen gaat */
+}
+
+/* MARK: Welkom afbeelding centreren */
+main figure {
+  width: 55%;
+  display: flex;
+  justify-content: center; /* Afbeelding horizontaal centreren */
+  align-items: center; /* Afbeelding verticaal centreren */
+  margin-bottom: 1.5rem; /* Ruimte onder de afbeelding */
+  margin: 0 auto;
+}
+
+/* MARK: Grootte van de welkom afbeelding */
+main figure img {
+  width: 100%;
+  max-width: 40rem;
+  height: auto;
+  display: block;
+}
+
+/* MARK: Welkom tekst centreren */
+main section {
+  text-align: center;
+}
+
+/* MARK: styling van de asides */
+aside {
+  display: flex;
+  flex-direction: column; /* Afbeeldingen onder elkaar plaatsen */
+  justify-content: center; /* Afbeeldingen verticaal centreren */
+  align-items: center; /* Afbeeldingen horizontaal centreren */
+  gap: 0.1rem; /* Kleine ruimte tussen de afbeeldingen */
+  width: 100%;
+  padding-top: 3rem;
+}
+
+aside > a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 auto;
+  text-decoration: none;
+  color: black;
+}
+
+aside figure {
+  width: 100%;
   margin: 0;
-  font-size: clamp(12px, 1.5vw, 16px);
-  line-height: 1.4;
 }
 
-/* MARK: Groot scherm */
+/* MARK: Grootte en verhouding van de figures */
+aside figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  flex: 0 0 auto;
+}
 
-@media (width >= 70em) {
-  .garden-layout {
-    width: min(1400px, 94%);
-    grid-template-columns:
-      minmax(280px, 1fr)
-      minmax(500px, 2fr)
-      minmax(280px, 1fr);
-    align-items: start;
-    gap: 1.5em;
-    margin: 1em auto 3em;
+aside figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+aside figcaption {
+  text-align: center;
+  margin-top: -1rem;
+  font-family: "Outfit", sans-serif;
+}
+/* 
+
+
+
+desktop view
+
+
+
+
+/*
+
+/* MARK: Responsive design voor groot scherm */
+@media (min-width: 48em) {
+  /* MARK: Grid aanpassen voor groot scherm */
+  body {
+    grid-template-areas: /* Drie kolommen maken: links, midden en rechts */
+      "left-colum header right-colum" /*pakt in de grid de bovenste rij*/
+      "left-colum main right-colum"
+      "footer footer footer";
+    grid-template-columns: 14rem 1fr 14rem; /* Breedte van de drie kolommen */
+    grid-template-rows: auto 1fr auto; /* Twee rijen maken */
   }
 
-  .garden-links {
-    transform: translate(-2em, -10em);
+  body > header {
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
-  .mijn-art-map {
-    width: clamp(320px, 24vw, 500px);
+  body > header figure {
+    width: 5rem;
+    margin: 0;
   }
 
-  .tips {
-    width: clamp(230px, 17vw, 350px);
+  header h1 {
+    width: auto;
+    margin: 0 0 0 0.5rem;
+    text-align: left;
+    white-space: nowrap;
   }
 
-  .mijn-process-map {
-    width: clamp(240px, 18vw, 360px);
+  main h2 {
+    font-size: 2rem;
   }
 
-  .mijn-prullenbak {
-    width: clamp(210px, 16vw, 320px);
+  main p {
+    font-size: 1.2rem;
+  }
+  nav {
+    display: flex;
+    width: auto;
+    margin-left: auto;
+    justify-content: flex-end;
+    gap: 1rem;
   }
 
-  .music-list {
-    width: clamp(240px, 18vw, 360px);
+  nav a {
+    margin-right: 1rem;
+    margin-bottom: 0;
   }
 
-  .mijn-art p {
-    transform: translateY(-2em);
+  /* MARK: Asides op groot scherm */
+  aside {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  aside > a {
+    max-width: 100%;
+  }
+
+  aside > a figure {
+    width: 100%;
+  }
+
+  aside > a:hover {
+    transform: scale(1.1);
+  }
+
+  aside figure img {
+    width: 100%;
+  }
+
+  aside:first-of-type {
+    grid-area: left-colum;
+    align-items: flex-start;
+    margin-top: 5rem;
+    transform: translateX(-2rem);
+  }
+
+  aside:last-of-type {
+    grid-area: right-colum;
+    transform: translateX(1rem) translateY(10rem);
+  }
+
+  /* MARK: Desktop view */
+  main {
+    width: 100%;
+    height: 30rem;
+    min-height: 30rem;
+    padding-bottom: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    align-items: stretch;
+  }
+
+  /* MARK: Header binnen main */
+
+  main > header {
+    width: 100%;
+    height: 2rem;
+    flex-shrink: 0;
+    box-sizing: border-box;
+  }
+
+  /* MARK: Afbeelding desktop */
+
+  main > figure {
+    width: 60%;
+    height: calc(100% - 2rem);
+
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+  }
+
+  main > figure img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+    transform: translateX(-4rem);
+  }
+
+  /* MARK: Tekst desktop */
+
+  main > section {
+    width: 40%;
+    height: calc(100% - 2rem);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 2rem;
+    box-sizing: border-box;
+
+    transform: translateX(-5rem);
   }
 }
+/* BRONNENLIJST VOOR CODE:*/
+/*https://www.w3schools.com/tags/tag_figure.asp*/
+/*https://www.w3schools.com/tags/tag_section.asp*/
+/*https://www.w3schools.com/css/css3_buttons.asp*/
+/*https://www.w3schools.com/css/css3_flexbox.asp*/
+/*https://www.w3schools.com/css/css_grid.asp*/
