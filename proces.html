@@ -1,16 +1,122 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logboek - [Digitaal Tuintje van ...]</title>
-    <link rel="stylesheet" href="./assets/style/normal.css" />
+    <title>Process - My Doodle Garden</title>
+    <link rel="stylesheet" href="assets/style/proces.css" />
   </head>
 
   <body>
+    <header>
+      <header></header>
+      <!-- Bloem logo / figuur net als op 1b -->
+      <figure>
+        <img src="assets/images/doodlegarden.svg" alt="Bloem logo" />
+      </figure>
+
+      <h1>My doodle garden</h1>
+
+      <!-- Navigatie met dezelfde knoppen als 1b -->
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="proces.html">Logboek</a>
+        <a href="#">Story</a>
+      </nav>
+    </header>
+
     <main>
-      <h1>proces</h1>
-      <p>Ben er mee bezig!</p>
+      <!-- Verborgen radiobuttons om bij te houden welke stap actief is -->
+      <input type="radio" name="proces-stap" id="stap1" checked />
+      <input type="radio" name="proces-stap" id="stap2" />
+      <input type="radio" name="proces-stap" id="stap3" />
+      <input type="radio" name="proces-stap" id="stap4" />
+      <input type="radio" name="proces-stap" id="stap5" />
+
+      <!-- De interactieve stappenlijn bovenin -->
+      <nav class="stappen-nav">
+        <label for="stap1">1</label>
+        <label for="stap2">2</label>
+        <label for="stap3">3</label>
+        <label for="stap4">4</label>
+        <label for="stap5">5</label>
+      </nav>
+
+      <!-- Het centrale werkblad -->
+      <section>
+        <!-- Inhoud Stap 1 -->
+        <article>
+          <h2>1. IDEA</h2>
+          <p>
+            Alles begint met een idee. Soms is het een vaag beeld, een gevoel of
+            gewoon een random vorm. Ik schets het losjes en probeer nog niet te
+            perfect te zijn.
+          </p>
+          <label for="stap2">NEXT -&gt;</label>
+        </article>
+
+        <!-- Inhoud Stap 2 -->
+        <article>
+          <h2>2. SKETCH</h2>
+          <p>
+            In deze fase zet ik de grove lijnen neer en bepaal ik de
+            verhoudingen en compositie. Het hoeft nog niet netjes, als de
+            basisvormen maar kloppen.
+          </p>
+          <label for="stap3">NEXT -&gt;</label>
+        </article>
+
+        <!-- Inhoud Stap 3 -->
+        <article>
+          <h2>3. LINEART</h2>
+          <p>
+            Tijd voor strakke en zelfverzekerde lijnen. Ik trek de belangrijkste
+            contouren over en breng variatie aan in de lijndikte voor meer
+            diepte.
+          </p>
+          <label for="stap4">NEXT -&gt;</label>
+        </article>
+
+        <!-- Inhoud Stap 4 -->
+        <article>
+          <h2>4. SHADING</h2>
+          <p>
+            Hier breng ik licht en schaduw aan. Door te arceren en contrast toe
+            te voegen, komt de tekening echt tot leven en krijgt het volume.
+          </p>
+          <label for="stap5">NEXT -&gt;</label>
+        </article>
+
+        <!-- Inhoud Stap 5 -->
+        <article>
+          <h2>5. FINAL</h2>
+          <p>
+            Het eindresultaat! Alle details zijn uitgewerkt, de laatste
+            correcties zijn doorgevoerd en de illustratie is helemaal klaar om
+            gedeeld te worden.
+          </p>
+          <label for="stap1">START OVER -&gt;</label>
+        </article>
+
+        <!-- Afbeeldingen per stap (standaard verborgen) -->
+        <figure>
+          <img src="assets/images/art.svg" alt="Idee fase" />
+        </figure>
+        <figure>
+          <img src="assets/images/tips.svg" alt="Schets fase" />
+        </figure>
+        <figure>
+          <img src="assets/images/process.svg" alt="Lineart fase" />
+        </figure>
+        <figure>
+          <img src="assets/images/art.svg" alt="Shading fase" />
+        </figure>
+        <figure>
+          <img src="assets/images/tips.svg" alt="Eindresultaat" />
+        </figure>
+      </section>
     </main>
+
+    <footer>&copy; 2026 My Doodle Garden</footer>
   </body>
 </html>

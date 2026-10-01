@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Outfit", sans-serif;
-  src: url("assets/type/Outfit-VariableFont_wght.ttf");
-  font-weight: 400;
+  font-family: "Quantico";
+  src: url("../type/Quantico-Bold.ttf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -15,10 +15,8 @@ body {
   background-image: url("../images/achtergrond.jpg");
   background-size: 100%;
 
-  /* MARK: Body gebruiken als CSS Grid */
   display: grid;
 
-  /* MARK: Grid indeling voor kleine schermen */
   grid-template-areas:
     "header"
     "main"
@@ -26,45 +24,43 @@ body {
     "right-colum"
     "footer";
 
-  grid-template-columns: 1fr; /* Een kolom op kleine schermen */
+  grid-template-columns: 1fr;
 
-  gap: 1rem; /* Ruimte tussen de grid onderdelen */
+  gap: 1rem;
 
-  max-width: 80rem; /* Maximale breedte van de website */
+  max-width: 80rem;
   min-height: 100vh;
-  margin: 0 auto; /*Website horizontaal centreren */
+  margin: 0 auto;
   padding: 0 1em 0 1em;
+  position: relative;
 }
 
 body > header {
   grid-area: header;
   border: 0.2rem solid black;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0 -1rem 1rem -1rem; /*0 = boven 1= rechts 1=onder -1=links*/
+  padding: 0 -1rem 1rem -1rem;
   background-color: #dce7f8;
   margin-top: 4rem;
   margin-bottom: 3rem;
 }
 
 body > header > header {
-  /*blauwe balk bovenkant*/
   width: calc(100% + 1.5rem);
   height: 2rem;
   background-color: #b2c2e5;
-  border-bottom: 0.2rem solid black;
   margin: 0 -1rem 1rem -1rem;
 }
 
-/*bloem*/
 body > header figure {
   width: 4rem;
   margin: 0;
-  flex-shrink: 0; /*zorgt ervoor dat hij zelfde size blijft*/
+  flex-shrink: 0;
 }
 
 body > header figure img {
@@ -74,35 +70,29 @@ body > header figure img {
 }
 
 header h1 {
-  font-family: "Outfit", sans-serif;
-  font-size: 1.5rem;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
   width: auto;
   text-align: left;
   margin: 0;
   white-space: nowrap;
 }
 
-/* MARK: Eerste aside in de linker kolom plaatsen */
 aside:first-of-type {
   grid-area: left-colum;
 }
 
 /* MARK: Main - mobile */
-
 main {
   grid-area: main;
-
   width: 100%;
   min-height: 25rem;
-
   border: 0.2rem solid black;
   border-radius: 0.5rem;
-
   display: flex;
   flex-direction: column;
-
   overflow: hidden;
-
   background-color: #faf9ec;
 }
 
@@ -110,7 +100,6 @@ main > header {
   width: 100%;
   height: 2rem;
   background-color: #f8d7e0;
-  border-bottom: 0.2rem solid black;
   display: flex;
   padding: 0 1rem;
   align-items: center;
@@ -120,56 +109,42 @@ main > header {
 main > header > p {
   width: 1rem;
   height: 1rem;
-  border-radius: 50%;
+  border-radius: 2em;
   margin: 0;
-  background-color: rgb(255, 110, 110);
-  border: 0.15rem solid black;
+  background-color: rgb(248, 138, 138);
+  border: 0.1rem solid black;
 
   box-shadow:
-    1.8rem 0 0 -0.15rem rgb(251, 251, 139),
+    1.8rem 0 0 -0.1rem rgb(239, 239, 168),
     1.8rem 0 0 0 black,
-    3.6rem 0 0 -0.15rem rgb(170, 251, 170),
+    3.6rem 0 0 -0.1rem rgb(188, 249, 188),
     3.6rem 0 0 0 black;
 }
 
-/* MARK: Afbeelding mobile */
-
 main > figure {
   width: 100%;
-
   margin: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   overflow: hidden;
 }
 
 main > figure img {
   width: 100%;
   height: auto;
-
   display: block;
-
   object-fit: contain;
 }
 
-/* MARK: Tekst mobile */
-
 main > section {
   width: 100%;
-
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
-
   text-align: center;
-
   padding: 1.5rem;
-
   box-sizing: border-box;
 }
 
@@ -182,14 +157,12 @@ main > section h2 {
   margin: 0 0 0.5rem 0;
 }
 
-/*broodtekst*/
 main > section p {
   margin: 0;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
 }
 
-/*welkom tekst */
 main h2 {
   font-size: medium;
   font-weight: 800;
@@ -203,12 +176,10 @@ footer {
   font-size: 0.9rem;
 }
 
-/* MARK: Laatste aside in de rechter kolom plaatsen */
 aside:last-of-type {
   grid-area: right-colum;
 }
 
-/* MARK: Navigatie als Flexbox */
 nav {
   text-decoration: none;
   gap: 1rem;
@@ -217,37 +188,33 @@ nav {
   display: flex;
 }
 
-/* MARK: Styling van de navigatielinks */
 nav a {
-  font-family: "Outfit", sans-serif;
+  font-family: "Quantico", sans-serif;
   font-weight: 700;
-  border: 0.2em solid black; /* Zwarte rand om de links */
-  border-radius: 2rem; /* Ronde hoeken */
-  padding: 0.5rem 1rem 0.5rem 1rem; /* Ruimte binnen de link */
-  background-color: #b2c2e5; /* Achtergrondkleur van de link */
-  text-decoration: none; /* Onderstreping van de link verwijderen */
-  color: black; /* Tekstkleur */
+  border: 0.2em solid rgb(36, 36, 36);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: #b2c2e5;
+  text-decoration: none;
+  color: black;
   margin-right: 0;
   text-align: center;
   margin-bottom: 2rem;
 }
 
-/* MARK: Hover-effect voor navigatielinks */
 nav a:hover {
-  background-color: #dce7f8; /* Achtergrondkleur verandert wanneer je eroverheen gaat */
+  background-color: #dce7f8;
 }
 
-/* MARK: Welkom afbeelding centreren */
 main figure {
   width: 55%;
   display: flex;
-  justify-content: center; /* Afbeelding horizontaal centreren */
-  align-items: center; /* Afbeelding verticaal centreren */
-  margin-bottom: 1.5rem; /* Ruimte onder de afbeelding */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
   margin: 0 auto;
 }
 
-/* MARK: Grootte van de welkom afbeelding */
 main figure img {
   width: 100%;
   max-width: 40rem;
@@ -255,23 +222,22 @@ main figure img {
   display: block;
 }
 
-/* MARK: Welkom tekst centreren */
 main section {
   text-align: center;
 }
 
-/* MARK: styling van de asides */
 aside {
   display: flex;
-  flex-direction: column; /* Afbeeldingen onder elkaar plaatsen */
-  justify-content: center; /* Afbeeldingen verticaal centreren */
-  align-items: center; /* Afbeeldingen horizontaal centreren */
-  gap: 0.1rem; /* Kleine ruimte tussen de afbeeldingen */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
   width: 100%;
   padding-top: 3rem;
 }
 
 aside > a {
+  font-family: "Quantico", sans-serif;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -284,15 +250,9 @@ aside > a {
 aside figure {
   width: 100%;
   margin: 0;
-}
-
-/* MARK: Grootte en verhouding van de figures */
-aside figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  margin: 0;
   flex: 0 0 auto;
 }
 
@@ -305,29 +265,235 @@ aside figure img {
 aside figcaption {
   text-align: center;
   margin-top: -1rem;
-  font-family: "Outfit", sans-serif;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
 }
-/* 
 
+/* MARK: Klein cookie-icoon rechtsonder vastgepind */
+body > label {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 3.5rem;
+  height: auto;
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+body > label img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-desktop view
+body > label input[type="checkbox"] {
+  display: none;
+}
 
+body > label section {
+  display: none;
+  position: fixed;
+  bottom: 6rem;
+  right: 1.5rem;
+  background-color: #dce7f8;
+  border: 0.3rem solid black;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 18rem;
+  z-index: 101;
+  text-align: left;
+  cursor: default;
+}
 
+body > label section h2 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  font-family: "Quantico", sans-serif;
+  font-weight: 800;
+}
 
+body > label section p {
+  font-family: "Quantico", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
 
-/*
+body > label section a {
+  display: inline-block;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  border: 0.15rem solid black;
+  border-radius: 1rem;
+  padding: 0.3rem 0.7rem;
+  background-color: #b2c2e5;
+  text-decoration: none;
+  color: black;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+body > label section span {
+  display: inline-block;
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  border: 0.15rem solid black;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  padding: 0.3rem 0.7rem;
+  background-color: #f29bb1;
+  cursor: pointer;
+  color: black;
+  font-size: 1rem;
+}
+
+body > label input[type="checkbox"]:checked ~ section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ========================================= */
+/* MARK: SCHETSBOEK POP-UP & TEKEN-CANVAS    */
+/* ========================================= */
+
+aside > .sketchbook-trigger {
+  font-family: "Quantico", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 auto;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+aside > .sketchbook-trigger input[type="checkbox"] {
+  display: none;
+}
+
+.sketchbook-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #faf9ec;
+  border: 0.3rem solid black;
+  border-radius: 0.8rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 90%;
+  max-width: 550px;
+  overflow: hidden;
+  cursor: default;
+}
+
+aside > .sketchbook-trigger input[type="checkbox"]:checked ~ .sketchbook-popup {
+  display: flex;
+  flex-direction: column;
+}
+
+.sketchbook-popup > header {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #f8d7e0;
+  display: flex;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-bottom: 0.2rem solid black;
+}
+
+.sketchbook-popup > header > p {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  margin: 0;
+  background-color: rgb(248, 138, 138);
+  border: 0.1rem solid black;
+  box-shadow:
+    1.2rem 0 0 -0.1rem rgb(239, 239, 168),
+    1.2rem 0 0 0 black,
+    2.4rem 0 0 -0.1rem rgb(188, 249, 188),
+    2.4rem 0 0 0 black;
+}
+
+.sketchbook-popup > header h2 {
+  font-size: 1rem;
+  font-family: "Quantico", sans-serif;
+  margin: 0;
+}
+
+.sketchbook-popup > header .close-btn {
+  font-family: "Quantico", sans-serif;
+  font-weight: bold;
+  background-color: #f29bb1;
+  border: 0.15rem solid black;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.5rem;
+  cursor: pointer;
+}
+
+.sketchbook-popup > header .close-btn:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.canvas-container {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+#drawCanvas {
+  border: 2px solid #333;
+  background-color: #fff;
+  cursor: crosshair;
+  touch-action: none;
+  width: 100%;
+  max-width: 480px;
+  height: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.sketchbook-popup .controls {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.sketchbook-popup .controls button {
+  font-family: "Quantico", sans-serif;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  background-color: #b2c2e5;
+  color: black;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sketchbook-popup .controls button:hover {
+  background-color: #dce7f8;
+}
 
 /* MARK: Responsive design voor groot scherm */
 @media (min-width: 48em) {
-  /* MARK: Grid aanpassen voor groot scherm */
   body {
-    grid-template-areas: /* Drie kolommen maken: links, midden en rechts */
-      "left-colum header right-colum" /*pakt in de grid de bovenste rij*/
+    grid-template-areas:
+      "left-colum header right-colum"
       "left-colum main right-colum"
       "footer footer footer";
-    grid-template-columns: 14rem 1fr 14rem; /* Breedte van de drie kolommen */
-    grid-template-rows: auto 1fr auto; /* Twee rijen maken */
+    grid-template-columns: 14rem 1fr 14rem;
+    grid-template-rows: auto 1fr auto;
   }
 
   body > header {
@@ -349,11 +515,14 @@ desktop view
 
   main h2 {
     font-size: 2rem;
+    font-weight: 800;
+    font-family: "Quantico", sans-serif;
   }
 
   main p {
     font-size: 1.2rem;
   }
+
   nav {
     display: flex;
     width: auto;
@@ -367,7 +536,6 @@ desktop view
     margin-bottom: 0;
   }
 
-  /* MARK: Asides op groot scherm */
   aside {
     justify-content: flex-start;
     align-items: center;
@@ -385,6 +553,12 @@ desktop view
     transform: scale(1.1);
   }
 
+  /* Hover effect ook voor de schetsboek trigger */
+  aside > .sketchbook-trigger:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+  }
+
   aside figure img {
     width: 100%;
   }
@@ -398,24 +572,19 @@ desktop view
 
   aside:last-of-type {
     grid-area: right-colum;
-    transform: translateX(1rem) translateY(10rem);
+    transform: translateX(1rem) translateY(0);
   }
 
-  /* MARK: Desktop view */
   main {
     width: 100%;
     height: 30rem;
     min-height: 30rem;
     padding-bottom: 3rem;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
     align-items: stretch;
   }
-
-  /* MARK: Header binnen main */
 
   main > header {
     width: 100%;
@@ -424,54 +593,34 @@ desktop view
     box-sizing: border-box;
   }
 
-  /* MARK: Afbeelding desktop */
-
   main > figure {
     width: 60%;
     height: calc(100% - 2rem);
-
     margin: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     box-sizing: border-box;
   }
 
   main > figure img {
     width: 100%;
     height: 100%;
-
     display: block;
-
     object-fit: contain;
     transform: translateX(-4rem);
   }
 
-  /* MARK: Tekst desktop */
-
   main > section {
     width: 40%;
     height: calc(100% - 2rem);
-
     display: flex;
     flex-direction: column;
-
     justify-content: center;
     align-items: center;
-
     text-align: center;
-
     padding: 2rem;
     box-sizing: border-box;
-
     transform: translateX(-5rem);
   }
 }
-/* BRONNENLIJST VOOR CODE:*/
-/*https://www.w3schools.com/tags/tag_figure.asp*/
-/*https://www.w3schools.com/tags/tag_section.asp*/
-/*https://www.w3schools.com/css/css3_buttons.asp*/
-/*https://www.w3schools.com/css/css3_flexbox.asp*/
-/*https://www.w3schools.com/css/css_grid.asp*/

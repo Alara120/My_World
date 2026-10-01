@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Doodle Garden</title>
     <link rel="stylesheet" href="./assets/style/normal.css" />
   </head>
   <body>
@@ -11,14 +11,13 @@
       <header></header>
       <!-- MARK: Mijn hoofdtitel van mijn website -->
       <figure>
-        <img src="assets/images/doodlegarden.svg" />
+        <img src="assets/images/doodlegarden.svg" alt="Bloem logo" />
       </figure>
 
       <h1>My doodle garden</h1>
 
       <!-- MARK: Navigatie op het balk -->
       <nav>
-        git
         <a href="#">Home</a>
         <a href="#">Logboek</a>
         <a href="#">Story</a>
@@ -51,23 +50,42 @@
       <a href="art.html">
         <figure>
           <img src="assets/images/art.svg" alt="map van tekeningen" />
-          <figcaption>Bla bla</figcaption>
+          <figcaption>Mijn art</figcaption>
         </figure>
       </a>
 
-      <a href="tips.html">
-        <figure>
-          <img src="assets/images/tips.svg" alt="map van tips" />
-          <figcaption>Bla bla</figcaption>
-        </figure>
-      </a>
       <a href="proces.html">
         <figure>
-          <img src="assets/images/process.svg" alt="map van het proces" />
-          <figcaption>Bla bla</figcaption>
+          <img src="assets/images/tips.svg" alt="map van tips" />
+          <figcaption>Het proces</figcaption>
         </figure>
       </a>
+
+      <!-- MARK: Schetsboek icoon met pop-up en teken canvas -->
+      <label class="sketchbook-trigger">
+        <input type="checkbox" id="sketchbook-toggle" />
+        <figure>
+          <img src="assets/images/process.svg" alt="map van het proces" />
+          <figcaption>Schetsboek</figcaption>
+        </figure>
+
+        <!-- De Teken Pop-up -->
+        <section class="sketchbook-popup" onclick="event.preventDefault()">
+          <header>
+            <p></p>
+            <h2>Mijn Schetsboek</h2>
+            <span class="close-btn">X</span>
+          </header>
+          <div class="canvas-container">
+            <canvas id="drawCanvas" width="500" height="320"></canvas>
+          </div>
+          <div class="controls">
+            <button type="button" id="clearBtn">Wis Doek</button>
+          </div>
+        </section>
+      </label>
     </aside>
+
     <aside>
       <!-- MARK: afbeeldingen voor de rechterkant van website-->
       <a href="Google.com">
@@ -89,6 +107,95 @@
         </figure>
       </a>
     </aside>
+
+    <!-- MARK: Klein cookie icoon vastgepind rechtsonder met pop-up -->
+    <label>
+      <input type="checkbox" />
+      <img src="assets/images/cookies.svg" alt="Cookies icoon" />
+      <section>
+        <h2>Cookiebeleid</h2>
+        <p>
+          Wij gebruiken cookies om jouw ervaring op de website te verbeteren.
+        </p>
+        <a
+          href="https://docs.github.com/en/site-policy/privacy-policies/github-cookies"
+          target="_blank"
+          >Lees meer</a
+        >
+        <span>Sluiten</span>
+      </section>
+    </label>
+
     <footer>&copy; 2026 My Doodle Garden</footer>
+
+    <!-- MARK: JavaScript voor de tekenfunctie op het canvas -->
+    <script>
+      const canvas = document.getElementById("drawCanvas");
+      const ctx = canvas.getContext("2d");
+
+      let isDrawing = false;
+      let lastX = 0;
+      let lastY = 0;
+
+      // Lijninstellingen
+      ctx.strokeStyle = "#000000";
+      ctx.lineWidth = 4;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+
+      function startDrawing(e) {
+        isDrawing = true;
+        [lastX, lastY] = getCoordinates(e);
+      }
+
+      function draw(e) {
+        if (!isDrawing) return;
+        const [currentX, currentY] = getCoordinates(e);
+
+        ctx.beginPath();
+        ctx.moveTo(lastX, lastY);
+        ctx.lineTo(currentX, currentY);
+        ctx.stroke();
+
+        [lastX, lastY] = [currentX, currentY];
+      }
+
+      function stopDrawing() {
+        isDrawing = false;
+      }
+
+      function getCoordinates(e) {
+        const rect = canvas.getBoundingClientRect();
+        let clientX = e.clientX;
+        let clientY = e.clientY;
+
+        if (e.touches && e.touches.length > 0) {
+          clientX = e.touches[0].clientX;
+          clientY = e.touches[0].clientY;
+        }
+
+        return [clientX - rect.left, clientY - rect.top];
+      }
+
+      // Event listeners voor muis en touch
+      canvas.addEventListener("mousedown", startDrawing);
+      canvas.addEventListener("mousemove", draw);
+      canvas.addEventListener("mouseup", stopDrawing);
+      canvas.addEventListener("mouseout", stopDrawing);
+
+      canvas.addEventListener("touchstart", startDrawing);
+      canvas.addEventListener("touchmove", draw);
+      canvas.addEventListener("touchend", stopDrawing);
+
+      // Wis knop
+      document.getElementById("clearBtn").addEventListener("click", () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      });
+
+      // Sluit knop (kruisje)
+      document.querySelector(".close-btn").addEventListener("click", () => {
+        document.getElementById("sketchbook-toggle").checked = false;
+      });
+    </script>
   </body>
 </html>
