@@ -26,9 +26,9 @@
 
       <!-- MARK: Navigatie op het balk -->
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Logboek</a>
-        <a href="#">Story</a>
+        <a href="index.html">Home</a>
+        <a href="index.html">Logboek</a>
+        <a href="index.html">Story</a>
       </nav>
     </header>
 
@@ -82,13 +82,19 @@
           <header>
             <p></p>
             <h2>Mijn Schetsboek</h2>
-            <span class="close-btn">X</span>
+            <button
+              type="button"
+              class="close-btn"
+              aria-label="Schetsboek sluiten"
+            >
+              X
+            </button>
           </header>
           <div class="canvas-container">
             <canvas id="drawCanvas" width="500" height="320"></canvas>
           </div>
           <div class="controls">
-            <button type="button" id="clearBtn">Wis Doek</button>
+            <button type="button" id="clearBtn">Verwijderen</button>
           </div>
         </section>
       </label>
@@ -96,22 +102,22 @@
 
     <aside>
       <!-- MARK: afbeeldingen voor de rechterkant van website-->
-      <a href="Google.com">
+      <a href="index.html">
         <figure>
           <img
             src="assets/images/prullenbak.svg"
             alt="afbeelding van een prullenbak"
           />
-          <figcaption>Bla bla</figcaption>
+          <figcaption>Prullenbakje</figcaption>
         </figure>
       </a>
-      <a href="Google.com">
+      <a href="index.html">
         <figure>
           <img
             src="assets/images/music.svg"
             alt="afbeelding van een muziekspeler"
           />
-          <figcaption>Bla bla</figcaption>
+          <figcaption>Muziekspeler</figcaption>
         </figure>
       </a>
     </aside>

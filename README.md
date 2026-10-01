@@ -4,12 +4,63 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Mijn Learning Log
 
+## 30 sept - WS 5
+
+Helaas was ik niet aanwezig in deze les i.v.m defecte trein/ treinuitvallen. Vond het ook best jammer, want ik keek er naar uit om de toegankelijkheid van mijn website te testen. Het is niet echt iets makkelijks, dus het was fijn geweest om hierbij aanwezig te zijn. Ik heb de test verder thuis uitgevoerd:
+
+**Opdracht: Toegankelijkheid testen**
+
+**1. Screenreader**
+**Kijk in ieder geval goed naar de:**
+**Headings, Is de structuur logisch? Geeft elk kopje goed aan wat er onder het kopje valt?**
+
+**Wat ik zie:** Ik zie een logische structuur bij links, alleen de namen kunnen veranderd worden want het staat soort van dubbel geschreven. Ik zie geen onnodige sprongen van H1 naar H3. Het probleem is alleen dat mijn icoon: "schetsboek" een interactief element is, dus het geeft geen goeie structuur aan. Voor mijn proces pagina: zit er een logische headingstructuur. Voor mijn tekeningen pagina: is er alleen maar een H1
+
+**Interactie elementen**
+**link, button, dialog, details/summary, inputs… zijn ze opgenomen in het de overzichten met interactie elementen?**
+**Geeft elke link goed aan waar naartoe gelinkt wordt? Heeft elke button een heldere naam?**
+
+**Wat ik zie in de buttons:**
+Ik merk dat als ik naar de icoon: "schetsboek" ga en hij opent de popup sluit hij het niet af wanneer ik op het kruisje klik. Dat komt omdat dat geen button is en daar heeft de screenreader moeite mee. Hetzelfde geldt voor mijn cookie pop-up.
+
+**Links:** Op mijn navigatie: home, logboek en story heb ik een # staan bij mijn href's wat daardoor nergens naar navigeert.
+
+**2. Alleen-met-toetsenbord:**
+Focusvolgorde met tab: Wanneer ik mijn pagina probeer te navigeren met alleen TAB, merk ik dat hij gelijk naar boven de website gaat. De volgorde klopt. hij gaat eerst naar doodle garden, daarna door naar de navigatie knoppen zoals home, logboek en story. Daarna door naar de mappen. Mijn art, het proces, schetsboek, prullenbakje en muziekspeler. Wat me wel opvalt is dat hij niet doorgaat naar het cookie button. Wat ik merk met mijn toetsenbord vooral is dat ik normaal een "hover" effect heb als je met de muis eroverheen gaat maar met het toetsenbord heb je dat niet, dus je kan niet echt merken op welke specifiek je knop je staat.
+
+**3. 3. WCAG checklist**
+kon het niet voeren.
+
+## CHECKOUT
+
+**1.Waar staat WCAG en A11y voor?**
+WCAG staat voor Web Content Accessibility Guidelines. En A11Y is een afkorting voor accessibility.s
+
+**2.Wat vind je lastiger, je laptop/websites alleen met een toetsenbord bedienen of met een screenreader? Waarom? Waar moet je nog mee oefenen?**
+Ik vind ze beide wel even lastig, maar als ik echt moest kiezen: een screenreader, omdat er gebruik wordt
+gemaakt met gesproken tekst en het spreekt soms dingen niet uit/ is niet duidelijk wat er mee wordt bedoeld
+en daar kan je confused van raken. Ook praat die echt te veel dat je het gewoon niet meer eens volgt... Ik moet oefenen om
+een volledige beheersing te hebben met screenreader en het alleen-met-toetsenbord functie, want dat vind ik nog wel lastig.
+
+**3.Met welke beperking rekening houden vind je het meest lastig? Vind je dat je beperkt wordt in wat je kunt ontwerpen?**
+**Of heb je al manieren gevonden om vanuit een solide basis die voor iedereen toegankelijk is - allemaal leuke en mooie extra's toe te voegen als je bezoekers dat goed vinden?**
+Ik vind het creeren van een balans tussen het ontwerpen en toegankelijkheid lastig. Ik had nooit gedacht dat daar rekening mee wordt gehouden in het ontwerpwereld, wat een uitdaging is maar wel leuk om ervan te leren.
+
 ## 28 sept - WS 4 + Bi-weekly geek 2
 
 ![Opdracht](assets/images-voor-readme/bigeek2.png)
-![Opdracht](assets/images-voor-readme/bigees22.png)
+![Opdracht](assets/images-voor-readme/bigeek22.png)
+
+**Aantekeningen in de les**
+![Opdracht](assets/images-voor-readme/aantekening1.jpg)
+![Opdracht](assets/images-voor-readme/aantekening2.jpg)
 
 **Opdracht: werken met alleen-het-toetsenbord en screenreader**
+![Opdracht](assets/images-voor-readme/nsstap1.png)
+![Opdracht](assets/images-voor-readme/nsstap2.png)
+![Opdracht](assets/images-voor-readme/nsstap3.png)
+![Opdracht](assets/images-voor-readme/nsstap4.png)
+![Opdracht](assets/images-voor-readme/nsstap5.png)
 
 ## CHECKOUT
 
@@ -72,14 +123,6 @@ Peroonlijke feedback:
 -Je kunt op je website een icoontje toevoegen voor je consent. Misschien een "bedankje" toevoegen nadat de gebruiker bijvoorbeeld op "Ja" heeft geklikt.
 
 -Tof dat alles zelf is gemaakt. Zou leuk zijn als er helemaal geen gebruik wordt gemaakt van cookies.
-
-# Wat heb ik geleerd?
-
-# Wat ging goed?
-
-# Wat vond ik lastig?
-
-# Volgende stap
 
 **Opdracht: Human Consent Component**
 
@@ -177,22 +220,14 @@ Mijn volgende stap is om de schets verder uit te werken en de HTML structuur van
 
 # CHECKOUT:
 
-1. Wat zijn HTML landmark role elements?
-   HTML elementen die belangrijke onderdelen van een webpagina aangeven. Zoals, header,nav, main etc.
+**1. Wat zijn HTML landmark role elements?**
+HTML elementen die belangrijke onderdelen van een webpagina aangeven. Zoals, header,nav, main etc.
 
-2. Wat zijn heading elementen en hoe horen deze 'genest' te worden?
-   Het zijn HTMLelementen waarmee je de titels en tussenkopjes van je pagina aangeeft. Ze lopen van <h1> tot en met <h6>
+**2. Wat zijn heading elementen en hoe horen deze 'genest' te worden?**
+Het zijn HTMLelementen waarmee je de titels en tussenkopjes van je pagina aangeeft. Ze lopen van <h1> tot en met <h6>
 
-3. Hoe ga jij met cookies om? Beschrijf jouw beweegreden en of die zijn veranderd na het volgen van dit college.
-   Ik lees nooit de cookies en klik snel op "accepteer" omdat het me allemaal niet echt boeit. maar wanneer ik het eenmaal lees boeit het me deels best wel. Na het volgen van dit college zal ik meer op letten om een beetje ervan te lezen.
-
-# Wat heb ik geleerd?
-
-# Wat ging goed?
-
-# Wat vond ik lastig?
-
-# Volgende stap
+**3. Hoe ga jij met cookies om? Beschrijf jouw beweegreden en of die zijn veranderd na het volgen van dit college.**
+Ik lees nooit de cookies en klik snel op "accepteer" omdat het me allemaal niet echt boeit. maar wanneer ik het eenmaal lees boeit het me deels best wel. Na het volgen van dit college zal ik meer op letten om een beetje ervan te lezen.
 
 ### 18 sept - Voortgang + Retrospect
 
@@ -213,17 +248,14 @@ Feedback van Barbara:
 
 # CHECKOUT:
 
-1. Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?
-
+**1. Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?**
 wanneer het bijvoorbeeld veel verschillende kleuren heeft, lettertypes die niet passen en afbeeldingen die niet goed staan. Best een onrustige vibe geven en geen samenhang heeft met het stijl
 
-2. Vertel welke volgende stap je neemt om je website responsive te maken.
+**2. Vertel welke volgende stap je neemt om je website responsive te maken.**
+Ik ga ervoor zorgen dat de website goed werkt op verschillende apparaten zoals een laptop, tablet en telefoon door vooral er naar te kijken naar de grootte van afbeeldingen, tekst en knoppen etc.
 
-   Ik ga ervoor zorgen dat de website goed werkt op verschillende apparaten zoals een laptop, tablet en telefoon door vooral er naar te kijken naar de grootte van afbeeldingen, tekst en knoppen etc.
-
-3. Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen in Webby vocabulair?
-
-   Ik ga ervoor zorgen dat mijn website aan de volgende voorwaardes voldoen, zodat het webby mogelijk is
+**3. Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen in Webby vocabulair?**
+Ik ga ervoor zorgen dat mijn website aan de volgende voorwaardes voldoen, zodat het webby mogelijk is
 
 # Wat heb ik geleerd?
 
@@ -281,17 +313,14 @@ Deze les werd online uitgevoerd.
 
 # CHECKOUT:
 
-1. Leg uit waar het Visual Research in 3 stappen naartoe werkt
+**1. Leg uit waar het Visual Research in 3 stappen naartoe werkt**
+Het Visual Research werkt toe naar een duidelijk concept voor mijn Digital Garden. Je verzamelt eerst inspiratie en daarmee doe je onderzoek en uiteindelijk combineer je je ideeen
 
-   Het Visual Research werkt toe naar een duidelijk concept voor mijn Digital Garden. Je verzamelt eerst inspiratie en daarmee doe je onderzoek en uiteindelijk combineer je je ideeen
+**2. Vertel in 2 zinnen waar jouw Garden over gaat, en met welke content je dat gaat doen (beeld, tekst, sound, animatie enz)**
+Mijn Garden gaat over tekenen als hobby en creativiteit. Ik wil dit laten zien met vooral zwart wit kleuren, tekeningen, korte teksten en als het me gaat lukken: animaties!
 
-2. Vertel in 2 zinnen waar jouw Garden over gaat, en met welke content je dat gaat doen (beeld, tekst, sound, animatie enz).
-
-   Mijn Garden gaat over tekenen als hobby en creativiteit. Ik wil dit laten zien met vooral zwart wit kleuren, tekeningen, korte teksten en als het me gaat lukken: animaties!
-
-3. Vertel kort welk idee van de Crazy 8 je het liefst zou willen uitvoeren/ verder zou willen onderzoeken.
-
-   Ik zou graag iets interactiefs willen maken, in plaats van dat bezoekers alleen maar naar tekeningen bekijken. Het proces vind ik ook vooral belangerijk, want het gaat niet alleen maar om perfectie. Dus ik denk dat ik graag me verder zou in willen verdiepen met nummer 5 (2de rij - 1ste)
+**3. Vertel kort welk idee van de Crazy 8 je het liefst zou willen uitvoeren/ verder zou willen onderzoeken.**
+Ik zou graag iets interactiefs willen maken, in plaats van dat bezoekers alleen maar naar tekeningen bekijken. Het proces vind ik ook vooral belangerijk, want het gaat niet alleen maar om perfectie. Dus ik denk dat ik graag me verder zou in willen verdiepen met nummer 5 (2de rij - 1ste)
 
 # Wat heb ik geleerd?
 
@@ -328,16 +357,13 @@ Mijn content: Vroeger kon ik uren tekenen. Tegenwoordig doe ik het minder, maar 
 
 # CHECKOUT:
 
-1. Leg uit wat een digital garden is en waarom dat anders is dan een reguliere website.
+**1. Leg uit wat een digital garden is en waarom dat anders is dan een reguliere website**
+Een digital garden is een persoonlijke website waar je je ideeën, projecten en dingen die je leert kunt verzamelen. Het verschil met een gewone website is dat een digital garden niet helemaal af hoeft te zijn. Je kunt hem steeds aanpassen en uitbreiden.
 
-   Een digital garden is een persoonlijke website waar je je ideeën, projecten en dingen die je leert kunt verzamelen. Het verschil met een gewone website is dat een digital garden niet helemaal af hoeft te zijn. Je kunt hem steeds aanpassen en uitbreiden.
-
-2. Wat maakt een website ‘webby’?
-
+**2. Wat maakt een website ‘webby’?**
 Een website is voor mij ‘webby’ als hij creatief, interactief en anders is dan een normale website. Ik vind websites met leuke animaties, bijzondere ontwerpen en interactieve onderdelen inspirerend.
 
-3. Vertel waar jij mee aan de slag wilt gaan bij het maken van jouw eigen digital garden let op: dit zijn jouw eerste ideeën, dit kan en mag veranderen in de loop van het programma.
-
+**3. Vertel waar jij mee aan de slag wilt gaan bij het maken van jouw eigen digital garden let op: dit zijn jouw eerste ideeën, dit kan en mag veranderen in de loop van het programma.**
 Ik zat te denken om mijn digital garden te visualiseren in illustraties. Omdat tekenen mijn hobby is die ik tijdje niet heb uitgevoerd.
 
 # Wat heb ik geleerd?
@@ -371,16 +397,13 @@ Maak een bruikbaar, online formulier van het Wok to Walk menu voor middelgrote s
 
 ### 31 aug - Kickoff + CHECKOUT
 
-1. Leg uit wat een source hosting platform is en voor welke jij gekozen hebt.
-
+**1. Leg uit wat een source hosting platform is en voor welke jij gekozen hebt.**
 Source hosting platform = Online opslagplek voor programmeercode
 
-2. Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina.
-
+**2. Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina.**
 Ik heb mijn domeinnaam vernoemd naar “Kirazz” dat is een online username die ik gebruik. Ik heb het gekoppeld via transit.nl en via Github met behulp van DNS
 
-3. Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden.
-
+**3. Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden.**
 Je kunt je pagina aanpassen in VSCodium en het uploaden door: Commit - Comment - Sync changes en het te pushen naar je GitHub.
 
 # Wat heb ik geleerd?
@@ -446,3 +469,5 @@ Voorbereiding + Notities:
 **S1 - Responsive grid + Grid-areas**
 
 Voorbereiding:
+
+## CODE UITLEG VOOR MIJN WEBSITE + BRONNEN
