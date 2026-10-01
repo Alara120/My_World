@@ -507,18 +507,18 @@ De Event Listeners luisteren steeds naar acties van de gebruiker, zoals klikken 
 
 **Code uitleg voor HTML**
 
-<figcaption> = Dit hoort altijd binnen een <figure> tag en dient als een beschrijvend bijschrift bij een afbeelding of logo. Het helpt ook voor toegankelijkheid zoals screenreaders.
+figcaption> = Dit hoort altijd binnen een figure> tag en dient als een beschrijvend bijschrift bij een afbeelding of logo. Het helpt ook voor toegankelijkheid zoals screenreaders.
 
-<label> = wordt gebruikt voor formuliervelden, zoals een tekstvak of vinkje. In mijn code heb ik het gebruikt voor mijn pop-ups
+label> = wordt gebruikt voor formuliervelden, zoals een tekstvak of vinkje. In mijn code heb ik het gebruikt voor mijn pop-ups
 
-<input type="checkbox"> = Dit maakt een selectievakje (vinkje) aan. het wordt in webdesign vaak gebruikt in combinatie met de zogenaamde checkbox hack om pop-ups te openen en sluiten zonder dat je daar ingewikkelde JavaScript voor nodig hebt.
+input type="checkbox"> = Dit maakt een selectievakje (vinkje) aan. het wordt in webdesign vaak gebruikt in combinatie met de zogenaamde checkbox hack om pop-ups te openen en sluiten zonder dat je daar ingewikkelde JavaScript voor nodig hebt.
 
-<button> = Maakt een klikbare knop aan
+button> = Maakt een klikbare knop aan
 
-<span> = Een neutraal, inline element dat geen eigen opmaak heeft. Het wordt gebruikt om een klein stukje tekst of een specifiek woord binnen een zin te groeperen zodat je het via CSS kunt stylen
+span> = Een neutraal, inline element dat geen eigen opmaak heeft. Het wordt gebruikt om een klein stukje tekst of een specifiek woord binnen een zin te groeperen zodat je het via CSS kunt stylen
 
 **Ik heb wel in mijn code gebruik gemaakt van classes en ids, maar waarom? Nou:**
-ik heb gebruik gemaakt van JavaScript. En bij javascript moet hij weten welke knop het moet wissen (clearBtn) of waar er getekend moet worden (drawCanvas) daarom moet JavaScript dat element kunnen opzoeken in de HTML. Dit gebeurt in mijn script met document.getElementById("drawCanvas"). Een id moet uniek zijn op de pagina. Voor classes wil ik dat als iemand op het schetsboek icoon klikt, er een pop-up op scherm komt. Omdat ik dit zonder zware JavaScript wilt oplossen, gebruik ik de checkbox hack door: een verborgen <input type="checkbox"> in een <label> te verstoppen. Als de gebruiker op het label klikt, verandert de aan/uit status van de checkbox. Via CSS kan je dan zeggen: "Als de checkbox aangevinkt is, maak de pop-up dan zichtbaar (display: block)". Hiervoor heb ik classes (class="sketchbook-trigger", class="sketchbook-popup") nodig, omdat ik deze stijlregels op meerdere plekken wil kunnen toepassen.
+ik heb gebruik gemaakt van JavaScript. En bij javascript moet hij weten welke knop het moet wissen (clearBtn) of waar er getekend moet worden (drawCanvas) daarom moet JavaScript dat element kunnen opzoeken in de HTML. Dit gebeurt in mijn script met document.getElementById("drawCanvas"). Een id moet uniek zijn op de pagina. Voor classes wil ik dat als iemand op het schetsboek icoon klikt, er een pop-up op scherm komt. Omdat ik dit zonder zware JavaScript wilt oplossen, gebruik ik de checkbox hack door: een verborgen input type="checkbox"> in een label> te verstoppen. Als de gebruiker op het label klikt, verandert de aan/uit status van de checkbox. Via CSS kan je dan zeggen: "Als de checkbox aangevinkt is, maak de pop-up dan zichtbaar (display: block)". Hiervoor heb ik classes (class="sketchbook-trigger", class="sketchbook-popup") nodig, omdat ik deze stijlregels op meerdere plekken wil kunnen toepassen.
 
 **Bronvermeldingen:** -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure,
 https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input,
@@ -531,7 +531,7 @@ https://www.w3schools.com/TAGS/default.ASP
 ![Opdracht](assets/images-voor-readme/cs1.png)
 
 **Grid**
-Dit is de CSS grid lay-out. je verdeelt de hele webpagina in een raster. Met grid-template-areas geef je elk HTML element (<header>, <main>, <aside>, etc.) een eigen naam en plek in dat raster. Dit maakt het mogelijk om je website volledig flexibel te maken. Voor mobiel onder elkaar en in je @media (min-width: 48em) query maak je het raster in een keer naar een brede desktop layout met zijbalken (left-colum header right-colum), zonder dat je HTML code hoeft te veranderen.
+Dit is de CSS grid lay-out. je verdeelt de hele webpagina in een raster. Met grid-template-areas geef je elk HTML element (header>, main>, aside>, etc.) een eigen naam en plek in dat raster. Dit maakt het mogelijk om je website volledig flexibel te maken. Voor mobiel onder elkaar en in je @media (min-width: 48em) query maak je het raster in een keer naar een brede desktop layout met zijbalken (left-colum header right-colum), zonder dat je HTML code hoeft te veranderen.
 
 **Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout
 
