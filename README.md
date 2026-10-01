@@ -471,3 +471,30 @@ Voorbereiding + Notities:
 Voorbereiding:
 
 ## CODE UITLEG VOOR MIJN WEBSITE + BRONNEN
+
+**Javascript**
+ik heb gebruik gemaakt van javascript in mijn website, omdat ik het belangrijk vind dat er eenn interactie aanwezig is
+dat ik de gebruikers ermee kan entertainen. Met deze script zorgt het ervoor dat de gebruike kan tekenen op het canvas en het schetsboek kan gebruiken.
+
+![Opdracht](assets/images-voor-readme/js1.png)
+**Wat doet het?**
+Het zoekt het canvas element op via zijn ID (drawCanvas) en vraagt de 2D-tekencontext (getContext("2d")) op.
+Dit wordt dan je soort digitale teken doekje. Daarna wordt er bij te houden of de muis is ingedrukt (isDrawing).
+De strokeStyle, lineWidth, lineCap en lineJoin bepalen hoe dik, zwart en mooi afgerond je lijnen zijn.
+
+![Opdracht](assets/images-voor-readme/js2.png)
+**Wat doet het?**
+Dit zijn de tekenfuncties. startDrawing: Wordt geactiveerd zodra je de muis indrukt of het scherm aanraakt.
+isDrawing op false staat, gebeurt er niets. als je gaat tekenen, dan trekt JavaScript met beginPath(), moveTo(), lineTo() en stroke() een lijn vanaf het vorige punt naar het huidige punt. stopDrawing: Stopt het tekenen zodra je de muis loslaat of buiten het canvas komt.
+
+![Opdracht](assets/images-voor-readme/js3.png)
+**Wat doet het?**
+Dit berekent de coordinaten van je muis en touchscreen. (clientX/clientY) is voor muisklikt
+en (e.touches). is het aanraken met je vingers. Daarna berekent hij met (rect.left en rect.top)
+of de lijn precies onder je muis of vinger wordt getekent.
+
+![Opdracht](assets/images-voor-readme/js4.png)
+**Wat doet het?**
+De Event Listeners luisteren steeds naar acties van de gebruiker, zoals klikken of vegen en koppelen dat aan de juiste functies. het verwijderen knop (clearBtn) gebruikt ctx.clearRect() om alles van het scherm te verwijderen. De Sluit knop zoekt de sluit knop op en zorgt ervoor dat het vinkje van de sketchbook toggle checkbox wordt uitgezet, waardoor de pop-up sluit.
+
+**Bronnenlijst voor javascript:** -https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API -https://www.w3schools.com/js/js_htmldom_eventlistener.asp -https://www.w3schools.com/graphics/canvas_intro.asp
