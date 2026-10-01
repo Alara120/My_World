@@ -5,19 +5,19 @@
   font-style: normal;
 }
 
-/* MARK: Light en dark theme*/
+/* MARK: BASIS INSTELLINGEN VOOR DE HELE PAGINA --- */
+
+/* --- MARK: LIGHT EN DARK MODE --- */
 html {
   color-scheme: light dark;
 }
 
-/* MARK: styling van de body */
+/* De opmaak van de totale body / de container van mijn hele webpagina */
 body {
   background-image: url("../images/achtergrond.jpg");
   background-size: 100%;
-
-  display: grid;
-
-  grid-template-areas:
+  display: grid; /* Activeert CSS Grid om de pagina in vlakken / indelingen  te verdelen */
+  grid-template-areas:   /* Bepaalt de naam van de vlakken en de volgorde op een mobile scherm */
     "header"
     "main"
     "left-colum"
@@ -25,77 +25,111 @@ body {
     "footer";
 
   grid-template-columns: 1fr;
-
   gap: 1rem;
-
   max-width: 80rem;
   min-height: 100vh;
-  margin: 0 auto;
-  padding: 0 1em 0 1em;
+  margin: 0 auto; /* Centreert de website automatisch horizontaal (0 boven/onder, auto links/rechts) */
+  padding: 0 1rem; /* Voegt binnenruimte (padding) toe aan de zijkanten van de body */
   position: relative;
 }
 
+/* --- MARK: HOOFD HEADER VAN DE WEBSITE --- */
+
 body > header {
-  grid-area: header;
+  /* Selecteert de header die direct een kind is van de body */
+  grid-area: header; /* Koppelt deze header aan het grid-gebied genaamd "header" */
   border: 0.2rem solid black;
   border-radius: 1rem;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 0 -1rem 1rem -1rem;
+  overflow: hidden; /* Zorgt dat inhoud die buiten de rand valt wordt afgekapt */
+  display: flex; /* Activeert Flexbox om de inhoud netjes te ordenen */
+  flex-wrap: wrap; /* Zorgt dat elementen naar de volgende regel springen als ze niet passen */
+  align-items: center; /* Centreert de inhoud verticaal */
+  justify-content: center; /* Centreert de inhoud horizontaal */
   background-color: #dce7f8;
   margin-top: 4rem;
   margin-bottom: 3rem;
 }
 
+/* Het donkerblauwe balkje bovenin de header */
 body > header > header {
   width: calc(100% + 1.5rem);
-  height: 2rem;
+  height: 2rem; /* Bepaalt de hoogte van de balk */
   background-color: #b2c2e5;
   margin: 0 -1rem 1rem -1rem;
 }
 
 body > header figure {
+  /* De container (<figure>) voor het logo in de header */
   width: 4rem;
-  margin: 0;
-  flex-shrink: 0;
+  margin: 0; /* Verwijdert de standaard marges rondom de figure */
+  flex-shrink: 0; /* Zorgt dat dit element niet kan krimpen in een flexbox */
 }
 
 body > header figure img {
+  /* Het logo afbeelding zelf binnen de header */
   width: 100%;
-  height: auto;
-  display: block;
+  height: auto; /* Laat de hoogte automatisch aanpassen om vervorming te voorkomen */
+  display: block; /* Zorgt dat de afbeelding zich gedraagt als een blok-element */
 }
 
+/* De titel (H1) in de header */
 header h1 {
   font-family: "Quantico", sans-serif;
   font-weight: 700;
   font-size: 2rem;
-  width: auto;
   text-align: left;
   margin: 0;
-  white-space: nowrap;
+  white-space: nowrap; /* Zorgt dat de tekst altijd op 1 regel blijft staan en niet afbreekt */
 }
 
-aside:first-of-type {
-  grid-area: left-colum;
+/* --- MARK: NAVIGATIE MENU --- */
+
+nav {
+  /* De navigatiebalk zelf */
+  display: flex; /* Activeert Flexbox om de knoppen naast elkaar te zetten */
+  gap: 1rem;
+  width: 100%;
+  text-decoration: none; /* Verwijdert tekstdecoraties */
 }
 
-/* MARK: Main - mobile */
+/* De individuele links in de navigatiebalk */
+nav a {
+  /* De individuele links in de navigatiebalk */
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  border: 0.2em solid rgb(36, 36, 36);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #b2c2e5;
+  text-decoration: none; /* Haalt de onderstreping van de link weg */
+  color: black;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Wat er gebeurt als je met je muis over een navigatieknop hovert */
+nav a:hover {
+  /* Verandert de achtergrondkleur naar een iets lichtere blauwtint */
+  background-color: #dce7f8;
+}
+
+/* --- MARK: HOOFD INHOUD (MAIN CONTAINER) --- */
+
 main {
-  grid-area: main;
+  /* Het hoofdvak van de webpagina */
+
+  grid-area: main; /* Koppelt dit element aan het grid-gebied genaamd "main" */
   width: 100%;
   min-height: 25rem;
   border: 0.2rem solid black;
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: hidden; /* Zorgt dat inhoud die uitsteekt verborgen wordt */
   background-color: #faf9ec;
 }
 
+/* De vensterbalk bovenaan het main-element */
 main > header {
   width: 100%;
   height: 2rem;
@@ -106,6 +140,7 @@ main > header {
   justify-content: space-between;
 }
 
+/* De drie gekleurde maccie stijl knopjes in de vensterbalk */
 main > header > p {
   width: 1rem;
   height: 1rem;
@@ -113,30 +148,33 @@ main > header > p {
   margin: 0;
   background-color: rgb(248, 138, 138);
   border: 0.1rem solid black;
-
-  box-shadow:
+  box-shadow:   /* Maakt met schaduw (!) slim de andere twee gekleurde bolletjes ernaast */
     1.8rem 0 0 -0.1rem rgb(239, 239, 168),
     1.8rem 0 0 0 black,
     3.6rem 0 0 -0.1rem rgb(188, 249, 188),
     3.6rem 0 0 0 black;
 }
 
+/* De figuur container voor de afbeelding in main */
 main > figure {
-  width: 100%;
-  margin: 0;
+  width: 55%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  margin-bottom: 1.5rem;
 }
 
+/* De afbeelding in de main container */
 main > figure img {
   width: 100%;
+  max-width: 40rem;
   height: auto;
   display: block;
   object-fit: contain;
 }
 
+/* Het tekstgedeelte (section) in de main */
 main > section {
   width: 100%;
   display: flex;
@@ -148,84 +186,34 @@ main > section {
   box-sizing: border-box;
 }
 
-main > section h2,
-main > section p {
-  text-align: center;
-}
-
+/* De kop (h2) in de main sectie */
 main > section h2 {
+  font-size: medium;
+  font-weight: 800;
+  font-family: "Outfit", sans-serif;
   margin: 0 0 0.5rem 0;
 }
 
+/* De alinea (p) in de main sectie */
 main > section p {
   margin: 0;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
 }
 
-main h2 {
-  font-size: medium;
-  font-weight: 800;
-  font-family: "Outfit", sans-serif;
+/* --- MAKR: ZIJKANTEN (ASIDES) --- */
+
+/* Koppel de linker aside aan het grid-gebied "left-colum" */
+aside:first-of-type {
+  grid-area: left-colum;
 }
 
-footer {
-  grid-area: footer;
-  text-align: center;
-  padding: 0.1rem 0;
-  font-size: 0.9rem;
-}
-
+/* Koppel de rechter aside aan het grid-gebied "right-colum" */
 aside:last-of-type {
   grid-area: right-colum;
 }
 
-nav {
-  text-decoration: none;
-  gap: 1rem;
-  width: 100%;
-  justify-content: center;
-  display: flex;
-}
-
-nav a {
-  font-family: "Quantico", sans-serif;
-  font-weight: 700;
-  border: 0.2em solid rgb(36, 36, 36);
-  border-radius: 2rem;
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  background-color: #b2c2e5;
-  text-decoration: none;
-  color: black;
-  margin-right: 0;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-nav a:hover {
-  background-color: #dce7f8;
-}
-
-main figure {
-  width: 55%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1.5rem;
-  margin: 0 auto;
-}
-
-main figure img {
-  width: 100%;
-  max-width: 40rem;
-  height: auto;
-  display: block;
-}
-
-main section {
-  text-align: center;
-}
-
+/* Basisopmaak voor beide asides */
 aside {
   display: flex;
   flex-direction: column;
@@ -236,6 +224,7 @@ aside {
   padding-top: 3rem;
 }
 
+/* Links binnen de asides */
 aside > a {
   font-family: "Quantico", sans-serif;
   display: flex;
@@ -247,52 +236,59 @@ aside > a {
   color: black;
 }
 
+/* Figure elementen binnen de asides */
 aside figure {
   width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 0 0 auto;
 }
 
+/* Afbeeldingen in de asides */
 aside figure img {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* de figcaption  onder de aside afbeeldingen */
 aside figcaption {
   text-align: center;
+  /* Trekt de tekst iets omhoog zodat het dichter bij de afbeelding komt */
   margin-top: -1rem;
   font-family: "Quantico", sans-serif;
   font-weight: 700;
 }
 
-/* MARK: Klein cookie-icoon rechtsonder vastgepind */
+/* --- MARK: COOKIE POP-UP --- */
+
+/* Het label (icoon) rechtsonder voor de cookie melding */
 body > label {
-  position: fixed;
+  position: fixed; /* Plaatst het icoon vast op het scherm (reageert niet op scrollen) */
   bottom: 1.5rem;
   right: 1.5rem;
   width: 3.5rem;
-  height: auto;
   cursor: pointer;
-  z-index: 100;
+  z-index: 100; /* Zorgt dat het icoon altijd bovenop andere elementen ligt */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Het cookie-icoon afbeelding */
 body > label img {
   width: 100%;
   height: auto;
   display: block;
 }
 
+/* Verbergt de standaard HTML checkbox volledig */
 body > label input[type="checkbox"] {
   display: none;
 }
 
+/* Het pop-up venster van de cookies (standaard onzichtbaar) */
 body > label section {
   display: none;
   position: fixed;
@@ -308,6 +304,7 @@ body > label section {
   cursor: default;
 }
 
+/* Titel in de cookie pop-up */
 body > label section h2 {
   font-size: 1.1rem;
   margin-top: 0;
@@ -315,50 +312,50 @@ body > label section h2 {
   font-weight: 800;
 }
 
+/* Tekst in de cookie pop-up */
 body > label section p {
   font-family: "Quantico", sans-serif;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
 
-body > label section a {
-  display: inline-block;
-  font-family: "Quantico", sans-serif;
-  font-weight: 700;
-  border: 0.15rem solid black;
-  border-radius: 1rem;
-  padding: 0.3rem 0.7rem;
-  background-color: #b2c2e5;
-  text-decoration: none;
-  color: black;
-  margin-right: 0.5rem;
-  font-size: 1rem;
-}
-
+/* Knoppen en links in de cookie pop-up */
+body > label section a,
 body > label section span {
   display: inline-block;
   font-family: "Quantico", sans-serif;
   font-weight: 700;
   border: 0.15rem solid black;
-  margin-top: 1rem;
   border-radius: 1rem;
   padding: 0.3rem 0.7rem;
-  background-color: #f29bb1;
-  cursor: pointer;
+  text-decoration: none;
   color: black;
   font-size: 1rem;
 }
 
+/* Specifieke stijl voor de cookie-link */
+body > label section a {
+  background-color: #b2c2e5;
+  margin-right: 0.5rem;
+}
+
+/* Specifieke stijl voor de sluit knop */
+body > label section span {
+  background-color: #f29bb1;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* DE CHECKBOX HACK: Maak de pop-up zichtbaar zodra de checkbox is aangevinkt */
 body > label input[type="checkbox"]:checked ~ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-/* ========================================= */
-/* MARK: SCHETSBOEK POP-UP & TEKEN-CANVAS    */
-/* ========================================= */
+/* ---  MARK: SCHETSBOEK POP-UP & TEKEN-CANVAS --- */
 
+/* De trigger voor het schetsboek in de zijbalk */
 aside > .sketchbook-trigger {
   font-family: "Quantico", sans-serif;
   display: flex;
@@ -372,12 +369,15 @@ aside > .sketchbook-trigger {
   cursor: pointer;
 }
 
+/* Verbergt de checkbox van het schetsboek */
 aside > .sketchbook-trigger input[type="checkbox"] {
   display: none;
 }
 
+/* Het pop-up venster van het schetsboek (standaard verborgen) */
 .sketchbook-popup {
   display: none;
+  /* Plaatst de pop-up exact in het midden van het scherm */
   position: fixed;
   top: 50%;
   left: 50%;
@@ -393,11 +393,13 @@ aside > .sketchbook-trigger input[type="checkbox"] {
   cursor: default;
 }
 
+/* Toon het schetsboek venster wanneer de trigger is aangevinkt */
 aside > .sketchbook-trigger input[type="checkbox"]:checked ~ .sketchbook-popup {
   display: flex;
   flex-direction: column;
 }
 
+/* De headerbalk binnen de schetsboek pop-up */
 .sketchbook-popup > header {
   width: 100%;
   height: 2.5rem;
@@ -410,6 +412,7 @@ aside > .sketchbook-trigger input[type="checkbox"]:checked ~ .sketchbook-popup {
   border-bottom: 0.2rem solid black;
 }
 
+/* De drie bolletjes in de schetsboek header */
 .sketchbook-popup > header > p {
   width: 0.8rem;
   height: 0.8rem;
@@ -424,12 +427,14 @@ aside > .sketchbook-trigger input[type="checkbox"]:checked ~ .sketchbook-popup {
     2.4rem 0 0 0 black;
 }
 
+/* Titel van de schetsboek pop-up */
 .sketchbook-popup > header h2 {
   font-size: 1rem;
   font-family: "Quantico", sans-serif;
   margin: 0;
 }
 
+/* De sluit-knop (kruisje) in de schetsboek header */
 .sketchbook-popup > header .close-btn {
   font-family: "Quantico", sans-serif;
   font-weight: bold;
@@ -440,23 +445,27 @@ aside > .sketchbook-trigger input[type="checkbox"]:checked ~ .sketchbook-popup {
   cursor: pointer;
 }
 
+/* Hover effect voor de sluit-knop */
 .sketchbook-popup > header .close-btn:hover {
   background-color: #e74c3c;
   color: white;
 }
 
+/* De container waar het teken-canvas in staat */
 .canvas-container {
   padding: 1.5rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #fff;
 }
 
+/* Het HTML canvas element waar de gebruiker op tekent */
 #drawCanvas {
   border: 2px solid #333;
   background-color: #fff;
+  /* Verandert de muisaanwijzer in een kruisje om te tekenen */
   cursor: crosshair;
+  /* Schakelt standaard mobiele schermgebaren uit zodat je soepel kunt tekenen op touchscreens */
   touch-action: none;
   width: 100%;
   max-width: 480px;
@@ -464,11 +473,13 @@ aside > .sketchbook-trigger input[type="checkbox"]:checked ~ .sketchbook-popup {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
+/* De knoppenbalk onder het canvas */
 .sketchbook-popup .controls {
   padding: 0 1.5rem 1.5rem 1.5rem;
   text-align: center;
 }
 
+/* De wis knop in het schetsboek */
 .sketchbook-popup .controls button {
   font-family: "Quantico", sans-serif;
   padding: 0.5rem 1.5rem;
@@ -481,11 +492,21 @@ aside > .sketchbook-trigger input[type="checkbox"]:checked ~ .sketchbook-popup {
   font-weight: bold;
 }
 
+/* Hover effect voor de wis knop */
 .sketchbook-popup .controls button:hover {
   background-color: #dce7f8;
 }
 
-/* MARK: Responsive design voor groot scherm */
+/* --- MARK: FOOTER --- */
+footer {
+  grid-area: footer;
+  text-align: center;
+  padding: 0.1rem 0;
+  font-size: 0.9rem;
+}
+
+/* --- MARK: RESPONSIVE DESIGN (TABLET & DESKTOP) --- */
+
 @media (min-width: 48em) {
   body {
     grid-template-areas:
@@ -496,131 +517,86 @@ aside > .sketchbook-trigger input[type="checkbox"]:checked ~ .sketchbook-popup {
     grid-template-rows: auto 1fr auto;
   }
 
+  /* Zet de header items netjes aan de linkerkant op grote schermen */
   body > header {
     justify-content: flex-start;
-    flex-wrap: wrap;
   }
 
+  /* Maakt het logo iets groter op desktop */
   body > header figure {
     width: 5rem;
-    margin: 0;
   }
 
+  /* Voegt ruimte toe naast de paginatitel */
   header h1 {
-    width: auto;
-    margin: 0 0 0 0.5rem;
-    text-align: left;
-    white-space: nowrap;
+    margin-left: 0.5rem;
   }
 
+  /* Maakt de kop in main groter op desktop */
   main h2 {
     font-size: 2rem;
-    font-weight: 800;
-    font-family: "Quantico", sans-serif;
   }
 
+  /* Maakt de alinea-tekst groter op desktop */
   main p {
     font-size: 1.2rem;
   }
 
+  /* Verplaatst de navigatie naar rechts op grote schermen */
   nav {
-    display: flex;
     width: auto;
     margin-left: auto;
     justify-content: flex-end;
-    gap: 1rem;
   }
 
+  /* Verwijdert overbodige marges van nav-links op desktop */
   nav a {
     margin-right: 1rem;
     margin-bottom: 0;
   }
 
-  aside {
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  aside > a {
-    max-width: 100%;
-  }
-
-  aside > a figure {
-    width: 100%;
-  }
-
-  aside > a:hover {
-    transform: scale(1.1);
-  }
-
-  /* Hover effect ook voor de schetsboek trigger */
+  /* Voegt een subtiel vergroot-effect (zoom) toe bij het hoveren over de zijbalk-items */
+  aside > a:hover,
   aside > .sketchbook-trigger:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease;
   }
 
-  aside figure img {
-    width: 100%;
-  }
-
+  /* Verplaatst de linker zijbalk iets omhoog en naar links voor een speels effect */
   aside:first-of-type {
-    grid-area: left-colum;
-    align-items: flex-start;
     margin-top: 5rem;
     transform: translateX(-2rem);
   }
 
+  /* Verplaatst de rechter zijbalk iets naar rechts */
   aside:last-of-type {
-    grid-area: right-colum;
-    transform: translateX(1rem) translateY(0);
+    transform: translateX(1rem);
   }
 
+  /* Zet de main container in een rij-indeling (horizontaal) op grote schermen */
   main {
-    width: 100%;
     height: 30rem;
     min-height: 30rem;
-    padding-bottom: 3rem;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: stretch;
   }
 
-  main > header {
-    width: 100%;
-    height: 2rem;
-    flex-shrink: 0;
-    box-sizing: border-box;
-  }
-
+  /* Maakt de afbeelding-container 60% breed binnen de main */
   main > figure {
     width: 60%;
     height: calc(100% - 2rem);
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
   }
 
+  /* Past de afbeeldinghoogte aan en verschuift hem iets naar links */
   main > figure img {
-    width: 100%;
     height: 100%;
-    display: block;
-    object-fit: contain;
     transform: translateX(-4rem);
   }
 
+  /* Maakt de tekst-sectie 40% breed binnen de main */
   main > section {
     width: 40%;
     height: calc(100% - 2rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    box-sizing: border-box;
     transform: translateX(-5rem);
   }
 }

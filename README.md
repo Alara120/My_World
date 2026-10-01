@@ -472,7 +472,7 @@ Voorbereiding:
 
 ## CODE UITLEG VOOR MIJN WEBSITE + BRONNEN
 
-**Javascript**
+**Code uitleg voor Javascript**
 ik heb gebruik gemaakt van javascript in mijn website, omdat ik het belangrijk vind dat er eenn interactie aanwezig is
 dat ik de gebruikers ermee kan entertainen. Met deze script zorgt het ervoor dat de gebruike kan tekenen op het canvas en het schetsboek kan gebruiken.
 
@@ -482,10 +482,14 @@ Het zoekt het canvas element op via zijn ID (drawCanvas) en vraagt de 2D-tekenco
 Dit wordt dan je soort digitale teken doekje. Daarna wordt er bij te houden of de muis is ingedrukt (isDrawing).
 De strokeStyle, lineWidth, lineCap en lineJoin bepalen hoe dik, zwart en mooi afgerond je lijnen zijn.
 
+**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+
 ![Opdracht](assets/images-voor-readme/js2.png)
 **Wat doet het?**
 Dit zijn de tekenfuncties. startDrawing: Wordt geactiveerd zodra je de muis indrukt of het scherm aanraakt.
 isDrawing op false staat, gebeurt er niets. als je gaat tekenen, dan trekt JavaScript met beginPath(), moveTo(), lineTo() en stroke() een lijn vanaf het vorige punt naar het huidige punt. stopDrawing: Stopt het tekenen zodra je de muis loslaat of buiten het canvas komt.
+
+**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/Touch_events en https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event
 
 ![Opdracht](assets/images-voor-readme/js3.png)
 **Wat doet het?**
@@ -493,8 +497,55 @@ Dit berekent de coordinaten van je muis en touchscreen. (clientX/clientY) is voo
 en (e.touches). is het aanraken met je vingers. Daarna berekent hij met (rect.left en rect.top)
 of de lijn precies onder je muis of vinger wordt getekent.
 
+**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
+
 ![Opdracht](assets/images-voor-readme/js4.png)
 **Wat doet het?**
 De Event Listeners luisteren steeds naar acties van de gebruiker, zoals klikken of vegen en koppelen dat aan de juiste functies. het verwijderen knop (clearBtn) gebruikt ctx.clearRect() om alles van het scherm te verwijderen. De Sluit knop zoekt de sluit knop op en zorgt ervoor dat het vinkje van de sketchbook toggle checkbox wordt uitgezet, waardoor de pop-up sluit.
 
-**Bronnenlijst voor javascript:** -https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API -https://www.w3schools.com/js/js_htmldom_eventlistener.asp -https://www.w3schools.com/graphics/canvas_intro.asp
+**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/clearRect en https://www.w3schools.com/tags/canvas_clearrect.asp
+
+**Code uitleg voor HTML**
+
+<figcaption> = Dit hoort altijd binnen een <figure> tag en dient als een beschrijvend bijschrift bij een afbeelding of logo. Het helpt ook voor toegankelijkheid zoals screenreaders.
+
+<label> = wordt gebruikt voor formuliervelden, zoals een tekstvak of vinkje. In mijn code heb ik het gebruikt voor mijn pop-ups
+
+<input type="checkbox"> = Dit maakt een selectievakje (vinkje) aan. het wordt in webdesign vaak gebruikt in combinatie met de zogenaamde checkbox hack om pop-ups te openen en sluiten zonder dat je daar ingewikkelde JavaScript voor nodig hebt.
+
+<button> = Maakt een klikbare knop aan
+
+<span> = Een neutraal, inline element dat geen eigen opmaak heeft. Het wordt gebruikt om een klein stukje tekst of een specifiek woord binnen een zin te groeperen zodat je het via CSS kunt stylen
+
+**Ik heb wel in mijn code gebruik gemaakt van classes en ids, maar waarom? Nou:**
+ik heb gebruik gemaakt van JavaScript. En bij javascript moet hij weten welke knop het moet wissen (clearBtn) of waar er getekend moet worden (drawCanvas) daarom moet JavaScript dat element kunnen opzoeken in de HTML. Dit gebeurt in mijn script met document.getElementById("drawCanvas"). Een id moet uniek zijn op de pagina. Voor classes wil ik dat als iemand op het schetsboek icoon klikt, er een pop-up op scherm komt. Omdat ik dit zonder zware JavaScript wilt oplossen, gebruik ik de checkbox hack door: een verborgen <input type="checkbox"> in een <label> te verstoppen. Als de gebruiker op het label klikt, verandert de aan/uit status van de checkbox. Via CSS kan je dan zeggen: "Als de checkbox aangevinkt is, maak de pop-up dan zichtbaar (display: block)". Hiervoor heb ik classes (class="sketchbook-trigger", class="sketchbook-popup") nodig, omdat ik deze stijlregels op meerdere plekken wil kunnen toepassen.
+
+**Bronvermeldingen:** -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure,
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input,
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label,
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button,
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/span,
+https://www.w3schools.com/TAGS/default.ASP
+
+**Code uitleg voor CSS**
+![Opdracht](assets/images-voor-readme/cs1.png)
+
+**Grid**
+Dit is de CSS grid lay-out. je verdeelt de hele webpagina in een raster. Met grid-template-areas geef je elk HTML element (<header>, <main>, <aside>, etc.) een eigen naam en plek in dat raster. Dit maakt het mogelijk om je website volledig flexibel te maken. Voor mobiel onder elkaar en in je @media (min-width: 48em) query maak je het raster in een keer naar een brede desktop layout met zijbalken (left-colum header right-colum), zonder dat je HTML code hoeft te veranderen.
+
+**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout
+
+**Checkbox hack voor pop-up**
+![Opdracht](assets/images-voor-readme/cs2.png)
+Je verbergt de standaard checkbox (display: none). Je zegt dan eigenlijk: Als dit vinkje aan staat, verander dan de weergave van het gekoppelde pop-up gedeelte van display: none naar display: flex". Hiermee kan ik interactieve pop-ups gebruiken zonder dat ik daar ingewikkelde JavaScript voor nodig hebt.
+
+**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:checked
+
+**Responsive voor web**
+![Opdracht](assets/images-voor-readme/cs3.png)
+Dit is een media query. Regels die hierin staan worden alleen toegepast op schermen die breder zijn dan 48em voor tablets en desktops.
+
+**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using
+**andere gebruikte bronnen voor css:**
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Child_combinator
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside
