@@ -4,6 +4,15 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Mijn Learning Log
 
+## 2 okt - Voortgang + Retrospect
+
+**Voortgangsgesprek - Feedback**
+
+**Retrospect sprint 2**
+![Opdracht](assets/images-voor-readme/r1.jpg)
+![Opdracht](assets/images-voor-readme/r2.jpg)
+![Opdracht](assets/images-voor-readme/r3.jpg)
+
 ## 30 sept - WS 5
 
 Helaas was ik niet aanwezig in deze les i.v.m defecte trein/ treinuitvallen. Vond het ook best jammer, want ik keek er naar uit om de toegankelijkheid van mijn website te testen. Het is niet echt iets makkelijks, dus het was fijn geweest om hierbij aanwezig te zijn. Ik heb de test verder thuis uitgevoerd:
