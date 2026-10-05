@@ -5,31 +5,14 @@
   font-style: normal;
 }
 
-/* Custom properties > alle kleuren en vaste waardes together */
 :root {
-  /* Kleuren */
-  --color-ink: black;
-  --color-blue: #b2c2e5;
-  --color-blue-light: #dce7f8;
-  --color-pink: #f29bb1;
-  --color-pink-light: #f8d7e0;
-  --color-cream: #faf9ec;
-  --color-white: #fff;
-  --color-canvas-border: #333;
-  --color-danger: #e74c3c;
-
-  /* Kleuren van de drie bolletjes in de vensterbalk */
-  --color-dot-red: rgb(248, 138, 138);
-  --color-dot-yellow: rgb(239, 239, 168);
-  --color-dot-green: rgb(188, 249, 188);
-
-  /* Verdere vaste waardes */
-  --font-title: "Quantico", sans-serif;
   --border: 0.2rem solid var(--color-ink);
   --shadow-popup: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Basis */
+/* ==========================================================
+   Basis
+   ========================================================== */
 * {
   box-sizing: border-box;
 }
@@ -54,13 +37,10 @@ button {
   color: inherit;
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
 body {
   font-family: var(--font-title);
   color: var(--color-ink);
+  background-color: var(--color-page);
   background-image: url("../images/achtergrond.jpg");
   background-size: 100%;
   display: grid;
@@ -79,9 +59,9 @@ body {
   padding: 0 1rem;
 }
 
-/* Vensterbalk (gedeeld door main en schetsboek pop-up) */
+/* Roze balk bovenin main (gedeeld door main en door de schetsboek pop-up) */
 main > header,
-.sketchbook-popup > header {
+#sketchbook > header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -96,19 +76,22 @@ main > header {
   height: 2rem;
 }
 
-.sketchbook-popup > header {
+#sketchbook > header {
   --dot: 0.8rem;
   --gap: 1.2rem;
-  height: 2.5rem;
+  min-height: 3.5rem; /* Ruimte voor een groter sluitknopje (makkelijk te raken) */
+  flex-shrink: 0;
   border-bottom: var(--border);
 }
 
-/* De drie bolletjes: 1 echt bolletje met border + 2 gemaakt met box-shadow */
-/* Deze code gemaakt met hulp van AI */
-:is(main, .sketchbook-popup) > header > p {
+/* De drie bolletjes: 1 echt bolletje met border + 2 gemaakt met box-shadow.
+   Gemaakt met ::before, zodat er geen extra HTML-element nodig is.
+   Deze code is deels gemaakt met hulp van AI */
+main > header::before,
+#sketchbook > header::before {
+  content: "";
   width: var(--dot);
   height: var(--dot);
-  margin: 0;
   border-radius: 50%;
   background-color: var(--color-dot-red);
   border: 0.1rem solid var(--color-ink);
@@ -134,10 +117,11 @@ body > header {
 }
 
 /* Het blauwe balkje bovenin de header */
-body > header > header {
-  width: calc(100% + 1.5rem);
+body > header::before {
+  content: "";
+  width: 100%;
   height: 2rem;
-  margin: 0 -1rem 1rem;
+  margin-bottom: 1rem;
   background-color: var(--color-blue);
 }
 
@@ -146,22 +130,29 @@ body > header figure {
   width: 4rem;
 }
 
-header h1 {
+body > header h1 {
   margin: 0;
   font-size: 2rem;
-  white-space: nowrap;
+  overflow-wrap: break-word; /* Titel mag naar de volgende regel bij grote tekst */
 }
 
 /* Navigatie */
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
   width: 100%;
 }
 
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
+}
+
 nav a {
-  margin-bottom: 2rem;
+  display: block;
   padding: 0.5rem 1rem;
   border: var(--border);
   border-radius: 2rem;
@@ -212,14 +203,14 @@ main > section {
 
 main > section h2 {
   margin: 0 0 0.5rem;
-  font-size: medium;
+  font-size: larger;
 }
 
 main > section p {
   margin: 0;
 }
 
-/* Zijkanten van website (asides) */
+/* Zijkanten van de website (asides met lijsten) */
 aside:first-of-type {
   grid-area: left-column;
 }
@@ -237,17 +228,27 @@ aside {
   padding-top: 3rem;
 }
 
-/* Links en het schetsboek-label zien er hetzelfde uit */
-aside > a,
-aside > .sketchbook-trigger {
-  display: block;
+aside ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  max-width: 20rem;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-aside > .sketchbook-trigger {
-  cursor: pointer;
+aside li {
+  width: 100%;
+  max-width: 20rem;
+}
+
+/* Links en de schetsboek-knop zien er hetzelfde uit */
+aside li > a,
+aside li > button {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
 }
 
 aside figure {
@@ -260,102 +261,129 @@ aside figcaption {
   font-weight: 700;
 }
 
-/* Cookie pop-up */
-body > label {
+/* Schetsboek-knop (de tekst in de button) */
+aside li > button {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+aside li > button img {
+  width: 100%;
+  margin-bottom: -1rem; /* Zelfde afstand als de figcaption */
+}
+
+/* Cookie-knop (de enige directe button in de body)
+Als er meerdere buttons moeten komen in een HTML-element is een class/id handiger */
+body > button {
   position: fixed;
   right: 1.5rem;
   bottom: 1.5rem;
   z-index: 100;
   width: 3.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
   cursor: pointer;
 }
 
-body > label img {
+body > button img {
   width: 100%;
 }
 
-body > label section {
-  display: none;
+/* Cookie pop-up doormiddel van een id */
+#cookie-popup {
   position: fixed;
-  right: 1.5rem;
-  bottom: 6rem;
-  z-index: 101;
+  inset: auto 1.5rem 6rem auto; /* rechtsonder, boven de knop */
   width: 18rem;
+  max-width: calc(100vw - 3rem);
+  max-height: calc(100vh - 8rem);
+  overflow-y: auto; /* Bij te grote tekst kan je scrollen in plaats van dat het wegvalt */
+  margin: 0;
   padding: 2rem;
   border: 0.3rem solid var(--color-ink);
   border-radius: 0.5rem;
   background-color: var(--color-blue-light);
-  cursor: default;
+  color: var(--color-ink);
+  font-family: var(--font-title);
 }
 
-/* Checkbox: Pop-up zichtbaar als de checkbox is aangevinkt */
-body > label input:checked ~ section {
+#cookie-popup:popover-open {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-body > label section h2 {
+#cookie-popup h2 {
   margin-top: 0;
   font-size: 1.1rem;
 }
 
-body > label section p {
-  margin-bottom: 1rem;
+#cookie-popup p {
+  margin: 0 0 1rem;
   font-size: 0.9rem;
 }
 
 /* De link en de sluitknop zijn allebei "knoppen" */
-body > label section a,
-body > label section span {
+#cookie-popup a,
+#cookie-popup button {
   display: inline-block;
   padding: 0.3rem 0.7rem;
   border: 0.15rem solid var(--color-ink);
   border-radius: 1rem;
-  font-weight: 700;
   font-size: 1rem;
-}
-
-body > label section a {
-  margin-right: 0.5rem;
-  background-color: var(--color-blue);
-}
-
-body > label section span {
-  margin-top: 1rem;
-  background-color: var(--color-pink);
+  font-weight: 700;
   cursor: pointer;
 }
 
-/* Schetsboek pop-up */
-.sketchbook-popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-  width: 90%;
-  max-width: 550px;
+#cookie-popup a {
+  background-color: var(--color-blue);
+}
+
+#cookie-popup button {
+  margin-top: 1rem;
+  background-color: var(--color-pink);
+}
+
+/* Schetsboek pop-up (<dialog> element, komt vooraan) */
+#sketchbook {
+  width: min(94vw, 900px);
+  max-width: none;
+  max-height: 94vh;
+  max-height: 94dvh;
+  padding: 0;
   border: 0.3rem solid var(--color-ink);
   border-radius: 0.8rem;
   box-shadow: var(--shadow-popup);
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background-color: var(--color-cream);
-  cursor: default;
+  color: var(--color-ink);
+  font-family: var(--font-title);
 }
 
-.sketchbook-trigger input:checked ~ .sketchbook-popup {
+#sketchbook[open] {
   display: flex;
   flex-direction: column;
 }
 
-.sketchbook-popup > header h2 {
+#sketchbook::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#sketchbook > header h2 {
   margin: 0;
   font-size: 1rem;
 }
 
-.close-btn {
+/* Sluitknop schetsboekje */
+#sketchbook > header button {
+  min-width: 2.5rem;
+  min-height: 2.5rem;
   padding: 0.1rem 0.5rem;
   border: 0.15rem solid var(--color-ink);
   border-radius: 0.3rem;
@@ -364,34 +392,21 @@ body > label section span {
   cursor: pointer;
 }
 
-.close-btn:hover {
-  background-color: var(--color-danger);
-  color: var(--color-white);
-}
-
-.canvas-container {
-  display: flex;
-  justify-content: center;
-  padding: 1.5rem;
-  background-color: var(--color-white);
-}
-
 #drawCanvas {
-  width: 100%;
-  max-width: 480px;
-  height: 300px;
+  display: block;
+  width: calc(100% - 1.5rem);
+  height: auto;
+  aspect-ratio: 900 / 560;
+  margin: 0.75rem;
   border: 2px solid var(--color-canvas-border);
   background-color: var(--color-white);
   cursor: crosshair;
   touch-action: none; /* Geen scrollen/zoomen tijdens het tekenen op touchscreens */
 }
 
-.controls {
-  padding: 0 1.5rem 1.5rem;
-  text-align: center;
-}
-
-.controls button {
+#clearBtn {
+  align-self: center;
+  margin-bottom: 1rem;
   padding: 0.5rem 1.5rem;
   border: var(--border);
   border-radius: 1rem;
@@ -401,26 +416,28 @@ body > label section span {
   cursor: pointer;
 }
 
-.controls button:hover {
+#clearBtn:hover {
   background-color: var(--color-blue-light);
 }
 
-/* Footer */
+/*  Footer  */
 footer {
   grid-area: footer;
+  padding-top: 2rem;
   text-align: center;
   font-size: 0.9rem;
 }
 
-/* Desktop responsive styling */
-@media (min-width: 60em) {
+/* Tablet responsive styling */
+@media (min-width: 48em) {
   body {
     grid-template-areas:
-      "left-column header right-column"
-      "left-column main right-column"
-      "footer footer footer";
-    grid-template-columns: 14rem 1fr 14rem;
-    grid-template-rows: auto 1fr auto;
+      "header header"
+      "main main"
+      "left-column right-column"
+      "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
   }
 
   body > header {
@@ -431,19 +448,18 @@ footer {
     width: 5rem;
   }
 
-  header h1 {
+  body > header h1 {
     margin-left: 0.5rem;
   }
 
   nav {
-    justify-content: flex-end;
     width: auto;
     margin-left: auto;
   }
 
-  nav a {
-    margin-right: 1rem;
-    margin-bottom: 0;
+  nav ul {
+    justify-content: flex-end;
+    margin: 0 1rem 0 0;
   }
 
   main h2 {
@@ -454,16 +470,15 @@ footer {
     font-size: 1.2rem;
   }
 
-  /* Zoom-effect bij hoveren over de zijbalk-items */
-  aside > a:hover,
-  aside > .sketchbook-trigger:hover {
+  /* Zoom-effect bij het hoveren over de asides */
+  aside li > a:hover,
+  aside li > button:hover {
     transform: scale(1.1);
     transition: transform 0.2s ease;
   }
 
-  /* Speelse verschuiving van de zijbalken */
+  /* Verschuiving van de zijbalken */
   aside:first-of-type {
-    margin-top: 5rem;
     transform: translateX(-2rem);
   }
 
@@ -471,26 +486,63 @@ footer {
     transform: translateX(1rem);
   }
 
+  /* Voor als de tekst 200% is word het niet afgeknipt via een raster met minimale hoogte */
   main {
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 30rem;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: auto 1fr;
+    align-items: start;
     min-height: 30rem;
   }
 
+  main > header {
+    grid-column: 1 / -1;
+  }
+
   main > figure {
-    width: 60%;
-    height: calc(100% - 2rem);
+    width: 100%;
+    margin: 0;
+    padding-top: 2rem;
   }
 
   main > figure img {
-    height: 100%;
+    height: auto;
+    max-height: 26rem;
     transform: translateX(-4rem);
   }
 
   main > section {
-    width: 40%;
-    height: calc(100% - 2rem);
     transform: translateX(-5rem);
+    padding-top: 8rem;
+  }
+
+  /* Ruimte rondom het schetsboek canvas */
+  #sketchbook > header h2 {
+    font-size: 1.2rem;
+  }
+
+  #drawCanvas {
+    width: calc(100% - 3rem);
+    margin: 1.5rem;
+  }
+
+  #clearBtn {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Desktop responsive styling */
+@media (min-width: 78em) {
+  body {
+    grid-template-areas:
+      "left-column header right-column"
+      "left-column main right-column"
+      "footer footer footer";
+    grid-template-columns: 14rem 1fr 14rem;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  aside:first-of-type {
+    margin-top: 4rem;
   }
 }

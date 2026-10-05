@@ -1,0 +1,24 @@
+/* Custom properties > alle kleuren en vaste waardes together */
+:root {
+  /* Kleuren */
+  --color-ink: black;
+  --color-blue: #b2c2e5;
+  --color-blue-light: #dce7f8;
+  --color-pink: #f29bb1;
+  --color-pink-light: #f8d7e0;
+  --color-cream: #faf9ec;
+  --color-white: #fff;
+  --color-canvas-border: #333;
+  --color-danger: #e74c3c;
+
+  /* Achtergrondkleur als achtervang als de afbeelding niet laadt */
+  --color-page: #bff0fd;
+
+  /* Kleuren van de drie bolletjes in de vensterbalk */
+  --color-dot-red: rgb(248, 138, 138);
+  --color-dot-yellow: rgb(239, 239, 168);
+  --color-dot-green: rgb(188, 249, 188);
+
+  /* Verdere vaste waardes */
+  --font-title: "Quantico", sans-serif;
+}
