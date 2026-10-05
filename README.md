@@ -4,9 +4,36 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Mijn Learning Log
 
+(De deepdives en code uitleg zit helemaal onderaan de document)
+
+## 5 okt - Sprintplanning 3 - WS1
+
+**Samen lezen artikelen**
+Notities gemaakt/ samenvatting
+
+**Opdracht 1: Songtekst analyseren**
+
+**Opdracht 2: Bespreek je schetsen met een ander**
+
+**Opdracht 3: Neem de css- en html-documenten**
+
+## CHECKOUT
+
+1. **Leg uit wat er met de volgende termen bedoeld wordt: kerning, tracking, leading, flush-left, flush-right, centered, justified, indent, outdent, modular scale, movable type, focus punt, vijf soorten contrast, spatial tension**
+
+2. **Wat is jouw ideale regellengte (measure)? Leg uit waarom.**
+
+3. **Als je in een ontwerp maar één variabele tot je beschikking had om hiërarchie aan te brengen (grootte, plaatsing, spacing, lettersoorten), welke zou je dan gebruiken en waarom?**
+
 ## 2 okt - Voortgang + Retrospect
 
 **Voortgangsgesprek - Feedback**
+-Deepdives moet je nog doen, het is een verplicht onderdeel en moet verwerkt worden in je learning log
+-Je cookies moet je nog duidelijker maken: wat voor informatie is er op je website te vinden?
+-Vermeld bijvoorbeeld wat github WEL doet en of je de gebruiker kan tracken. Maak een "accepteer" / "weiger" optie
+-Verwerk je schets van de cookie meer. je hebt er al veel bij staan maar niet verwerkt in je website. maak meer schetsen.
+-De theorie zit in de deepdives, lees ze nog goed is door
+-valideer je lijst opnieuw en neem de toegankelijkheidstest nog is goed doors
 
 **Retrospect sprint 2**
 ![Opdracht](assets/images-voor-readme/r1.jpg)
@@ -431,7 +458,7 @@ Nog echt te begrijpen waar het project over gaat en wat er van ons verwacht word
 
 Mij verdiepen in het project en informatie uit halen.
 
-## DEEPDIVES
+### DEEPDIVES
 
 **S0 - CSS: fonts met kleur en effecten**
 
