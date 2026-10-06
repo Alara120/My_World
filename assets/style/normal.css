@@ -10,9 +10,7 @@
   --shadow-popup: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* ==========================================================
-   Basis
-   ========================================================== */
+/* Basis */
 * {
   box-sizing: border-box;
 }
@@ -46,6 +44,7 @@ body {
   display: grid;
   /* Mobiel: alles onder elkaar laten zien */
   grid-template-areas:
+    "theme"
     "header"
     "main"
     "left-column"
@@ -59,6 +58,11 @@ body {
   padding: 0 1rem;
 }
 
+/* Dark thema (handmatig gekozen): andere achtergrond */
+:root:has(input[value="dark"]:checked) body {
+  background-image: url("../images/achtergrond_dark.jpg");
+}
+
 /* Roze balk bovenin main (gedeeld door main en door de schetsboek pop-up) */
 main > header,
 #sketchbook > header {
@@ -68,6 +72,10 @@ main > header,
   width: 100%;
   padding: 0 1rem;
   background-color: var(--color-pink-light);
+}
+
+:root:has(input[value="dark"]:checked) main > header {
+  background-color: var(--color-blue);
 }
 
 main > header {
@@ -136,6 +144,56 @@ body > header h1 {
   overflow-wrap: break-word; /* Titel mag naar de volgende regel bij grote tekst */
 }
 
+/* Thema-knoppen (het form met twee radio-knoppen) */
+body > form {
+  grid-area: theme;
+  justify-self: end;
+  align-self: center;
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+/* Elk label is een knop; het echte radiobolletje ligt onzichtbaar eroverheen */
+body > form label {
+  position: relative;
+  padding: 0.5rem 1rem;
+  border: var(--border);
+  border-radius: 2rem;
+  background-color: var(--color-blue);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+body > form input {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+body > form label:hover {
+  background-color: var(--color-blue-light);
+}
+
+/* De gekozen knop is lichter */
+body > form label:has(input:checked) {
+  background-color: var(--color-blue-light);
+}
+
+/* Nog niets aangeklikt: laat zien welk thema actief is (volgt het systeem).
+   Standaard (systeem is light) lijkt Light geselecteerd */
+body > form:not(:has(input:checked)) label:has(input[value="light"]) {
+  background-color: var(--color-blue-light);
+}
+
+/* Zichtbare focus voor toetsenbordgebruikers */
+body > form label:has(input:focus-visible) {
+  outline: 0.2rem solid var(--color-ink);
+  outline-offset: 0.2rem;
+}
+
 /* Navigatie */
 nav {
   width: 100%;
@@ -177,6 +235,10 @@ main {
   background-color: var(--color-cream);
 }
 
+:root:has(input[value="dark"]:checked) main {
+  background-color: var(--color-blue-light);
+}
+
 main > figure {
   display: flex;
   justify-content: center;
@@ -189,6 +251,20 @@ main > figure img {
   width: 100%;
   max-width: 40rem;
   object-fit: contain;
+}
+
+/* Welkom-plaatje wisselen: standaard alleen het eerste (light),
+   bij dark alleen het tweede */
+main > figure img:last-of-type {
+  display: none;
+}
+
+:root:has(input[value="dark"]:checked) main > figure img:first-of-type {
+  display: none;
+}
+
+:root:has(input[value="dark"]:checked) main > figure img:last-of-type {
+  display: block;
 }
 
 main > section {
@@ -226,6 +302,22 @@ aside {
   align-items: center;
   width: 100%;
   padding-top: 3rem;
+}
+
+/* Plaatjes wisselen in de aside (muziekspeler heeft er twee).
+   "img + img" = een plaatje direct na een ander plaatje, dus alleen figures met 2 plaatjes.
+   Standaard (light): tweede plaatje verborgen */
+aside img + img {
+  display: none;
+}
+
+/* Dark (handmatig gekozen): eerste plaatje weg, tweede zichtbaar */
+:root:has(input[value="dark"]:checked) aside img:has(+ img) {
+  display: none;
+}
+
+:root:has(input[value="dark"]:checked) aside img + img {
+  display: block;
 }
 
 aside ul {
@@ -277,6 +369,13 @@ aside li > button img {
   margin-bottom: -1rem; /* Zelfde afstand als de figcaption */
 }
 
+/* Optioneel: zwarte SVG's zichtbaar maken in dark mode (haal de commentaar weg als je ze niet apart opnieuw tekent)
+:root:has(input[value="dark"]:checked) aside img,
+:root:has(input[value="dark"]:checked) body > header figure img {
+  filter: invert(1);
+}
+*/
+
 /* Cookie-knop (de enige directe button in de body)
 Als er meerdere buttons moeten komen in een HTML-element is een class/id handiger */
 body > button {
@@ -295,21 +394,28 @@ body > button img {
   width: 100%;
 }
 
-/* Cookie pop-up doormiddel van een id */
+/* Cookie pop-up doormiddel van een id, midden in het scherm */
 #cookie-popup {
   position: fixed;
-  inset: auto 1.5rem 6rem auto; /* rechtsonder, boven de knop */
-  width: 18rem;
-  max-width: calc(100vw - 3rem);
-  max-height: calc(100vh - 8rem);
+  inset: 0; /* In combinatie met margin: auto staat hij midden in het scherm */
+  width: min(90vw, 28rem);
+  height: fit-content;
+  max-height: 90vh;
+  max-height: 90dvh;
   overflow-y: auto; /* Bij te grote tekst kan je scrollen in plaats van dat het wegvalt */
-  margin: 0;
+  margin: auto;
   padding: 2rem;
   border: 0.3rem solid var(--color-ink);
-  border-radius: 0.5rem;
+  border-radius: 0.8rem;
+  box-shadow: var(--shadow-popup);
   background-color: var(--color-blue-light);
   color: var(--color-ink);
   font-family: var(--font-title);
+}
+
+/* Donkere achtergrond achter de pop-up, net als bij het schetsboek */
+#cookie-popup::backdrop {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 #cookie-popup:popover-open {
@@ -346,7 +452,7 @@ body > button img {
 
 #cookie-popup button {
   margin-top: 1rem;
-  background-color: var(--color-pink);
+  background-color: var(--color-blue);
 }
 
 /* Schetsboek pop-up (<dialog> element, komt vooraan) */
@@ -432,6 +538,7 @@ footer {
 @media (min-width: 48em) {
   body {
     grid-template-areas:
+      "theme theme"
       "header header"
       "main main"
       "left-column right-column"
@@ -535,7 +642,7 @@ footer {
 @media (min-width: 78em) {
   body {
     grid-template-areas:
-      "left-column header right-column"
+      "left-column header theme"
       "left-column main right-column"
       "footer footer footer";
     grid-template-columns: 14rem 1fr 14rem;
@@ -544,5 +651,59 @@ footer {
 
   aside:first-of-type {
     margin-top: 4rem;
+  }
+
+  /* Thema-knoppen gecentreerd boven de rechter aside, naast de header */
+  body > form {
+    justify-self: center;
+    margin-top: 0;
+  }
+}
+
+/* Automatisch dark thema als het systeem op dark staat.
+   Dit blok staat onderaan zodat het de regels hierboven overschrijft.
+   Het geldt niet als de bezoeker zelf op "Light" heeft geklikt. */
+@media (prefers-color-scheme: dark) {
+  /* Thema-knoppen: Dark lijkt geselecteerd als er nog niets is aangeklikt */
+  body > form:not(:has(input:checked)) label:has(input[value="light"]) {
+    background-color: var(--color-blue);
+  }
+
+  body > form:not(:has(input:checked)) label:has(input[value="dark"]) {
+    background-color: var(--color-blue-light);
+  }
+
+  /* Achtergrond en vlakken */
+  :root:not(:has(input[value="light"]:checked)) body {
+    background-image: url("../images/achtergrond_dark.jpg");
+  }
+
+  :root:not(:has(input[value="light"]:checked)) main > header {
+    background-color: var(--color-blue);
+  }
+
+  :root:not(:has(input[value="light"]:checked)) main {
+    background-color: var(--color-blue-light);
+  }
+
+  /* Welkom-plaatje wisselen */
+  :root:not(:has(input[value="light"]:checked))
+    main
+    > figure
+    img:first-of-type {
+    display: none;
+  }
+
+  :root:not(:has(input[value="light"]:checked)) main > figure img:last-of-type {
+    display: block;
+  }
+
+  /* Muziekspeler-plaatje wisselen */
+  :root:not(:has(input[value="light"]:checked)) aside img:has(+ img) {
+    display: none;
+  }
+
+  :root:not(:has(input[value="light"]:checked)) aside img + img {
+    display: block;
   }
 }

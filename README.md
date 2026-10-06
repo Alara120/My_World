@@ -4,7 +4,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Mijn Learning Log
 
-(De deepdives en code uitleg zit helemaal onderaan de document)
+(De deepdives en code uitleg met de bronnenlijst zit helemaal onderaan de document)
 
 ## 5 okt - Sprintplanning 3 - WS1
 
@@ -133,14 +133,6 @@ Ik ben hier vergeten om ALTS toe te voegen bij mijn images
 Voor mijn nieuwe map heb ik de ALTS toegevoegd in mijn code.
 ![Opdracht](assets/images-voor-readme/alt.png)
 
-### 23 sept - WS2 + CHECKOUT
-
-Opdracht: Dark Pattern Herontwerp
-![Opdracht](assets/images-voor-readme/temu.jpg)
-
-Opdracht: Hoe teken je wireflows
-![Opdracht](assets/images-voor-readme/wireflow.jpg)
-
 **Voortgangsgesprek - Feedback**
 Algemene feedback voor de groep:
 -Het toevoegen van Ja en nee knoppen voor doorverwijzing van de webring. Hoef je niet persee te accepteren, maar dat je alleen op JOUW website wilt blijven.
@@ -159,6 +151,14 @@ Peroonlijke feedback:
 -Je kunt op je website een icoontje toevoegen voor je consent. Misschien een "bedankje" toevoegen nadat de gebruiker bijvoorbeeld op "Ja" heeft geklikt.
 
 -Tof dat alles zelf is gemaakt. Zou leuk zijn als er helemaal geen gebruik wordt gemaakt van cookies.
+
+### 23 sept - WS2 + CHECKOUT
+
+Opdracht: Dark Pattern Herontwerp
+![Opdracht](assets/images-voor-readme/temu.jpg)
+
+Opdracht: Hoe teken je wireflows
+![Opdracht](assets/images-voor-readme/wireflow.jpg)
 
 **Opdracht: Human Consent Component**
 
@@ -460,7 +460,7 @@ Mij verdiepen in het project en informatie uit halen.
 
 ### DEEPDIVES
 
-**S0 - CSS: fonts met kleur en effecten**
+**SPRINT 0 - CSS: fonts met kleur en effecten**
 
 Oefening 1 - font properties
 [Oefening-1](assets/Deepdives/oefening-1/)
@@ -474,7 +474,7 @@ Heb ik niet af kunnen maken, ben er mee bezig!
 Oefening 4 - transitions
 Heb ik niet af kunnen maken, ben er mee bezig!
 
-**S1 - Light & Dark theme**
+**SPRINT 1 - Light & Dark theme**
 
 Oefening 1 - Light & Dark 101
 [Oefening-1](assets/Deepdives/Oefening-1-Light-Dark-101/)
@@ -485,7 +485,7 @@ Oefening 2 - Twee thema's
 Oefening 3 - Responsive afbeelding
 Heb ik niet af kunnen maken, ben er mee bezig!
 
-**S1 - Mooie kleuren en gradients**
+**SPRINT 1 - Mooie kleuren en gradients**
 
 ![Opdracht](assets/images-voor-readme/spelletje.png)
 
@@ -498,13 +498,24 @@ Oefening 2 - Vlaggen en co
 Oefening 3 - Gradients animeren
 Heb ik niet af kunnen maken, ben er mee bezig!
 
-**S1 - Grid 101 + Media queries**
+**SPRINT 1 - Grid 101 + Media queries**
 
 Voorbereiding + Notities:
 
-**S1 - Responsive grid + Grid-areas**
+**SPRINT 1 - Responsive grid + Grid-areas**
 
 Voorbereiding:
+
+**SPRINT 2 - Buttons, states en selectors**
+Oefening 1: Basic button states oefenen
+
+**SPRINT 2 - Buttons + Dialogs**
+
+**SPRINT 2 - Position + Dialogs**
+
+**SPRINT 2 - meer interactie met HTML en CSS**
+
+**SPRINT 3 - Interessantere layouts**
 
 ## CODE UITLEG VOOR MIJN WEBSITE + BRONNEN
 

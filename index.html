@@ -27,19 +27,27 @@
 
       <nav aria-label="Hoofdmenu">
         <ul>
-          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="index.html">Logboek</a></li>
           <li><a href="index.html">Story</a></li>
         </ul>
       </nav>
     </header>
 
-    <main id="main">
+    <!-- Thema-keuze: twee radio-knoppen in een form, de CSS doet de rest (:has) -->
+    <form aria-label="Thema">
+      <label><input type="radio" name="thema" value="light" /> Light</label>
+      <label><input type="radio" name="thema" value="dark" /> Dark</label>
+    </form>
+
+    <main>
       <!-- Vensterbalk met drie bolletjes (puur decoratief, gemaakt in CSS) -->
       <header aria-hidden="true"></header>
 
+      <!-- Twee plaatjes: de CSS laat afhankelijk van het thema één van de twee zien -->
       <figure>
         <img src="assets/images/welkom.svg" alt="" />
+        <img src="assets/images/welkom_dark.svg" alt="" />
       </figure>
 
       <section>
@@ -95,10 +103,12 @@
         </li>
         <li>
           <a href="index.html">
+            <!-- Twee plaatjes: de CSS laat afhankelijk van het thema één van de twee zien -->
             <figure>
               <img src="assets/images/music.svg" alt="" />
-              <figcaption>Muziekspeler</figcaption>
+              <img src="assets/images/music_dark.svg" alt="" />
             </figure>
+            <figcaption>Muziekspeler</figcaption>
           </a>
         </li>
       </ul>
@@ -115,20 +125,40 @@
 
     <!-- Cookie pop-up: Tab, Enter, Spatie en Escape werken zonder JavaScript -->
     <section id="cookie-popup" popover aria-labelledby="cookie-title">
-      <h2 id="cookie-title">Cookiebeleid</h2>
-      <p>Wij gebruiken cookies om jouw ervaring op de website te verbeteren.</p>
-      <a
-        href="https://docs.github.com/en/site-policy/privacy-policies/github-cookies"
-        target="_blank"
-        rel="noopener"
-        >Lees meer</a
-      >
+      <h2 id="cookie-title">Privacy &amp; cookies</h2>
+      <p>
+        Op deze website worden enkele diensten gebruikt. Hieronder kun je zien
+        welke noodzakelijk zijn en voor welke onderdelen je zelf een keuze kunt
+        maken.
+      </p>
+
+      <h3>Noodzakelijk</h3>
+      <label><input type="checkbox" checked disabled /> GitHub Pages</label>
+      <p>
+        GitHub Pages is nodig om deze website te hosten en kan daarom niet
+        worden uitgeschakeld.
+      </p>
+
+      <h3>Optioneel</h3>
+      <label><input type="checkbox" name="webring" /> Webring</label>
+      <p>
+        Met de webring kun je andere Digital Gardens ontdekken en tussen
+        verschillende websites navigeren.
+      </p>
+
       <button
         type="button"
         popovertarget="cookie-popup"
         popovertargetaction="hide"
       >
-        Sluiten
+        Opslaan
+      </button>
+      <button
+        type="button"
+        popovertarget="cookie-popup"
+        popovertargetaction="hide"
+      >
+        Weigeren
       </button>
     </section>
 

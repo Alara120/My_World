@@ -8,7 +8,7 @@ let lastX = 0;
 let lastY = 0;
 
 // Lijninstellingen
-ctx.strokeStysle = "#000000";
+ctx.strokeStyle = "#000000";
 ctx.lineWidth = 4;
 ctx.lineCap = "round";
 ctx.lineJoin = "round";
