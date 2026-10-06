@@ -12,6 +12,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 Notities gemaakt/ samenvatting
 
 **Opdracht 1: Songtekst analyseren**
+![Opdracht](assets/images-voor-readme/typoschetsen.jpg)
 
 **Opdracht 2: Bespreek je schetsen met een ander**
 
