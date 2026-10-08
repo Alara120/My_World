@@ -6,6 +6,21 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 (De deepdives en code uitleg met de bronnenlijst zit helemaal onderaan de document)
 
+## 9 okt - WS3 + VOORTGANG
+
+## 7 okt - WS2
+
+## CHECKOUT
+
+1. **Waarom is het goed om een grid in je ontwerp toe te passen? Noem een reden voor de ontwerper en een voor de bezoeker**
+   Voor een ontwerper is een grid is handig bij het maken van keuzes. Je hoeft niet bij elk element opnieuw te bedenken waar het moet staan. Voor de gebruiker staan de elementen op logische plekken en lijnen met elkaar waardoor je weet waar je naar moet kijken en de pagina fijner kan gebruiken.
+
+2. **Noem drie manieren om chaos in je ontwerp te voorkomen.**
+   Het gebruiken van hierachie, witruimtes, duidelijke grid en hoe alles eruit komt te zien.
+
+3. **Hoeveel gekkigheid moet er in je werk zitten?**
+   Ligt er echt aan wat je gaat maken en voor wie. Deze vraag is best lastig om te beantwoorden.
+
 ## 5 okt - Sprintplanning 3 - WS1
 
 **Samen lezen artikelen**
@@ -517,6 +532,9 @@ Oefening 1: Basic button states oefenen
 **SPRINT 2 - meer interactie met HTML en CSS**
 
 **SPRINT 3 - Interessantere layouts**
+[Oefening-1](assets/Deepdives/sprint_3/Interessantere-layouts/)
+
+**SPRINT 3 - Variabele fonts**
 
 ## CODE UITLEG VOOR MIJN WEBSITE + BRONNEN
 

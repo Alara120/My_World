@@ -1,0 +1,122 @@
+:root {
+  --kobalt: #2437f0;
+  --papier: #f4f2ff;
+  --inkt: #12134d;
+  --roze: #ffc7e3;
+  --tint: #ddd9ff;
+
+  --marge-b: 5.5555vh;
+  --marge-i: 5.5555vw;
+}
+
+html {
+  background: var(--kobalt);
+}
+
+body {
+  margin: var(--marge-b) var(--marge-i);
+  display: grid;
+  gap: 1.5rem 4vi;
+  font-family: system-ui;
+  color: var(--inkt);
+
+  @media (width > 50em) {
+    grid-template-columns: auto 1fr;
+    align-items: start;
+  }
+}
+
+/* De titel: de grote, memorabele ingreep.
+   vi = viewport inline size, dus het werkt zowel liggend als staand. */
+header {
+  color: var(--roze);
+
+  @media (width > 50em) {
+    writing-mode: sideways-lr;
+    position: sticky;
+    top: var(--marge-b);
+    height: calc(100vh - 2 * var(--marge-b));
+  }
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 8vi, 9rem);
+  line-height: 0.9;
+  text-wrap: balance;
+}
+
+/* Het papier: een containment context, zodat de koppen
+   meeschalen met de breedte van de main in plaats van met het scherm. */
+main {
+  box-sizing: border-box;
+  max-width: 30em;
+  container-type: inline-size;
+  background: var(--papier);
+  padding: 1.5rem;
+  line-height: 1.55;
+
+  @media (width > 50em) {
+    justify-self: center;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: impact, haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: 400;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1;
+  margin-block: 1.6em 0.4em;
+  text-wrap: balance;
+}
+
+main > :first-child {
+  margin-top: 0;
+}
+
+h2 {
+  font-size: clamp(2rem, 11cqi, 4rem);
+}
+
+h3 {
+  font-size: clamp(1.6rem, 8cqi, 3rem);
+  margin-inline-start: 1.5cqi;
+}
+
+h4 {
+  font-size: clamp(1.3rem, 6cqi, 2.2rem);
+  margin-inline-start: 3cqi;
+}
+
+h5 {
+  font-size: clamp(1.1rem, 4.5cqi, 1.6rem);
+  margin-inline-start: 4.5cqi;
+}
+
+code {
+  background: var(--tint);
+  padding: 0.1em 0.3em;
+}
+
+pre {
+  background: var(--inkt);
+  color: var(--roze);
+  padding: 1em;
+  overflow-x: auto;
+  tab-size: 2;
+  font-size: 0.9em;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}

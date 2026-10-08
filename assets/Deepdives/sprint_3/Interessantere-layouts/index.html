@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pen</title>
+</head>
+<body>
+
+<header>
+<h1>Interessantere layouts</h1>
+
+</header>
+
+<main>
+<p>Met grids kan je dingen naast en onder elkaar zetten. Dat kan je rechttoe rechtaan doen, maar dat kan ook op een creatieve manier. We gaan nu eens naar wat creatieve manieren kijken.</p>
+	
+<h2>Schalende teksten</h2>
+<p>Bij posters zie je vaak dat een kopje precies past. Het letterype is precies zo groot dat alles perfect op z’n plek staat. Op het web is dat iets lastiger omdat we niet weten hoe groot het scherm van de gebruiker is. Gelukkig hebben we de zogenaamde <i lang="en-GB">viewport relative units</i> en de <i lang="en-GB">container query units.</i> Hiermee kunnen we er voor zorgen dat een kopje altijd precies past.</p>
+
+<h3>Viewport units</h3>
+<p>Het is best makkelijk om een tekst precies passend te maken. Geef de <code>h1</code> bijvoorbeeld maar eens een font-size van 6vw en maak vervolgens je scherm breder en smaller. Je ziet dat de font-size zich aanpast aan je schermgrootte. Je kan spelen met die grootte, iets meer of minder dan 6vw is waarschijnlijk interessanter.</p>
+
+<h4>Te klein of te groot</h4>
+<p>Het nadeel van deze techniek is dat de letters wel heel groot worden op een groot scherm, een onleesbaar klein op een klein scherm. Het is dus een goed idee om limieten aan te geven: niet groter dan een bepaald formaat, en nooit zo klein dat het niet meer te lezen is. Dat kan met de zogenaamde <code>clamp()</code> functie. Die is geweldig. Clamp heeft drie parameters nodig: <code>clamp(2em, 8vw, 6em)</code> betekent dat de letter nooit kleiner mag worden dan 2em, nooit groter dan 6em, en idealiter 8vw. Probeer maar, zet die clamp-functie maar eens als font-size, en ga dan je scherm weer eens groter en kleiner maken. Met de exacte waardes kan je natuurlijk spelen todat het er goed uitziet.</p>
+
+<h2>Container query units</h2>
+<p>We zouden die viewport units natuurlijk ook op de h2 kunnen gebruiken. Probeer maar eens. Geef de h2 een font-size van 6vw. Je ziet dat de h2 nu blijft groeien, ook als de <code>main</code> de maximale breedte van 30em heeft bereikt. Je wil dus niet dat de font-size relatief is aan de viewport, maar aan de main. Hier hebben we zogenaamde <i lang="en-GB">container query units</i> voor. Hiervoor moeten we aangeven dat de main een <em>containment context</em> is. Dat doe je door aan de main deze css property toe te voegen: <code>container-type: inline-size;</code></p>
+
+<p>Nu we deze <em>containment context</em> hebben gemaakt kunnen we container queries gaan gebruiken. Probeer maar. Geef de h2 maar eens een font-size van 7cqi. CQI staat voor Container Query Inline size, en inline size betekent in de tekst-richting. Ook hier is het weer een goed idee om limieten aan te geven, dus voeg vooral weer een clamp toe. Je kan nu hetzelfde doen voor de h3 en de h4. Mooi toch?</p>
+
+<h2>Ruimte in de breedte</h2>
+<p>Op een desktop-scherm is er meestal veel ruimte aan de linker- en de rechterkant, en juist weinig aan de bovenkant. Het is dus niet per se vanzelfsprekerd om de titel van de pagina bovenaan te zetten. Het zou logischer zijn om hem links neer te zetten als daar ruimte voor is.</p>
+
+<h3>De header kantelen</h3>
+<p>Het zou toch logisch zijn om de header te kantelen, dat-ie op zijn zij staat, van beneden naar boven. Dat kan met de zogenaamde <code>writing-mode</code> property. Probeer maar eens aan de header <code>writing-mode: sideways-lr;</code> toe te voegen. Cool toch? De tekst staat ineens op z’n kant. </p>
+
+<h4>Mediaqueries</h4>
+
+<p>We willen de header eigenlijk alleen maar kantelen als daar plek voor is, dus als de pagina breder is dan 40em ofzo. Dat kan makkelijk met mediaqueries. Dus in plaats van de writing-mode altijd toe te passen op de header, kunnen we hem alleen toepassen als het scherm groot genoeg is:</p>
+
+<pre>
+<code>
+header {
+	@media(width > 40em) {
+		writing-mode: sideways-lr;
+	}
+}
+</code>
+</pre>
+
+<p>Nu gaat de header alleen op zijn kant staan als het scherm breder is dan 40em.</p>
+
+<h5>Grid</h5>
+<p>Maar nu neemt hij wel veel te veel ruimte in. We moeten het grid aanpassen. Zodra het scherm breder is dan 40em dan willen we een tweekoloms grid, met de header links, en de tekst rechts. Hoe doe je dat ook al weer? Je hebt dit geleerd in de eerste paar deep-dives. Zoiets zou bijvoorbeeld kunnen werken:</p>
+
+<pre>
+<code>
+body {
+	@media(width > 50em) {
+		grid-template-columns: auto 1fr auto;
+		align-items: start;
+	}
+}
+</code>
+</pre>
+
+<p>Misschien is het leuker als de header rechts staat. Dat kan je vast wel met de kennis uit de eerdere deep-dives. </p>
+
+<h4>Inline vs Width</h4>
+<p>Er is natuurlijk een gek probleemje: Voor de H1 hadden we <code>vw</code> als unit gebruikt, we kunnen hier beter <code>vi</code> gebruiken: de viewport size van de tekst-richting. Dan maakt het niet uit of we de tekst horizontaal of verticaal staat.</p>
+
+<h4>Position sticky</h4>
+<p>Het kan nóg leuker. Je kan de header laten staan als je scrollt. Dat kan met <code>position: sticky.</code> Position:sticky werkt alleen maar als je ook een top aangeeft. Bijvoorbeeld top:0; Maar dat kan je vast beter.</p>
+</main>

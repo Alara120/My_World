@@ -1,0 +1,160 @@
+/**************/
+/* @FONT-FACE */
+/**************/
+
+@font-face {
+  font-family: "Noto Serif";
+  src: url("https://assets.codepen.io/274456/NotoSerif-Variable.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Climate Crisis";
+  src: url("https://assets.codepen.io/274456/ClimateCrisis-Variable.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Nabla";
+  src: url("https://assets.codepen.io/274456/Nabla-Variable.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Poo";
+  src: url("https://assets.codepen.io/274456/Poo-Variable.woff2")
+    format("woff2");
+}
+
+/**************/
+/* NOTO SERIF */
+/**************/
+
+section:nth-of-type(1) {
+  background-image: linear-gradient(in oklch, indigo, purple);
+  color: white;
+
+  h2 span {
+    font-family: "Noto Serif", serif;
+    transition-duration: 0.3s;
+    transition-delay: calc(sibling-index() * 0.1s);
+    transition-timing-function: ease-in-out;
+    transition-property: font-weight;
+
+    font-weight: 100;
+  }
+
+  h2:hover span {
+    font-weight: 900;
+  }
+}
+
+/*******************/
+/* CLIMATE CRISIS */
+/*******************/
+
+section:nth-of-type(2) {
+  background-image: linear-gradient(in oklch, mediumblue, dodgerblue);
+  color: white;
+
+  h2 span {
+    font-family: "Climate Crisis", sans-serif;
+    font-variation-settings: "YEAR" 1979;
+    transition: font-variation-settings 0.5s ease-in-out
+      calc(sibling-index() * 0.1s);
+  }
+
+  h2:hover span {
+    font-variation-settings: "YEAR" 2050;
+  }
+}
+
+/*********/
+/* NABLA */
+/*********/
+
+section:nth-of-type(3) {
+  background-image: linear-gradient(in oklch, orangered, gold);
+  color: white;
+
+  h2 span {
+    font-family: "Nabla", sans-serif;
+    font-variation-settings: "EDPT" 0;
+    transition: font-variation-settings 0.5s ease-in-out
+      calc(sibling-index() * 0.1s);
+  }
+
+  h2:hover span {
+    font-variation-settings: "EDPT" 24;
+  }
+}
+
+/*******/
+/* POO */
+/*******/
+
+section:nth-of-type(4) {
+  background-image: linear-gradient(in oklch, lime, limegreen);
+
+  h2 span {
+    font-family: "Poo", sans-serif;
+    font-variation-settings: "CRAP" 0;
+    transition: font-variation-settings 0.5s ease-in-out
+      calc(sibling-index() * 0.1s);
+  }
+
+  &:hover h2 span {
+    font-variation-settings: "CRAP" 100;
+  }
+}
+
+/*************************************/
+/* BASIS - HOEF JE NIETS MEE TE DOEN */
+/*************************************/
+
+@layer basis {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    color-scheme: light dark;
+  }
+
+  body {
+    display: grid;
+    place-content: safe center;
+    text-align: center;
+  }
+
+  h1 {
+    width: min-content;
+    margin: 0.2em auto;
+    font-size: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
+  }
+
+  main {
+    font-size: clamp(1rem, 0.5rem + 2.5vw, 2rem);
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 1em;
+  }
+
+  section {
+    border-radius: 2rem;
+    corner-shape: squircle;
+    justify-self: center;
+    padding: 2rem;
+  }
+
+  h2 {
+    margin: 0;
+
+    display: flex;
+
+    font-size: clamp(2.5rem, 0.75rem + 8.75vw, 6rem);
+    line-height: 1;
+  }
+}

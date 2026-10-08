@@ -1,0 +1,223 @@
+/**************/
+/* @FONT-FACE */
+/**************/
+
+/* 3x een font aanroepen: Dyna Puff, Honk en Kalnia Glaze */
+@font-face {
+  font-family: "DynaPuff";
+  src: url("../fonts/DynaPuff-Variable.ttf");
+}
+
+@font-face {
+  font-family: "Honk";
+  src: url("../fonts/Honk-Variable.ttf");
+}
+
+@font-face {
+  font-family: "KalniaGlaze";
+  src: url("../fonts/KalniaGlaze-Variable.ttf");
+}
+
+/*************/
+/* DYNA PUFF */
+/*************/
+
+/* code voor alle hokjes */
+
+section:nth-of-type(1) li {
+  /* Dyna Puff gebruiken + een fallback */
+  font-family: "DynaPuff", sans-serif;
+}
+
+/* code per hokje */
+
+section:nth-of-type(1) li:nth-of-type(1) {
+  font-weight: 400;
+  font-stretch: 75%;
+}
+
+section:nth-of-type(1) li:nth-of-type(2) {
+  font-weight: 400;
+  font-stretch: 100%;
+}
+
+section:nth-of-type(1) li:nth-of-type(3) {
+  font-weight: 550;
+  font-stretch: 75%;
+}
+
+section:nth-of-type(1) li:nth-of-type(4) {
+  font-weight: 550;
+  font-stretch: 100%;
+}
+
+section:nth-of-type(1) li:nth-of-type(5) {
+  font-weight: 700;
+  font-stretch: 75%;
+}
+
+section:nth-of-type(1) li:nth-of-type(6) {
+  font-weight: 700;
+  font-stretch: 100%;
+}
+
+/********/
+/* HONK */
+/********/
+
+/* code voor alle hokjes */
+
+section:nth-of-type(2) li {
+  font-size: 1.25em;
+  /* Honk gebruiken + een fallback */
+  font-family: "Honk", sans-serif;
+}
+
+/* code per hokje */
+
+section:nth-of-type(2) li:nth-of-type(1) {
+  font-variation-settings:
+    "MORF" 0,
+    "SHAD" 100;
+}
+
+section:nth-of-type(2) li:nth-of-type(2) {
+  font-variation-settings:
+    "MORF" 10,
+    "SHAD" 100;
+}
+
+section:nth-of-type(2) li:nth-of-type(3) {
+  font-variation-settings:
+    "MORF" 25,
+    "SHAD" 100;
+}
+
+section:nth-of-type(2) li:nth-of-type(4) {
+  font-variation-settings:
+    "MORF" 40,
+    "SHAD" 100;
+}
+
+/******************/
+/* Kalnia Glaze   */
+/******************/
+
+/* 4 color palettes */
+
+@font-palette-values --Kalnia0 {
+  font-family: "KalniaGlaze";
+  base-palette: 0;
+}
+
+@font-palette-values --Kalnia1 {
+  font-family: "KalniaGlaze";
+  base-palette: 1;
+}
+
+@font-palette-values --Kalnia2 {
+  font-family: "KalniaGlaze";
+  base-palette: 2;
+}
+
+@font-palette-values --Kalnia6 {
+  font-family: "KalniaGlaze";
+  base-palette: 6;
+}
+
+/* code voor alle hokjes */
+
+section:nth-of-type(3) li {
+  font-size: 0.95em;
+  /* Kalnia Glaze gebruiken + een fallback */
+  font-family: "KalniaGlaze", sans-serif;
+}
+
+/* code per hokje */
+
+section:nth-of-type(3) li:nth-of-type(1) {
+  font-variation-settings:
+    "BEVL" 0,
+    "SHAD" 0;
+  font-palette: --Kalnia0;
+}
+
+section:nth-of-type(3) li:nth-of-type(2) {
+  font-variation-settings:
+    "BEVL" 50,
+    "SHAD" 50;
+  font-palette: --Kalnia1;
+}
+
+section:nth-of-type(3) li:nth-of-type(3) {
+  font-variation-settings:
+    "BEVL" 50,
+    "SHAD" 50;
+  font-palette: --Kalnia2;
+}
+
+section:nth-of-type(3) li:nth-of-type(4) {
+  font-variation-settings:
+    "BEVL" 100,
+    "SHAD" 100;
+  font-palette: --Kalnia6;
+}
+
+/*************************************/
+/* BASIS - HOEF JE NIETS MEE TE DOEN */
+/*************************************/
+
+@layer basis {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    color-scheme: light dark;
+  }
+
+  body {
+    display: grid;
+    place-content: safe center;
+
+    text-align: center;
+  }
+
+  h1 {
+    width: min-content;
+    margin: 0.2em auto;
+
+    font-size: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
+    /* font-size:2.5em; */
+    /* font-size:3.5em; */
+    /* line-height:1em; */
+  }
+
+  main {
+    inline-size: min(100% - 2rem, 32rem);
+    block-size: 100dvh;
+    margin: 0 auto;
+
+    font-size: clamp(1rem, 0.5rem + 2.5vw, 2rem);
+  }
+
+  ul {
+    padding: 1px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+
+    background-color: black;
+    list-style-type: "";
+  }
+
+  li {
+    padding: 0.5em;
+
+    display: grid;
+
+    background-color: white;
+    color: black;
+  }
+}

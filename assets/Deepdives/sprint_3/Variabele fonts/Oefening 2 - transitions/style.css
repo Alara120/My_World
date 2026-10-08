@@ -1,0 +1,178 @@
+/**************/
+/* @FONT-FACE */
+/**************/
+
+/* 4x een font aanroepen: Saira Stencil, Kablammo, Plastic en Cheeeze */
+@font-face {
+  font-family: "Saira Stencil";
+  src: url("fonts/SairaStencilOne-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Kablammo";
+  src: url("fonts/Kablammo-VariableFont_MORF.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Plastic";
+  src: url("fonts/Plastic-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: "Cheeeze";
+  src: url("fonts/Cheeeze.woff2") format("woff2");
+  font-weight: 400;
+}
+
+/*****************/
+/* SAIRA STENCIL */
+/*****************/
+
+section:nth-of-type(1) {
+  background-color: forestgreen;
+
+  h2 {
+    color: lightgoldenrodyellow;
+
+    /* jouw code hier */
+    font-family: "Saira Stencil", sans-serif;
+    font-weight: 100;
+    transition: 1s;
+
+    &:hover {
+      /* jouw code hier */
+      font-weight: 900;
+    }
+  }
+}
+
+/************/
+/* KABLAMMO */
+/************/
+
+section:nth-of-type(2) {
+  background-color: yellow;
+
+  h2 {
+    background-image: linear-gradient(in oklch, mediumblue, deeppink);
+    background-clip: text;
+    color: transparent;
+    font-weight: 400;
+
+    /* jouw code hier */
+    font-family: "Kablammo", cursive;
+    font-variation-settings: "MORF" 0;
+    transition: 1s;
+
+    &:hover {
+      /* jouw code hier */
+      font-variation-settings: "MORF" 100; /* Of de maximale waarde van de custom axis 'MORF' */
+    }
+  }
+}
+
+/***********/
+/* PLASTIC */
+/***********/
+
+section:nth-of-type(3) {
+  background-color: mediumvioletred;
+
+  h2 {
+    color: white;
+
+    /* jouw code hier */
+    font-family: "Plastic", sans-serif;
+    font-weight: 100;
+    font-variation-settings: "VOLU" 0; /* Pas de axisnaam aan indien Wakamaifondue een andere tag aangeeft */
+    transition: 1s;
+
+    &:hover {
+      /* jouw code hier */
+      font-weight: 900;
+      font-variation-settings: "VOLU" 100;
+    }
+  }
+}
+
+/***********/
+/* CHEEEZE */
+/***********/
+
+section:nth-of-type(4) {
+  background-color: mediumblue;
+
+  h2 {
+    background-image: url("images/gatenkaas.jpg");
+    background-size: 2em auto;
+    background-position: center center;
+    background-clip: text;
+    color: transparent;
+    font-weight: 400;
+
+    /* jouw code hier */
+    font-family: "Cheeeze", sans-serif;
+    font-variation-settings:
+      "AXIS1" 0,
+      "AXIS2" 0; /* Vervang AXIS1/AXIS2 met de juiste tags uit Wakamaifondue */
+    transition: 1s;
+
+    &:hover {
+      /* jouw code hier */
+      font-variation-settings:
+        "AXIS1" 100,
+        "AXIS2" 100;
+    }
+  }
+}
+
+/*************************************/
+/* BASIS - HOEF JE NIETS MEE TE DOEN */
+/*************************************/
+
+@layer basis {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    color-scheme: light dark;
+  }
+
+  body {
+    display: grid;
+    place-content: safe center;
+    text-align: center;
+  }
+
+  h1 {
+    width: min-content;
+    margin: 0.2em auto;
+    font-size: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
+  }
+
+  main {
+    font-size: clamp(1rem, 0.5rem + 2.5vw, 2rem);
+
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 1em;
+  }
+
+  section {
+    border-radius: 2rem;
+    corner-shape: squircle;
+    justify-self: center;
+    padding: 2rem;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: clamp(2.5rem, 0.75rem + 8.75vw, 6rem);
+    line-height: 1;
+  }
+}

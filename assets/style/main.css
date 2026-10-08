@@ -19,7 +19,7 @@
   --color-dot-yellow: rgb(239, 239, 168);
   --color-dot-green: rgb(188, 249, 188);
 
-  /* Dark thema: overschrijft de kleuren als "Dark" is aangevinkt in het thema-form.
+  /* Dark thema:
    --color-white blijft wit, zodat het tekenvlak wit blijft (zwarte lijnen). */
   :root:has(input[value="dark"]:checked) {
     --color-ink: #f2f2f2;
