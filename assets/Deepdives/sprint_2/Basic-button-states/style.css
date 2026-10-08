@@ -1,0 +1,66 @@
+html {
+  --button-bg: lightpink;
+  --button-color: deeppink;
+
+  --button-accent-bg: papayawhip;
+  --button-accent-color: darkgoldenrod;
+
+  --button-hover-bg: lightblue;
+  --button-hover-color: darkblue;
+
+  --button-active-bg: lightgray;
+  --button-active-color: gray;
+}
+
+button {
+  /* verander de kleur en de achtergrond met de bovenstaande custom properties */
+  background: var(--button-bg);
+  color: var(--button-color);
+
+  font-family: system-ui;
+  padding-block: 0.5em;
+  padding-inline: 1em;
+
+  border-width: 0.1em;
+  border-style: solid;
+  border-color: currentcolor;
+  border-radius: 1.5em;
+}
+
+button:focus-visible {
+  /* verander de kleur en de achtergrond met de bovenstaande custom properties */
+  background: var(--button-accent-bg);
+  color: var(--button-accent-color);
+}
+
+/* En doe nu hetzelfde met de :hover state,
+en natuurlijk ook met de :active state.*/
+
+button:hover {
+  background: var(--button-hover-bg);
+  color: var(--button-hover-color);
+}
+
+button:active {
+  background: var(--button-active-bg);
+  color: var(--button-active-color);
+}
+
+button {
+  font-family: system-ui;
+
+  padding-block: 0.5em;
+  padding-inline: 1em;
+
+  border-width: 0.1em;
+  border-style: solid;
+  border-color: currentcolor;
+  border-radius: 1.5em;
+}
+
+html {
+  height: 95%;
+
+  display: grid;
+  place-content: center;
+}

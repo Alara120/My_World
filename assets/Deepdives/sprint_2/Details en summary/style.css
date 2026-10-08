@@ -1,0 +1,58 @@
+html {
+  --button-bg: lightgreen;
+  --button-color: limegreen;
+
+  --button-accent-bg: lightpink;
+
+  --button-hover-bg: lightblue;
+
+  --button-active-bg: lightgray;
+}
+summary {
+  background: var(--button-bg);
+}
+
+/* Geef nu zelf vorm aan devolgende states */
+summary:focus-visible {
+  outline: 3px solid var(--button-color);
+  outline-offset: 2px;
+}
+
+summary:hover {
+  background: var(--button-hover-bg);
+}
+
+summary:active {
+  background: var(--button-active-bg);
+}
+
+details {
+  border-width: 0.1em;
+  border-style: solid;
+  border-color: var(--button-color);
+  border-radius: 0.5em;
+}
+
+summary {
+  padding-block: 1em;
+  padding-inline: 1em;
+  border-radius: 0.4em;
+}
+details:open::details-content {
+  padding-inline: 1em;
+}
+
+details:open summary {
+  border-bottom: 0.1em solid var(--button-accent-bg);
+  border-radius: 0.4em 0.4em 0 0;
+}
+
+details:open {
+  background-color: var(--button-accent-bg);
+}
+
+body {
+  font-family: system-ui;
+  display: grid;
+  gap: 1em;
+}

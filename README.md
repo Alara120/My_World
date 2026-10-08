@@ -49,7 +49,7 @@ Notities gemaakt/ samenvatting
 -Vermeld bijvoorbeeld wat github WEL doet en of je de gebruiker kan tracken. Maak een "accepteer" / "weiger" optie
 -Verwerk je schets van de cookie meer. je hebt er al veel bij staan maar niet verwerkt in je website. maak meer schetsen.
 -De theorie zit in de deepdives, lees ze nog goed is door
--valideer je lijst opnieuw en neem de toegankelijkheidstest nog is goed doors
+-valideer je lijst opnieuw en neem de toegankelijkheidstest nog is goed door
 
 **Retrospect sprint 2**
 ![Opdracht](assets/images-voor-readme/r1.jpg)
@@ -515,26 +515,30 @@ Oefening 3 - Gradients animeren
 Heb ik niet af kunnen maken, ben er mee bezig!
 
 **SPRINT 1 - Grid 101 + Media queries**
-
-Voorbereiding + Notities:
+Ben er mee bezig!
 
 **SPRINT 1 - Responsive grid + Grid-areas**
-
-Voorbereiding:
+Ben er mee bezig!
 
 **SPRINT 2 - Buttons, states en selectors**
-Oefening 1: Basic button states oefenen
+[button](assets/Deepdives/sprint_2/Basic-button-states)
 
 **SPRINT 2 - Buttons + Dialogs**
+Ben er mee bezig!
 
 **SPRINT 2 - Position + Dialogs**
+Ben er mee bezig!
 
 **SPRINT 2 - meer interactie met HTML en CSS**
+Ben er mee bezig!
 
 **SPRINT 3 - Interessantere layouts**
-[Oefening-1](assets/Deepdives/sprint_3/Interessantere-layouts/)
+[layouts](assets/Deepdives/sprint_3/Interessantere-layouts/)
 
 **SPRINT 3 - Variabele fonts**
+[1. var-fonts](assets/Deepdives/sprint_3/Variabele-fonts/Oefening1-var-fonts)
+[2. transitions](assets/Deepdives/sprint_3/Variabele-fonts/Oefening2-transitions)
+[3. staggered](assets/Deepdives/sprint_3/Variabele-fonts/Oefening3-staggered)
 
 ## CODE UITLEG VOOR MIJN WEBSITE + BRONNEN
 
