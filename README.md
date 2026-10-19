@@ -6,7 +6,42 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 (De deepdives en code uitleg met de bronnenlijst zit helemaal onderaan de document)
 
+## 19 okt - Plan voor afronding
+
 ## 9 okt - WS3 + VOORTGANG
+
+**Feedback typografie van medestudenten**
+-Bij check, check, check dat als je hovert dat er als een trappetje de woorden komen
+-Sommige woorden als je hovert dat het naar voren springt, zoals "wishing"
+-Bij "splash" en "crash" dat er een beweging zit
+-Je hoeft niet alle tekst erin te zetten, maar een deel
+-Kleurgebruik
+
+**Feedback van docent:**
+Voor mijn digital garden:
+-Webring door verwijzen
+-Als je op weigeren klikt, wat gebeurt er? pas dat ook toe op je website
+-Voor je digital garden, als je het niet wilt toepassen: kan je een button maken dat door klikt naar je songpagina. Daar laat je de toepassingen zien.
+-Bij de hover van de mappen voeg: Ease-in-out toe
+-Nog puntjes op de ii
+
+Voor de songtekst:
+-Maak het responsive - Mobile first
+-Je kan CLAMP gebruiken, vW gaat het schalen met responsive
+-Variables toepassen
+
+## CHECKOUT
+
+1. **Welke variabelen van Seraphs gebruik je in de opmaak van je songtekst?**
+   Font weight, font size, line-height, letter spacing
+
+2. **Wat voegt iedere variabele toe aan je ontwerp (denk aan leesbaarheid, hiërarchie of de uitstraling die je wil bereiken)?**
+   Font weight: Hiermee kan ik belangrijke woorden of zinnen dikgedrukt maken
+   Font size: Door sommige woorden groter te maken, kan ik de aandacht naar bepaalde delen van de songtekst sturen
+   Letter spacing: Meer ruimte tussen letters kan de tekst rustiger en luchtiger laten lijken.
+   Line height: Dit bepaalt hoeveel ruimte er tussen de regels zit.
+
+3. **Hoe zou je animatie kunnen toepassen om het ritme of de accenten in de weergave van je songtekst nog beter visueel te maken?**
 
 ## 7 okt - WS2
 

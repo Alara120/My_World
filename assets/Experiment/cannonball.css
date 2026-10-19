@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Seraphs";
+  src: url("font/SeraphsVF.woff2") format("woff2");
+}
+
+body {
+  margin: 5.5555vh 5.5555vw;
+  display: grid;
+  font-family: "Seraphs", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+main {
+  max-width: 30em;
+  container-type: inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: clamp(2em, 6vi, 6em);
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.artist-title {
+  font-size: clamp(1rem, 3cqi, 1.2rem);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+section {
+  font-size: 1.4rem;
+}
+
+.gecentreerde-tekst {
+  text-align: center;
+}
+
+.hoofdletter-tekst {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.inspringing-tekst {
+  margin-left: 2.5rem;
+}
+
+/* de dikgedrukte woorden */
+.uitgelicht-woord {
+  font-size: clamp(2rem, 10cqi, 4rem);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.crash-sectie h2 {
+  font-size: clamp(3rem, 15cqi, 11rem);
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+@media (width > 50em) {
+  body {
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    gap: 4rem;
+  }
+
+  /* de header kantelen, sticky */
+  header {
+    writing-mode: sideways-lr;
+    position: sticky;
+    top: 2rem;
+    margin-bottom: 0;
+    border-bottom: none;
+    border-left: 3px solid #000;
+    padding-left: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  header h1 {
+    font-size: clamp(2em, 6vi, 6em);
+  }
+
+  main {
+    max-width: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(20em, 1fr));
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .crash-sectie {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .refrein-blok {
+    grid-column: span 2;
+  }
+
+  footer {
+    grid-column: span 2;
+  }
+}
