@@ -8,6 +8,8 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## 19 okt - Plan voor afronding
 
+![Opdracht](assets/images-voor-readme/webby.png)
+
 ## 9 okt - WS3 + VOORTGANG
 
 **Feedback typografie van medestudenten**

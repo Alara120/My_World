@@ -1,6 +1,10 @@
 @font-face {
   font-family: "Seraphs";
-  src: url("font/SeraphsVF.woff2") format("woff2");
+  src:
+    url("font/SeraphsVF.woff2") format("woff2-variations"),
+    url("font/SeraphsVF.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 50% 200%;
 }
 
 body {
@@ -27,12 +31,12 @@ header h1 {
   font-size: clamp(2em, 6vi, 6em);
   margin: 0;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .artist-title {
   font-size: clamp(1rem, 3cqi, 1.2rem);
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -46,27 +50,137 @@ section {
 
 .hoofdletter-tekst {
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .inspringing-tekst {
   margin-left: 2.5rem;
 }
 
-/* de dikgedrukte woorden */
-.uitgelicht-woord {
+/* RGBA KLEUR-EFFECT VOOR 'CHECK, CHECK, CHECK' */
+.check-fade .check-1 {
+  color: rgba(0, 0, 0, 1); /* 100% duidelijk (volledig zichtbaar) */
+}
+
+.check-fade .check-2 {
+  color: rgba(0, 0, 0, 0.45); /* Tweede check: beetje verdwenen */
+}
+
+.check-fade .check-3 {
+  color: rgba(0, 0, 0, 0.15); /* Derde check: nog lichter */
+}
+
+/* GOLVEND EFFECT VOOR WISHING */
+.wishing-golf {
+  display: inline-flex;
   font-size: clamp(2rem, 10cqi, 4rem);
-  font-weight: bold;
   text-transform: uppercase;
   line-height: 1;
 }
 
-.crash-sectie h2 {
-  font-size: clamp(3rem, 15cqi, 11rem);
+.wishing-golf span {
+  display: inline-block;
+  font-weight: 100;
+  transition-duration: 0.3s;
+  transition-delay: calc(sibling-index() * 0.08s);
+  transition-timing-function: ease-in-out;
+  transition-property: font-weight;
+}
+
+.wishing-golf:hover span {
   font-weight: 900;
+}
+
+/* SMELTEND EFFECT VOOR SPLASH */
+@keyframes smeltAnimatie {
+  0%,
+  100% {
+    font-weight: 200;
+    font-stretch: 60%;
+    transform: translateY(0);
+  }
+  50% {
+    font-weight: 900;
+    font-stretch: 180%;
+    transform: translateY(6px);
+  }
+}
+
+.splash-smelt {
+  display: inline-flex;
+  font-size: clamp(2rem, 10cqi, 4rem);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.splash-smelt span {
+  display: inline-block;
+  font-weight: 900;
+  animation-name: smeltAnimatie;
+  animation-duration: 0.8s;
+  animation-delay: calc(1.5s / sibling-count() * sibling-index() - 1.5s);
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* WEGVAGEND / FADE EFFECT VOOR 'IN THE SHADE' */
+.shade-effect {
+  opacity: 0.3;
+  filter: blur(2px);
+  transition:
+    opacity 0.5s ease-in-out,
+    filter 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.shade-effect:hover {
+  opacity: 1;
+  filter: blur(0px);
+  transform: scale(1.03);
+}
+
+/* CRASH Sectie met het springende effect */
+.crash-sectie {
+  text-align: center;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.crash-sectie h2 {
+  font-size: clamp(3rem, 12cqi, 10rem);
   margin: 0;
   text-transform: uppercase;
   line-height: 1;
+  display: inline-block;
+  cursor: pointer;
+
+  font-weight: 150;
+  font-stretch: 75%;
+
+  font-variation-settings:
+    "wght" 150,
+    "SRFS" 0;
+
+  transform-origin: center bottom;
+
+  transition:
+    font-weight 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    font-stretch 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    font-variation-settings 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.crash-sectie h2:hover {
+  font-weight: 900;
+  font-stretch: 150%;
+
+  font-variation-settings:
+    "wght" 190,
+    "SRFS" 20;
+
+  transform: scale(1.5) translateY(-15px) rotate(-3deg);
 }
 
 footer {
@@ -78,34 +192,21 @@ footer {
   margin-top: 2rem;
 }
 
+/* Responsive layout voor grotere schermen */
 @media (width > 50em) {
   body {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr;
     align-items: start;
-    gap: 4rem;
-  }
-
-  /* de header kantelen, sticky */
-  header {
-    writing-mode: sideways-lr;
-    position: sticky;
-    top: 2rem;
-    margin-bottom: 0;
-    border-bottom: none;
-    border-left: 3px solid #000;
-    padding-left: 1.5rem;
-    padding-bottom: 0;
   }
 
   header h1 {
-    font-size: clamp(2em, 6vi, 6em);
+    font-size: 4rem;
   }
 
   main {
     max-width: none;
     display: grid;
     grid-template-columns: repeat(2, minmax(20em, 1fr));
-    gap: 3rem;
     align-items: center;
   }
 

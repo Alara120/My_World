@@ -103,7 +103,7 @@ main {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: #f8d7e0;
+  background-color: #dde8fe;
   margin-bottom: 3rem;
 }
 
@@ -218,9 +218,7 @@ main > section > figure {
   display: none;
   margin: 0;
   border: 0.15rem solid #111;
-  border-radius: 0.5rem;
-  background: #cddaf6;
-  padding: 1rem;
+  background: #ffffff;
 }
 
 main > section > figure img {
