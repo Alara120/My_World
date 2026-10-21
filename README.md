@@ -6,6 +6,19 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 (De deepdives en code uitleg met de bronnenlijst zit helemaal onderaan de document)
 
+## 21 okt - Dotting the i's
+
+![Opdracht](assets/images-voor-readme/geek3.jpg)
+Vandaag hebben we feedbackrondes gedaan met mijn medestudenten. Ik zat met Tuya, Susanne en een hulpstudent. Samen hebben we gekeken naar elkaars website en beoordeeld met de hand van het formulier.
+
+**Gegeven feedback**
+![Opdracht](assets/images-voor-readme/feedback1.png)
+![Opdracht](assets/images-voor-readme/feedback2.png)
+
+**Ontvangen feedback**
+![Opdracht](assets/images-voor-readme/feedback3.png)
+![Opdracht](assets/images-voor-readme/feedback4.png)
+
 ## 19 okt - Plan voor afronding
 
 ![Opdracht](assets/images-voor-readme/webby.png)
