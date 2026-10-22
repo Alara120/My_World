@@ -92,24 +92,6 @@ main > header {
   border-bottom: var(--border);
 }
 
-/* De drie bolletjes: 1 echt bolletje met border + 2 gemaakt met box-shadow.
-   Gemaakt met ::before, zodat er geen extra HTML-element nodig is.
-   Deze code is deels gemaakt met hulp van AI */
-main > header::before,
-#sketchbook > header::before {
-  content: "";
-  width: var(--dot);
-  height: var(--dot);
-  border-radius: 50%;
-  background-color: var(--color-dot-red);
-  border: 0.1rem solid var(--color-ink);
-  box-shadow:
-    var(--gap) 0 0 -0.1rem var(--color-dot-yellow),
-    var(--gap) 0 0 0 var(--color-ink),
-    calc(var(--gap) * 2) 0 0 -0.1rem var(--color-dot-green),
-    calc(var(--gap) * 2) 0 0 0 var(--color-ink);
-}
-
 /* Hoofd header */
 body > header {
   grid-area: header;

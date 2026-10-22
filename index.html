@@ -17,7 +17,6 @@
     ></script>
   </head>
   <body>
-    <!-- Hoofdheader (het blauwe balkje wordt in CSS gemaakt met ::before) -->
     <header>
       <figure>
         <img src="assets/images/doodlegarden.svg" alt="" />
@@ -25,7 +24,16 @@
 
       <h1>My doodle garden</h1>
 
+      <!--************************************************************************************************************-->
+
+      <!-- Ik noteer voor mezelf gedetaileerd alles, zodat ik het kan begrijpen
+      wanneer ik het teruglees. Dit is een navigatiemenu. De gebruiker kan
+      hiermee naar drie verschillende plekken gaan: de homepage, het logboek en
+      de experimentpagina. Bron: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nav   -->
+
       <nav aria-label="Hoofdmenu">
+        <!-- aria-label geeft een naam aan het navigatiegebied. Zo weet dus de
+        screenreader dar dit een hoofdmenu is -->
         <ul>
           <li><a href="index.html">Home</a></li>
           <li>
@@ -37,18 +45,35 @@
         </ul>
       </nav>
     </header>
+    <!--************************************************************************************************************-->
 
-    <!-- Thema-keuze: twee radio-knoppen in een form, de CSS doet de rest (:has) -->
+    <!-- dit gedeelte is de thema keuze en CSS bepaalt wat er met de gekozen optie gebeurt. 
+     met form kan de gebruiker kiezen tussen dark en light thema. label gebruik ik om duidelijk te 
+     maken welke tekst bij welke radio button hoort. Omdat de input binnen het label staat, kan de 
+     gebruiker ook op de tekst klikken. <input> maakt een invoerveld/interactief element. Met type 
+     bepaal ik welk soort invoerveld het is, wat dus een radiobutton is. Bronnen: 
+    -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form
+    -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label
+    -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio -->
+
     <form aria-label="Thema">
       <label><input type="radio" name="thema" value="light" /> Light</label>
       <label><input type="radio" name="thema" value="dark" /> Dark</label>
     </form>
+    <!--************************************************************************************************************-->
+
+    <!-- <main> geeft het belangrijkste gedeelte van een webpagina aan. In mijn website 
+      is dat het welkomstgedeelte met de afbeeldingen, de titel en je introductietekst
+      bron: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/main -->
+
+    <!-- Ik gebruik dit element voor een decoratieve vensterbalk die ik met CSS
+      vormgeef. Met aria-hidden='true' zorg ik ervoor dat screenreaders dit
+      decoratieve onderdeel overslaan, want dat is niet nodig. Bronnen: 
+      -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header 
+      -https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-hidden -->
 
     <main>
-      <!-- Vensterbalk met drie bolletjes (puur decoratief, gemaakt in CSS) -->
       <header aria-hidden="true"></header>
-
-      <!-- Twee plaatjes: de CSS laat afhankelijk van het thema één van de twee zien -->
       <figure>
         <img src="assets/images/welkom.svg" alt="" />
         <img src="assets/images/welkom_dark.svg" alt="" />
@@ -65,7 +90,14 @@
       </section>
     </main>
 
-    <!-- Linkerkant -->
+    <!--************************************************************************************************************-->
+
+    <!-- Ik gebruik <aside> om mijn links naar mijn art, proces en schetsboek bij elkaar 
+      te zetten. Met aria-label geef ik dit onderdeel de naam: "Mijn werk" zodat het 
+      duidelijker is voor screenreader.  Bronnen:
+      -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside
+      -https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-label -->
+
     <aside aria-label="Mijn werk">
       <ul>
         <li>
@@ -85,7 +117,13 @@
           </a>
         </li>
         <li>
-          <!-- Opent het schetsboek (<dialog id="sketchbook">) -->
+          <!-- Ik gebruik een <button> zodat je hiermee een actie uitvoert en niet naar een 
+            andere pagina gaat. Met type="button" maak ik duidelijk dat het een gewone actieknop is. 
+            De ID sketchbook-open kan JavaScript gebruiken om de knop te herkennen en het schetsboek 
+            te openen. Bronnen: 
+            -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button
+            -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/id -->
+
           <button type="button" id="sketchbook-open">
             <img src="assets/images/process.svg" alt="" />
             Schetsboek
@@ -93,8 +131,9 @@
         </li>
       </ul>
     </aside>
+    <!--************************************************************************************************************-->
 
-    <!-- Rechterkant -->
+    <!-- Rechterkant van mijn pagina -->
     <aside aria-label="Extra">
       <ul>
         <li>
@@ -109,7 +148,6 @@
           <a
             href="https://www.youtube.com/watch?v=SwTJ_juyN8U&list=PLiai3H-s0sgMfuFpyZ1pIcwyQxekIsCMN"
           >
-            <!-- Twee plaatjes: de CSS laat afhankelijk van het thema één van de twee zien -->
             <figure>
               <img src="assets/images/music.svg" alt="" />
               <img src="assets/images/music_dark.svg" alt="" />
@@ -120,7 +158,13 @@
       </ul>
     </aside>
 
-    <!-- Cookie-knop (vastgepind rechtsonder) opent de popover hieronder -->
+    <!--************************************************************************************************************-->
+
+    <!-- Ik gebruik popovertarget om mijn cookie-knop te koppelen aan het venster met 
+     cookie-informatie. De browser herkent het venster aan de bijbehorende id en kan het 
+     openen wanneer de gebruiker op de knop klikt. Bronnen: 
+     https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button -->
+
     <button
       type="button"
       popovertarget="cookie-popup"
@@ -129,7 +173,18 @@
       <img src="assets/images/cookies.svg" alt="" />
     </button>
 
-    <!-- Cookie pop-up: Tab, Enter, Spatie en Escape werken zonder JavaScript -->
+    <!--************************************************************************************************************-->
+
+    <!-- Ik gebruik <section> om de inhoud van mijn cookie-pop-up bij elkaar te zetten. Met "id" 
+      geef ik de pop-up een naam. Met "popover" maak ik er een pop-up van. Met "aria-labelledby" 
+      koppel ik de titel aan de pop-up, zodat duidelijk is waar de pop-up over gaat. Als ik kijk
+      naar de checkbox van GitHub Pages. Heb ik dat als noodzakelijk aangegeven. Met checked staat 
+      het vakje standaard aan en met disabled kan de bezoeker het niet uitvinken. Bronnen:
+      -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section
+      -https://developer.mozilla.org/en-US/docs/Web/API/Popover_API
+      -https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-labelledby 
+      -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/checkbox -->
+
     <section id="cookie-popup" popover aria-labelledby="cookie-title">
       <h2 id="cookie-title">Privacy &amp; cookies</h2>
       <p>
@@ -168,10 +223,24 @@
       </button>
     </section>
 
-    <!-- Schetsboek pop-up (script.js opent en sluit hem) -->
+    <!--************************************************************************************************************-->
+
+    <!--Ik gebruik dialog om mijn schetsboek als pop-up te maken. Met een id kan 
+    JavaScript het venster vinden. De titel heeft ook een ID, zodat aria-labelledby de pop-up een
+     toegankelijke naam geeft. In het venster staat een canvas, waarop JavaScript het tekenen 
+     mogelijk maakt. De sluitknop en de knop om de tekening te verwijderen hebben elk een ID of 
+     class, zodat JavaScript ze kan vinden en er acties aan kan koppelen. Bronnen: 
+    -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog
+    -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/canvas
+    -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button
+    -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/id
+    -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/class
+    -https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-labelledby -->
+
     <dialog id="sketchbook" aria-labelledby="sketchbook-title">
       <header>
         <h2 id="sketchbook-title">Mijn Schetsboek</h2>
+
         <!-- class blijft staan omdat script.js hem gebruikt (.close-btn) -->
         <button type="button" class="close-btn" aria-label="Schetsboek sluiten">
           X
@@ -184,10 +253,11 @@
         role="img"
         aria-label="Tekenvlak. Tekenen kan met muis, vinger of pen."
       >
-        Het schetsboek werkt alleen met een browser die canvas ondersteunt.
       </canvas>
       <button type="button" id="clearBtn">Tekening verwijderen</button>
     </dialog>
+
+    <!--************************************************************************************************************-->
 
     <footer>&copy; 2026 My Doodle Garden</footer>
   </body>
