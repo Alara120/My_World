@@ -70,3 +70,9 @@ dialog.addEventListener("click", (e) => {
 
 // Stop met tekenen als de dialog sluit (ook met Esc)
 dialog.addEventListener("close", stopDrawing);
+
+/* Bronnen: 
+-https://chatgpt.com/c/6ada71bc-18e8-83ed-b2c3-d10260f673ea
+-https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
+-https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext
+-https://developer.mozilla.org/en-US/docs/Web/API/HTMLDialogElement/showModal */

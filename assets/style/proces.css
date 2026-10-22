@@ -112,7 +112,7 @@ main > input[type="radio"] {
   display: none;
 }
 
-/* MARK: Stappenlijn bovenin (labels 1 t/m 5) */
+/* MARK: Stappenlijn bovenin labels 1 t/m 5 */
 main > nav.stappen-nav {
   display: flex;
   justify-content: center;
@@ -143,11 +143,21 @@ main > nav.stappen-nav label {
   user-select: none;
 }
 
+/*--------------------------------------------------------*/
+
+/* als ik met mijn muis over een stapknop ga, wordt die een beetje groter. 
+Zo voelt de knop interactief aan */
+
 main > nav.stappen-nav label:hover {
   transform: scale(1.05);
 }
 
-/* MARK: Actieve stappen markeren via radiobuttons (knoppen bovenin) */
+/* Met :checked controleer ik welke radiobutton geselecteerd is. Daarna gebruik 
+ik ~ om het bijbehorende label te selecteren. Dat label krijgt een zwarte 
+achtergrond en witte tekst, zodat de gebruiker kan zien welke stap actief is. Bronnen:
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:checked
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Subsequent-sibling_combinator */
+
 #stap1:checked ~ nav.stappen-nav label[for="stap1"],
 #stap2:checked ~ nav.stappen-nav label[for="stap2"],
 #stap3:checked ~ nav.stappen-nav label[for="stap3"],
@@ -157,7 +167,9 @@ main > nav.stappen-nav label:hover {
   color: #fff;
 }
 
-/* MARK: Centrale werkblad / Container voor tekst en afbeelding */
+/*--------------------------------------------------------*/
+
+/* MARK: Centrale container voor tekst en afbeelding */
 main > section {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -189,7 +201,7 @@ main > section article p {
   font-family: "Outfit", sans-serif;
 }
 
-/* MARK: Volgende-knop styling */
+/* MARK: Volgende knop styling */
 main > section article label {
   display: inline-block;
   border: 0.15rem solid #111;
@@ -204,7 +216,17 @@ main > section article label:hover {
   background-color: #dce7f8;
 }
 
-/* MARK: Welke tekst zichtbaar is op basis van radiobutton */
+/*--------------------------------------------------------*/
+
+/* Ik gebruik radiobuttons om tussen vijf stappen te wisselen. Met 
+:checked controleer ik welke stap geselecteerd is. Daarna selecteer 
+ik met nth-of-type() het artikel dat bij die stap hoort. Met display: flex 
+wordt de inhoud van dat artikel zichtbaar. Bronnen:
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:checked
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Subsequent-sibling_combinator
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Child_combinator
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:nth-of-type */
+
 #stap1:checked ~ section > article:nth-of-type(1),
 #stap2:checked ~ section > article:nth-of-type(2),
 #stap3:checked ~ section > article:nth-of-type(3),
@@ -213,7 +235,9 @@ main > section article label:hover {
   display: flex;
 }
 
-/* MARK: Standaard alle stappen-afbeeldingen verbergen */
+/*--------------------------------------------------------*/
+
+/* MARK: Standaard alle stappen afbeeldingen verbergen */
 main > section > figure {
   display: none;
   margin: 0;
@@ -228,7 +252,7 @@ main > section > figure img {
   object-fit: contain;
 }
 
-/* MARK: Welke afbeelding zichtbaar is op basis van actieve radiobutton (zonder classes) */
+/* MARK: Welke afbeelding zichtbaar is op basis van actieve radiobutton */
 #stap1:checked ~ section > figure:nth-of-type(1),
 #stap2:checked ~ section > figure:nth-of-type(2),
 #stap3:checked ~ section > figure:nth-of-type(3),
@@ -237,7 +261,6 @@ main > section > figure img {
   display: block;
 }
 
-/* Footer styling */
 footer {
   text-align: center;
   padding: 1.5rem 0;

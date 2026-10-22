@@ -57,9 +57,11 @@ section {
   margin-left: 2.5rem;
 }
 
-/* RGBA KLEUR-EFFECT VOOR 'CHECK, CHECK, CHECK' */
+/*------------------------------------------------------------------------------ */
+
+/* RGBA KLEUR-EFFECT VOOR CHECK, CHECK, CHECK */
 .check-fade .check-1 {
-  color: rgba(0, 0, 0, 1); /* 100% duidelijk (volledig zichtbaar) */
+  color: rgba(0, 0, 0, 1); /* 100% duidelijk  */
 }
 
 .check-fade .check-2 {
@@ -69,6 +71,8 @@ section {
 .check-fade .check-3 {
   color: rgba(0, 0, 0, 0.15); /* Derde check: nog lichter */
 }
+
+/*------------------------------------------------------------------------------ */
 
 /* GOLVEND EFFECT VOOR WISHING */
 .wishing-golf {
@@ -90,6 +94,8 @@ section {
 .wishing-golf:hover span {
   font-weight: 900;
 }
+
+/*------------------------------------------------------------------------------ */
 
 /* SMELTEND EFFECT VOOR SPLASH */
 @keyframes smeltAnimatie {
@@ -123,7 +129,9 @@ section {
   animation-timing-function: ease-in-out;
 }
 
-/* WEGVAGEND / FADE EFFECT VOOR 'IN THE SHADE' */
+/*------------------------------------------------------------------------------ */
+
+/* WEGVAGEND / FADE EFFECT VOOR IN THE SHADE */
 .shade-effect {
   opacity: 0.3;
   filter: blur(2px);
@@ -140,6 +148,7 @@ section {
   filter: blur(0px);
   transform: scale(1.03);
 }
+/*------------------------------------------------------------------------------ */
 
 /* CRASH Sectie met het springende effect */
 .crash-sectie {
@@ -164,6 +173,11 @@ section {
     "SRFS" 0;
 
   transform-origin: center bottom;
+  /*------------------------------------------------------------------------------ */
+
+  /*transition maakt veranderingen vloeiend. 0.4s bepaalt hoelang het duurt en cubic-bezier 
+  bepaalt het tempo van de beweging. Bron:
+   https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/easing-function/cubic-bezier */
 
   transition:
     font-weight 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
@@ -171,6 +185,8 @@ section {
     font-variation-settings 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
+/*------------------------------------------------------------------------------ */
 
 .crash-sectie h2:hover {
   font-weight: 900;
@@ -183,6 +199,8 @@ section {
   transform: scale(1.5) translateY(-15px) rotate(-3deg);
 }
 
+/*------------------------------------------------------------------------------ */
+
 footer {
   text-align: center;
   font-size: 0.9rem;
@@ -192,7 +210,7 @@ footer {
   margin-top: 2rem;
 }
 
-/* Responsive layout voor grotere schermen */
+/* Desktop */
 @media (width > 50em) {
   body {
     grid-template-columns: 1fr;
