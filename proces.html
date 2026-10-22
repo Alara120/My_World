@@ -10,23 +10,35 @@
   <body>
     <header>
       <header></header>
-      <!-- Bloem logo / figuur net als op 1b -->
+
+      <!-- Bloem logo -->
       <figure>
         <img src="assets/images/doodlegarden.svg" alt="Bloem logo" />
       </figure>
 
       <h1>My doodle garden</h1>
 
-      <!-- Navigatie met dezelfde knoppen als 1b -->
+      <!-- Navigatie -->
       <nav>
         <a href="index.html">Home</a>
-        <a href="proces.html">Logboek</a>
-        <a href="#">Story</a>
+        <a href="https://github.com/Alara120/My_World#mijn-learning-log"
+          >Logboek</a
+        >
+        <a href="assets/Experiment/cannonball.html">Experiment</a>
       </nav>
     </header>
 
+    <!--************************************************************************************************************-->
+
+    <!-- Ik gebruik vijf radiobuttons om bij te houden welke stap van mijn proces geselecteerd 
+ is. Ze hebben allemaal dezelfde name, zodat er maar 1 tegelijk geselecteerd kan worden. 
+ De labels met de nummers 1 tot en met 5 zijn gekoppeld aan de radiobuttons. De radiobuttons 
+ zijn verborgen met CSS, zodat de gebruiker alleen de stappenlijn ziet. Bronnen:
+ -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio
+ -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label
+ -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input -->
+
     <main>
-      <!-- Verborgen radiobuttons om bij te houden welke stap actief is -->
       <input type="radio" name="proces-stap" id="stap1" checked />
       <input type="radio" name="proces-stap" id="stap2" />
       <input type="radio" name="proces-stap" id="stap3" />
@@ -42,7 +54,8 @@
         <label for="stap5">5</label>
       </nav>
 
-      <!-- Het centrale werkblad -->
+      <!--************************************************************************************************************-->
+
       <section>
         <!-- Inhoud Stap 1 -->
         <article>
@@ -79,7 +92,7 @@
           <label for="stap1">Terug</label>
         </article>
 
-        <!-- Afbeeldingen per stap (standaard verborgen) -->
+        <!-- Afbeeldingen per stap -->
         <figure>
           <img src="assets/images/sketch1.jpg" alt="Idee fase" />
         </figure>
@@ -97,6 +110,8 @@
         </figure>
       </section>
     </main>
+
+    <!--************************************************************************************************************-->
 
     <footer>&copy; 2026 My Doodle Garden</footer>
   </body>

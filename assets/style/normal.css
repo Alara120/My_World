@@ -4,16 +4,21 @@
   font-weight: 700;
   font-style: normal;
 }
+/*--------------------------------------------------------*/
+/* met :root kan je vaak om CSS-variabelen maken die je later op meerdere plekken in je CSS kunt gebruiken. 
+bron: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root */
 
 :root {
   --border: 0.2rem solid var(--color-ink);
   --shadow-popup: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
+/*--------------------------------------------------------*/
 
-/* Basis */
+/* Hiermee selecteer ik alle HTML elementen op mijn pagina */
 * {
   box-sizing: border-box;
 }
+/*--------------------------------------------------------*/
 
 img {
   display: block;
@@ -24,16 +29,21 @@ img {
 figure {
   margin: 0;
 }
-
+/*--------------------------------------------------------*/
+/* color: inherit zorgt ervoor dat mijn links dezelfde tekstkleur gebruiken als hun omgeving. 
+Met text-decoration: none haal ik de standaard onderstreping van links weg, zodat ik ze zelf 
+kan vormgeven */
 a {
   color: inherit;
   text-decoration: none;
 }
 
 button {
-  font-family: inherit; /* Inherit gebruikt exact hetzelfde als parent element */
+  font-family: inherit;
   color: inherit;
 }
+
+/*--------------------------------------------------------*/
 
 body {
   font-family: var(--font-title);
@@ -57,13 +67,26 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 }
+/*--------------------------------------------------------*/
 
-/* Dark thema (handmatig gekozen): andere achtergrond */
+/* Ik gebruik :has() om te controleren of de dark thema optie is geselecteerd
+ als dat zo is verandert de achtergrond afbeelding naar de donkere versie. Bronnen:
+ -https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:has
+ -https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:checked */
+
 :root:has(input[value="dark"]:checked) body {
   background-image: url("../images/achtergrond_dark.jpg");
 }
+/*--------------------------------------------------------*/
 
-/* Roze balk bovenin main (gedeeld door main en door de schetsboek pop-up) */
+/* Ik gebruik deze code om de bovenste balk van mijn website en mijn schetsboek-pop-up 
+dezelfde roze stijl te geven. Met Flexbox zet ik de onderdelen netjes op hun plek. 
+Ik zorg dat er ruimte tussen de onderdelen zit en dat ze in het midden staan. Met 
+padding geef ik ruimte aan de zijkanten en met background-color maak ik de balk roze. Bronnen:
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Child_combinator  
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout 
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties */
+
 main > header,
 #sketchbook > header {
   display: flex;
@@ -74,9 +97,23 @@ main > header,
   background-color: var(--color-pink-light);
 }
 
+/*--------------------------------------------------------*/
+
+/* Als ik het dark thema kies, verandert de bovenste balk van mijn website naar blauw */
 :root:has(input[value="dark"]:checked) main > header {
   background-color: var(--color-blue);
 }
+
+/*--------------------------------------------------------*/
+
+/* Ik gebruik deze code om de bovenste balk van mijn website en de balk van mijn 
+schetsboek-pop-up apart in te stellen. Met height bepaal ik de hoogte van de websitebalk. 
+Bij de schetsboek-pop-up gebruik ik min-height, zodat de balk niet te klein wordt en er 
+genoeg ruimte is voor de sluitknop. Met flex-shrink: 0; zorg ik ervoor dat de balk niet 
+kleiner wordt gemaakt. Met border-bottom voeg ik een rand toe aan de onderkant. Bronnen:
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/flex-shrink
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-bottom
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/min-height */
 
 main > header {
   --dot: 1rem;
@@ -87,10 +124,12 @@ main > header {
 #sketchbook > header {
   --dot: 0.8rem;
   --gap: 1.2rem;
-  min-height: 3.5rem; /* Ruimte voor een groter sluitknopje (makkelijk te raken) */
+  min-height: 3.5rem;
   flex-shrink: 0;
   border-bottom: var(--border);
 }
+
+/*--------------------------------------------------------*/
 
 /* Hoofd header */
 body > header {
@@ -106,7 +145,14 @@ body > header {
   background-color: var(--color-blue-light);
 }
 
-/* Het blauwe balkje bovenin de header */
+/*--------------------------------------------------------*/
+
+/* Deze code maakt met ::before een blauw balkje bovenaan de header. Met content: "" 
+maak ik een lege vorm, width: 100% maakt het balkje even breed als de header en 
+height: 2rem bepaalt de hoogte. margin-bottom: 1rem zorgt voor ruimte onder het
+balkje en background-color: var(--color-blue) geeft het de blauwe kleur uit mijn CSS-variabele.
+Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::before  */
+
 body > header::before {
   content: "";
   width: 100%;
@@ -115,18 +161,21 @@ body > header::before {
   background-color: var(--color-blue);
 }
 
+/*--------------------------------------------------------*/
+
 body > header figure {
   flex-shrink: 0;
   width: 4rem;
 }
 
+/* De titel in de header */
 body > header h1 {
   margin: 0;
   font-size: 2rem;
   overflow-wrap: break-word; /* Titel mag naar de volgende regel bij grote tekst */
 }
 
-/* Thema-knoppen (het form met twee radio-knoppen) */
+/* de thema knoppen */
 body > form {
   grid-area: theme;
   justify-self: end;
@@ -136,7 +185,8 @@ body > form {
   margin-top: 1rem;
 }
 
-/* Elk label is een knop; het echte radiobolletje ligt onzichtbaar eroverheen */
+/* Elk label is een knop. het echte radiobolletje ligt onzichtbaar eroverheen.
+Geeft de labels de vorm en stijl van knoppen */
 body > form label {
   position: relative;
   padding: 0.5rem 1rem;
@@ -147,6 +197,7 @@ body > form label {
   cursor: pointer;
 }
 
+/* Maakt de radio button onzichtbaar, maar kan nog wel gebruiken */
 body > form input {
   position: absolute;
   inset: 0;
@@ -155,26 +206,28 @@ body > form input {
   cursor: pointer;
 }
 
+/* Verandert de knop kleur als je er met de muis overheen gaat */
 body > form label:hover {
   background-color: var(--color-blue-light);
 }
 
-/* De gekozen knop is lichter */
+/* Geeft de gekozen thema knop een lichtere kleur */
 body > form label:has(input:checked) {
   background-color: var(--color-blue-light);
 }
 
-/* Nog niets aangeklikt: laat zien welk thema actief is (volgt het systeem).
-   Standaard (systeem is light) lijkt Light geselecteerd */
+/* Geeft Light een lichtere kleur als nog geen thema is gekozen */
 body > form:not(:has(input:checked)) label:has(input[value="light"]) {
   background-color: var(--color-blue-light);
 }
 
-/* Zichtbare focus voor toetsenbordgebruikers */
+/* Laat zien welke knop focus heeft bij toetsenbordgebruik */
 body > form label:has(input:focus-visible) {
   outline: 0.2rem solid var(--color-ink);
   outline-offset: 0.2rem;
 }
+
+/*--------------------------------------------------------*/
 
 /* Navigatie */
 nav {
@@ -205,6 +258,7 @@ nav a:hover {
   background-color: var(--color-blue-light);
 }
 
+/*--------------------------------------------------------*/
 /* Main gedeelte */
 main {
   grid-area: main;
@@ -235,7 +289,9 @@ main > figure img {
   object-fit: contain;
 }
 
-/* Welkom-plaatje wisselen: standaard alleen het eerste (light),
+/*--------------------------------------------------------*/
+
+/* Welkom plaatje wisselen: standaard alleen het eerste light-thema,
    bij dark alleen het tweede */
 main > figure img:last-of-type {
   display: none;
@@ -248,6 +304,7 @@ main > figure img:last-of-type {
 :root:has(input[value="dark"]:checked) main > figure img:last-of-type {
   display: block;
 }
+/*--------------------------------------------------------*/
 
 main > section {
   display: flex;
@@ -268,7 +325,9 @@ main > section p {
   margin: 0;
 }
 
-/* Zijkanten van de website (asides met lijsten) */
+/*--------------------------------------------------------*/
+
+/* Zijkanten van de website */
 aside:first-of-type {
   grid-area: left-column;
 }
@@ -286,9 +345,11 @@ aside {
   padding-top: 3rem;
 }
 
+/*--------------------------------------------------------*/
+
 /* Plaatjes wisselen in de aside (muziekspeler heeft er twee).
    "img + img" = een plaatje direct na een ander plaatje, dus alleen figures met 2 plaatjes.
-   Standaard (light): tweede plaatje verborgen */
+   Standaard light-thema: tweede plaatje verborgen */
 aside img + img {
   display: none;
 }
@@ -301,6 +362,8 @@ aside img + img {
 :root:has(input[value="dark"]:checked) aside img + img {
   display: block;
 }
+
+/*--------------------------------------------------------*/
 
 aside ul {
   display: flex;
@@ -317,7 +380,7 @@ aside li {
   max-width: 20rem;
 }
 
-/* Links en de schetsboek-knop zien er hetzelfde uit */
+/* Links en de schetsboek knop zien er hetzelfde uit */
 aside li > a,
 aside li > button {
   display: block;
@@ -335,7 +398,7 @@ aside figcaption {
   font-weight: 700;
 }
 
-/* Schetsboek-knop (de tekst in de button) */
+/* Schetsboek knop (de tekst in de button) */
 aside li > button {
   padding: 0;
   border: 0;
@@ -351,15 +414,7 @@ aside li > button img {
   margin-bottom: -1rem; /* Zelfde afstand als de figcaption */
 }
 
-/* Optioneel: zwarte SVG's zichtbaar maken in dark mode (haal de commentaar weg als je ze niet apart opnieuw tekent)
-:root:has(input[value="dark"]:checked) aside img,
-:root:has(input[value="dark"]:checked) body > header figure img {
-  filter: invert(1);
-}
-*/
-
-/* Cookie-knop (de enige directe button in de body)
-Als er meerdere buttons moeten komen in een HTML-element is een class/id handiger */
+/* Cookie knop */
 body > button {
   position: fixed;
   right: 1.5rem;
@@ -376,15 +431,17 @@ body > button img {
   width: 100%;
 }
 
-/* Cookie pop-up doormiddel van een id, midden in het scherm */
+/*--------------------------------------------------------*/
+
+/* Vormt de cookie-pop-up vorm, grootte en kleur etc. */
 #cookie-popup {
   position: fixed;
-  inset: 0; /* In combinatie met margin: auto staat hij midden in het scherm */
+  inset: 0;
   width: min(90vw, 28rem);
   height: fit-content;
   max-height: 90vh;
   max-height: 90dvh;
-  overflow-y: auto; /* Bij te grote tekst kan je scrollen in plaats van dat het wegvalt */
+  overflow-y: auto;
   margin: auto;
   padding: 2rem;
   border: 0.3rem solid var(--color-ink);
@@ -395,28 +452,31 @@ body > button img {
   font-family: var(--font-title);
 }
 
-/* Donkere achtergrond achter de pop-up, net als bij het schetsboek */
+/* Maakt de achtergrond achter de pop-up donkerder */
 #cookie-popup::backdrop {
   background: rgba(0, 0, 0, 0.5);
 }
 
+/* Zet de inhoud van de geopende pop-up onder elkaar */
 #cookie-popup:popover-open {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
+/*  de titel van pop-up */
 #cookie-popup h2 {
   margin-top: 0;
   font-size: 1.1rem;
 }
 
+/* de gewone tekst in pop-up */
 #cookie-popup p {
   margin: 0 0 1rem;
   font-size: 0.9rem;
 }
 
-/* De link en de sluitknop zijn allebei "knoppen" */
+/* Geeft de link en knop dezelfde basisstijl */
 #cookie-popup a,
 #cookie-popup button {
   display: inline-block;
@@ -428,16 +488,27 @@ body > button img {
   cursor: pointer;
 }
 
+/* Geeft de link een blauwe achtergrond */
 #cookie-popup a {
   background-color: var(--color-blue);
 }
 
+/* Geeft de sluitknop een blauwe achtergrond en ruimte erboven */
 #cookie-popup button {
   margin-top: 1rem;
   background-color: var(--color-blue);
 }
 
-/* Schetsboek pop-up (<dialog> element, komt vooraan) */
+/* Bronnen: 
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-y
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:popover-open
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::backdrop
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/box-shadow */
+
+/*--------------------------------------------------------*/
+
+/* Dit gedeelte bepaalt hoe jouw schetsboekje eruitziet en hoe groot
+ het is wanneer het wordt geopend. */
 #sketchbook {
   width: min(94vw, 900px);
   max-width: none;
@@ -454,21 +525,28 @@ body > button img {
   font-family: var(--font-title);
 }
 
+/* als het schetsboekje open is, worden de onderdelen netjes
+ onder elkaar geplaatst. */
 #sketchbook[open] {
   display: flex;
   flex-direction: column;
 }
 
+/* wanneer ik het schetsboekje open, wordt de rest van de pagina
+ donkerder. Daardoor valt het schetsboekje meer op. */
 #sketchbook::backdrop {
   background: rgba(0, 0, 0, 0.5);
 }
 
+/* hiermee bepaal ik de grootte en de ruimte rondom de titel,
+ zodat die netjes in de bovenkant van het schetsboekje past. */
 #sketchbook > header h2 {
   margin: 0;
   font-size: 1rem;
 }
 
-/* Sluitknop schetsboekje */
+/* deze code maakt de sluitknop roze, geeft hem een donkere rand en 
+afgeronde hoeken, en zorgt ervoor dat hij een minimale grootte heeft. */
 #sketchbook > header button {
   min-width: 2.5rem;
   min-height: 2.5rem;
@@ -480,11 +558,16 @@ body > button img {
   cursor: pointer;
 }
 
+/*--------------------------------------------------------*/
+
+/* wanneer iemand op het canvas tekent met zijn vinger, probeert de browser niet
+ tegelijkertijd de pagina te scrollen of te zoomen. De regel zorgt er zelf niet voor 
+ dat er lijnen worden getekend.  */
 #drawCanvas {
   display: block;
   width: calc(100% - 1.5rem);
   height: auto;
-  aspect-ratio: 900 / 560;
+  aspect-ratio: 900 / 560; /* Dit bepaalt de verhouding van het canvas */
   margin: 0.75rem;
   border: 2px solid var(--color-canvas-border);
   background-color: var(--color-white);
@@ -492,6 +575,8 @@ body > button img {
   touch-action: none; /* Geen scrollen/zoomen tijdens het tekenen op touchscreens */
 }
 
+/* ik geef de knop een blauwe achtergrond, ronde hoeken en dikgedrukte tekst. Ik zet 
+hem in het midden en geef hem ruimte onderaan */
 #clearBtn {
   align-self: center;
   margin-bottom: 1rem;
@@ -507,14 +592,21 @@ body > button img {
 #clearBtn:hover {
   background-color: var(--color-blue-light);
 }
+/* Bronnen: 
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/aspect-ratio 
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/touch-action 
+-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/cursor */
 
-/*  Footer  */
+/*--------------------------------------------------------*/
+
 footer {
   grid-area: footer;
   padding-top: 2rem;
   text-align: center;
   font-size: 0.9rem;
 }
+
+/*--------------------------------------------------------*/
 
 /* Tablet responsive styling */
 @media (min-width: 48em) {
@@ -620,6 +712,8 @@ footer {
   }
 }
 
+/*--------------------------------------------------------*/
+
 /* Desktop responsive styling */
 @media (min-width: 78em) {
   body {
@@ -635,12 +729,14 @@ footer {
     margin-top: 4rem;
   }
 
-  /* Thema-knoppen gecentreerd boven de rechter aside, naast de header */
+  /* Thema knoppen gecentreerd boven de rechter aside, naast de header */
   body > form {
     justify-self: center;
     margin-top: 0;
   }
 }
+
+/*--------------------------------------------------------*/
 
 /* Automatisch dark thema als het systeem op dark staat.
    Dit blok staat onderaan zodat het de regels hierboven overschrijft.
