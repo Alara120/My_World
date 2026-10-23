@@ -6,6 +6,15 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 (De deepdives en code uitleg met de bronnenlijst zit helemaal onderaan de document)
 
+## 23 okt - Voortgang + Retrospect
+
+**Voortgangsgesprek - Feedback**s
+
+**Retrospect sprint 3**
+![Opdracht](assets/images-voor-readme/retro1.jpg)
+![Opdracht](assets/images-voor-readme/retro2.jpg)
+![Opdracht](assets/images-voor-readme/retro3.jpg)
+
 ## 21 okt - Dotting the i's
 
 ![Opdracht](assets/images-voor-readme/geek3.jpg)
