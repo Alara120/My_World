@@ -9,7 +9,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 ## Inhoudsopgave
 
 - [23 okt - Voortgang + Retrospect](#dag-23-okt)
-- [21 okt - Dotting the i's](#dag-21-okt)
+- [21 okt - Dotting the i's + Bi geekly week 3 ](#dag-21-okt)
 - [19 okt - Plan voor afronding](#dag-19-okt)
 - [9 okt - WS3 + Voortgang](#dag-9-okt)
 - [7 okt - WS2](#dag-7-okt)
