@@ -664,45 +664,16 @@ Ik ga onderzoeken welke informatie mijn website en gebruikte diensten verwerken 
 
 ## 18 sept - Voortgang + Retrospect
 
-Helaas ben ik ziek en was ik niet aanwezig in de les.., deze stof ga ik inhalen.
-
-### Wat heb ik geleerd?
-
-Ik was niet aanwezig bij deze les, maar ik heb genoteerd dat ik de gemiste stof nog moet inhalen. Daardoor weet ik dat ik deze dag nog moet aanvullen in mijn eigen leerproces.
-
-### Wat ging goed?
-
-Ik heb de les zelf niet kunnen volgen, dus ik kan nog niet goed beoordelen hoe de les ging.
-
-### Wat vond ik lastig?
-
-Het nadeel was dat ik hierdoor de uitleg en opdrachten van deze dag heb gemist.
-
-### Volgende stap
-
-Ik ga de gemiste stof inhalen en de opdrachten toevoegen aan mijn learning log.
+Helaas ben ik ziek en was ik niet aanwezig in de les.., maar heb de retrospectief
+zelfstandig uitgevoerd.
 
 <a id="dag-16-sept"></a>
 
 ## 16 sept - OntwerpTheorie
 
-Helaas ben ik ziek en was ik niet aanwezig in de les.., deze stof ga ik inhalen.
+Helaas ben ik ziek en was ik niet aanwezig in de les.., maar heb illustraties gemaakt in Adobe illustrator. In deze afbeelding heb ik een aantal onderdelen van mijn ontwerp bij elkaar gezet: de icoontjes, de Light en Dark theme en de achtergronden. Ik wilde dat de verschillende onderdelen bij dezelfde stijl passen. Daarom heb ik gekeken naar vormen, kleuren en hoe de Light theme verandert naar de Dark theme. Dit hielp mij om tijdens het bouwen van de website steeds dezelfde visuele stijl aan te houden.
 
-### Wat heb ik geleerd?
-
-Ik was niet aanwezig bij deze les. Ik heb daarom nog niet kunnen vastleggen wat ik precies uit de les heb geleerd.
-
-### Wat ging goed?
-
-Ik kan het verloop van deze les nog niet goed beoordelen omdat ik niet aanwezig was.
-
-### Wat vond ik lastig?
-
-Het minder goede was dat ik de lesstof en uitleg heb gemist.
-
-### Volgende stap
-
-Ik ga de stof inhalen en mijn learning log aanvullen zodra ik de inhoud heb doorgenomen.
+<img src="assets/images-voor-readme/stijl.jpg" alt="Overzicht van mijn ontwerpproces met icoontjes, Light en Dark theme en achtergronden" width="500">
 
 <a id="dag-14-sept"></a>
 
