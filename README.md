@@ -9,7 +9,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 ## Inhoudsopgave
 
 - [23 okt - Voortgang + Retrospect](#dag-23-okt)
-- [21 okt - Dotting the i's + Bi geekly week 3 ](#dag-21-okt)
+- [21 okt - Dotting the i's](#dag-21-okt)
 - [19 okt - Plan voor afronding](#dag-19-okt)
 - [9 okt - WS3 + Voortgang](#dag-9-okt)
 - [7 okt - WS2](#dag-7-okt)
@@ -34,20 +34,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## 23 okt - Voortgang + Retrospect
 
-**Voortgangsgesprek - Feedback**
-
-In de klas hebben wij vandaag onze retrospective uitgevoerd en feedback gekregen van onze laatste sprint.
-Feedback van Vasilis:
-
-- De songtekst kan wat krachtiger, de schetsen zagen er meer interessanter uit
-
-- Mijn website meer "levendiger" maken door animaties toe te voegen als je bijvoorbeeld door een
-  icoon hovert
-
-- Wanneer je tab gebruikt, is de lijning rondom de buttons, saai. Doe er wat mee
-
-<img src="assets/images-voor-readme/peri.png" alt="Opdracht" width="500">
-<img src="assets/images-voor-readme/website.png" alt="Opdracht" width="500">
+**Voortgangsgesprek - Feedback**s
 
 **Retrospect sprint 3**
 
@@ -59,23 +46,27 @@ Feedback van Vasilis:
 
 ### Wat heb ik geleerd?
 
-Vandaag heb ik geleerd dat feedback en een retrospect helpen om te kijken wat er nog beter kan aan mijn project. Door het voortgangsgesprek kreeg ik een duidelijker beeld van de laatste verbeterpunten
+Vandaag heb ik geleerd dat feedback en een retrospect helpen om te kijken wat er nog beter kan aan mijn project. Door het voortgangsgesprek kreeg ik een duidelijker beeld van de laatste verbeterpunten.
 
 ### Wat ging goed?
 
-De dag ging goed omdat ik mijn voortgang kon bespreken en feedback kreeg op wat ik nog moest afronden. Het was fijn om mijn werk door iemand anders te laten bekijken
+De dag ging goed omdat ik mijn voortgang kon bespreken en feedback kreeg op wat ik nog moest afronden. Het was fijn om mijn werk door iemand anders te laten bekijken.
 
 ### Wat vond ik lastig?
 
-Ik merkte dat er nog kleine punten zijn die ik makkelijk kan vergeten wanneer ik vooral bezig ben met het eindresultaat
+Ik merkte dat er nog kleine punten zijn die ik makkelijk kan vergeten wanneer ik vooral bezig ben met het eindresultaat.
+
+### Volgende stap
+
+Ik ga de laatste feedback verwerken, mijn website controleren en daarna nog een laatste test doen.
 
 <a id="dag-21-okt"></a>
 
-## 21 okt - Dotting the i's + Bi geekly week3
+## 21 okt - Dotting the i's
 
 <img src="assets/images-voor-readme/geek3.jpg" alt="Opdracht" width="500">
 
-Vandaag hebben we feedbackrondes gedaan met mijn medestudenten. Ik zat met Tuya, Susanne en een hulpstudent. Samen hebben we gekeken naar elkaars website en beoordeeld met de hand van het formulier. Ik heb wel kleie tips hier en daar gekregen waardoor ik verder kan werken met het verbeteren van mijn website
+Vandaag hebben we feedbackrondes gedaan met mijn medestudenten. Ik zat met Tuya, Susanne en een hulpstudent. Samen hebben we gekeken naar elkaars website en beoordeeld met de hand van het formulier.
 
 **Gegeven feedback**
 
@@ -91,35 +82,41 @@ Vandaag hebben we feedbackrondes gedaan met mijn medestudenten. Ik zat met Tuya,
 
 ### Wat heb ik geleerd?
 
-Ik heb geleerd om niet alleen feedback te geven, maar ook bewust te kijken naar de keuzes van andere studenten. Daardoor zie je soms problemen of mogelijkheden die je zelf niet opmerkt. Ook vind ik het best leuk om feedback te geven aan mijn medestudenten en vond ik het ook interessant om te zien hoe iedereen zijn creativiteit uit op hun website
+Ik heb geleerd om niet alleen feedback te geven, maar ook bewust te kijken naar de keuzes van andere studenten. Daardoor zie je soms problemen of mogelijkheden die je zelf niet opmerkt.
 
 ### Wat ging goed?
 
-Het ging goed omdat ik samen met anderen mijn website en hun websites kon bekijken. De feedbackronde gaf mij nieuwe ideeën voor de laatste verbeteringen
+Het ging goed omdat ik samen met anderen mijn website en hun websites kon bekijken. De feedbackronde gaf mij nieuwe ideeën voor de laatste verbeteringen.
 
 ### Wat vond ik lastig?
 
-Het was soms lastig om feedback duidelijk en goed mogelijk te formuleren zonder alleen te zeggen dat iets mooi of niet mooi is. Want dat kan je wel zeggen, maar WAAROM is het wel of niet mooi is de vraag...
+Het was soms lastig om feedback duidelijk en concreet te formuleren zonder alleen te zeggen dat iets mooi of niet mooi is.
+
+### Volgende stap
+
+Volgende keer wil ik mijn feedback nog specifieker maken en de ontvangen feedback meteen verwerken in mijn website.
 
 <a id="dag-19-okt"></a>
 
 ## 19 okt - Plan voor afronding
 
-Vandaag zijn we in duo's met de randominazor ingedeeld. Je gaat met zn 2 kijken naar elkaars website en het webby formulier invullen
-
 <img src="assets/images-voor-readme/webby.png" alt="Opdracht" width="500">
 
 ### Wat heb ik geleerd?
 
-Ik heb geleerd om mijn werk beter richting de afronding te plannen. Ik moet niet alleen kijken naar wat al af is, maar ook naar de kleine punten die nog gecontroleerd moeten worden of gedaan
+Ik heb geleerd om mijn werk beter richting de afronding te plannen. Ik moet niet alleen kijken naar wat al af is, maar ook naar de kleine punten die nog gecontroleerd moeten worden.
 
 ### Wat ging goed?
 
-Het ging lekker, omdat ik steeds duidelijker zie wat er nog moet gebeuren voor de eindoplevering en zie ook mijn medestudent dr perspectief
+Het ging redelijk goed omdat ik steeds duidelijker zie wat er nog moet gebeuren voor de eindoplevering.
 
 ### Wat vond ik lastig?
 
-Ik vind het lastig om alle kleine verbeterpunten bij te houden naast de andere opdrachten en feedback. Ik heb best wel een dingetje dat ik heel erg kan focussen op 1 ding omdat ik het goed wil doen en de rest een beetje vergeet..
+Ik vind het lastig om alle kleine verbeterpunten bij te houden naast de andere opdrachten en feedback.
+
+### Volgende stap
+
+Ik ga een duidelijke lijst maken van de laatste taken en deze één voor één afwerken.
 
 <a id="dag-9-okt"></a>
 
@@ -176,146 +173,104 @@ Voor de songtekst:
 &#x20; Line height: Dit bepaalt hoeveel ruimte er tussen de regels zit.
 
 3. **Hoe zou je animatie kunnen toepassen om het ritme of de accenten in de weergave van je songtekst nog beter visueel te maken?**
-   Ik zou animatie kunnen gebruiken om bepaalde woorden of zinnen die dikgedrukt zijn of een bepaalde beweging hebben. Zoals het woord: "Whising, splash, crash" etc.
 
 ### Wat heb ik geleerd?
 
-Ik heb geleerd hoe feedback op typografie en animatie mijn ontwerp kan verbeteren. Ook heb ik geleerd dat responsive design en variabele fonts belangrijk zijn voor mijn songtekst en best meer emoties kan uitdrukken afhankelijk van hoe je een bepaalde vormgeving geeft aan woorden/ zinnen
+Ik heb geleerd hoe feedback op typografie en animatie mijn ontwerp kan verbeteren. Ook heb ik geleerd dat responsive design en variabele fonts belangrijk zijn voor mijn songtekst.
 
 ### Wat ging goed?
 
-De feedback gaf mij veel punten waar ik direct mee verder kan. Vooral de ideeën voor hover effecten en het gebruik van variabelen vond ik handig
+De feedback gaf mij veel concrete punten waar ik direct mee verder kan. Vooral de ideeën voor hover-effecten en het gebruik van variabelen vond ik handig.
 
 ### Wat vond ik lastig?
 
-Het was lastig om alle feedback tegelijk te verwerken en te bepalen welke verbeteringen het belangrijkst zijn
+Het was lastig om alle feedback tegelijk te verwerken en te bepalen welke verbeteringen het belangrijkst zijn.
+
+### Volgende stap
+
+Ik ga eerst de belangrijkste feedback verwerken en daarna mijn songtekst responsive maken en de variabele fonts verder toepassen.
 
 <a id="dag-7-okt"></a>
 
 ## 7 okt - WS2
 
-**Experimentjes met de songtekst**
-
-<img src="assets/images-voor-readme/peri1.png" alt="Opdracht" width="500">
-<img src="assets/images-voor-readme/peri2.png" alt="Opdracht" width="500">
-<img src="assets/images-voor-readme/peri3.png" alt="Opdracht" width="500">
-<img src="assets/images-voor-readme/peri4.png" alt="Opdracht" width="500">
-
 ## CHECKOUT
 
 1. **Waarom is het goed om een grid in je ontwerp toe te passen? Noem een reden voor de ontwerper en een voor de bezoeker**
 
-&#x20; Voor een ontwerper is een grid is handig bij het maken van keuzes. Je hoeft niet bij elk element opnieuw te bedenken waar het moet staan. Voor de gebruiker staan de elementen op logische plekken en lijnen met elkaar waardoor je weet waar je naar moet kijken en de pagina fijner kan gebruiken
+&#x20; Voor een ontwerper is een grid is handig bij het maken van keuzes. Je hoeft niet bij elk element opnieuw te bedenken waar het moet staan. Voor de gebruiker staan de elementen op logische plekken en lijnen met elkaar waardoor je weet waar je naar moet kijken en de pagina fijner kan gebruiken.
 
 2. **Noem drie manieren om chaos in je ontwerp te voorkomen.**
 
-&#x20; Het gebruiken van hierachie, witruimtes, duidelijke grid en hoe alles eruit komt te zien
+&#x20; Het gebruiken van hierachie, witruimtes, duidelijke grid en hoe alles eruit komt te zien.
 
 3. **Hoeveel gekkigheid moet er in je werk zitten?**
 
-&#x20; Ligt er echt aan wat je gaat maken en voor wie. Deze vraag is best lastig om te beantwoorden
+&#x20; Ligt er echt aan wat je gaat maken en voor wie. Deze vraag is best lastig om te beantwoorden.
 
 ### Wat heb ik geleerd?
 
-Ik heb geleerd dat een grid helpt om structuur en samenhang in een ontwerp te krijgen. Ook heb ik geleerd dat chaos kan worden verminderd als je werkt met hiërarchie, witruimte en een duidelijke indelingen
+Ik heb geleerd dat een grid helpt om structuur en samenhang in een ontwerp te krijgen. Ook heb ik geleerd dat chaos kan worden verminderd met hiërarchie, witruimte en een duidelijke indeling.
 
 ### Wat ging goed?
 
-De les ging goed, heb zitten experimenter met, line-height en het grid voor mijn songtekst.
+De les ging goed omdat ik beter begon te begrijpen waarom een ontwerp soms rustig of juist chaotisch aanvoelt.
 
 ### Wat vond ik lastig?
 
-Wat ik lastig vond is spelen met het grid en wat echt past bij je songtekst.
+Ik vond de vraag over hoeveel gekkigheid er in een ontwerp moet zitten lastig, omdat dit erg afhankelijk is van het ontwerp en de doelgroep.
+
+### Volgende stap
+
+Ik ga bij mijn eigen ontwerp beter kijken naar de balans tussen structuur en speelsheid.
 
 <a id="dag-5-okt"></a>
 
 ## 5 okt - Sprintplanning 3 - WS1
 
-Deze dag was ik afwezig, dus heb ik de opdrachten thuis doorgenomen en uitgevoerd. Ik heb voor Cannonball The Breeders gekozen, omdat ik denk ik wel bepaalde woorden beter kan uitdrukken met deze songtekst. Ik heb 10 schetsen gemaakt op mijn ipad en ga hier verder mee experimenteren in HTML en CSS
+**Samen lezen artikelen**
 
-**Opdracht: Songtekst analyseren**
+Notities gemaakt/ samenvatting
+
+**Opdracht 1: Songtekst analyseren**
 
 <img src="assets/images-voor-readme/typoschetsen.jpg" alt="Opdracht" width="500">
+
+**Opdracht 2: Bespreek je schetsen met een ander**
+
+**Opdracht 3: Neem de css- en html-documenten**
 
 ## CHECKOUT
 
 1. **Leg uit wat er met de volgende termen bedoeld wordt: kerning, tracking, leading, flush-left, flush-right, centered, justified, indent, outdent, modular scale, movable type, focus punt, vijf soorten contrast, spatial tension**
 
-Kerning
-Kerning is de ruimte tussen twee specifieke letters. Sommige letters staan van nature wat te ver of te dicht bij elkaar. Met kerning pas je die ruimte aan zodat het er mooier en gelijk eruit ziet.
-
-Tracking
-Tracking is de ruimte tussen alle letters in een woord of tekst. Je maakt hiermee de letters dus overal iets meer of minder uit elkaar.
-
-Leading
-Leading is de verticale ruimte tussen tekstregels. Met meer leading komen de regels verder uit elkaar te staan.
-
-Flush-left
-De tekst staat links uitgelijnd. De linkerkant is recht en de rechterkant is ongelijk.
-
-Flush-right
-De tekst staat rechts uitgelijnd. De rechterkant is recht en de linkerkant is ongelijk.
-
-Centered
-De tekst staat gecentreerd. De tekstregels staan in het midden en hebben aan beide kanten ongeveer evenveel ruimte.
-
-Justified
-De tekst wordt aan zowel de linker- als rechterkant recht uitgelijnd. De ruimte tussen woorden wordt aangepast zodat alle regels ongeveer even lang zijn.
-
-Indent
-Een indent is een inspringing. De eerste regel van een alinea begint bijvoorbeeld iets verder naar rechts dan de rest van de tekst.
-
-Outdent
-Een outdent is het tegenovergestelde van een indent. Een deel van de tekst springt juist naar buiten ten opzichte van de rest.
-
-Modular scale
-Een modular scale is een vaste verhouding waarmee je verschillende tekstgroottes bepaalt. Bijvoorbeeld: een titel is groter dan een subtitel en een subtitel weer groter dan gewone tekst. Hierdoor ontstaat een duidelijke hiërarchie.
-
-Movable type
-Movable type is een oude manier van drukken waarbij losse letters van metaal of hout gebruikt werden. De letters konden steeds opnieuw worden gerangschikt om verschillende teksten te drukken.
-
-Focuspunt
-Een focuspunt is het onderdeel van een ontwerp waar je als eerste naar kijkt. Dit kan bijvoorbeeld een grote titel, opvallende afbeelding of een contrasterende kleur zijn.
-
-Vijf soorten contrast
-Vijf manieren om contrast te maken zijn:
-
-Grootte – bijvoorbeeld een grote titel tegenover kleine tekst.
-
-Kleur – bijvoorbeeld zwart tegenover een opvallende kleur.
-
-Vorm – bijvoorbeeld ronde vormen tegenover hoekige vormen.
-
-Ruimte – bijvoorbeeld een druk gedeelte tegenover een gedeelte met veel witruimte.
-
-Typografie – bijvoorbeeld een dik lettertype tegenover een dun lettertype.
-
-Spatial tension
-Spatial tension betekent dat je spanning creëert door de plaatsing en ruimte tussen elementen. Bijvoorbeeld door een tekst heel dicht bij de rand te zetten of twee elementen bewust dicht bij elkaar te plaatsen. Hierdoor voelt een ontwerp minder statisch.
-
 2. **Wat is jouw ideale regellengte (measure)? Leg uit waarom.**
-   Deze vraag kan ik niet beantwoorden.
 
 3. **Als je in een ontwerp maar één variabele tot je beschikking had om hiërarchie aan te brengen (grootte, plaatsing, spacing, lettersoorten), welke zou je dan gebruiken en waarom?**
-   Ik zou grootte gebruiken. Met alleen het verschil in grootte kun je al duidelijk maken wat belangrijker is en druk je ook bepaalde dingen veel beter uit.
 
 ### Wat heb ik geleerd?
 
-Ik heb geleerd hoe typografie, zoals kerning, tracking, leading en regellengte, invloed heeft op de leesbaarheid en hiërarchie van een ontwerp. Ook heb ik 10 schetsjes gemaakt van de songtekst van Cannonball.
+Ik heb geleerd hoe typografie, zoals kerning, tracking, leading en regellengte, invloed heeft op de leesbaarheid en hiërarchie van een ontwerp. Ook ben ik begonnen met het analyseren van de songtekst van Cannonball.
 
 ### Wat ging goed?
 
-Het ging goed met het schetsen van mijn songtekst. Het was leuk om het te doen.
+Het ging goed met het maken en bespreken van mijn typografische schetsen. Door meerdere versies te maken kon ik verschillende mogelijkheden vergelijken.
 
 ### Wat vond ik lastig?
 
-Ik vond het lastig om alle typografische begrippen goed toe te passen en tegelijk een ontwerp te maken dat niet te druk wordt
+Ik vond het lastig om alle typografische begrippen goed toe te passen en tegelijk een ontwerp te maken dat niet te druk wordt.
+
+### Volgende stap
+
+Ik ga mijn favoriete schets verder uitwerken en de HTML en CSS gebruiken om de typografie digitaal te testen.
 
 <a id="dag-2-okt"></a>
 
 ## 2 okt - Voortgang + Retrospect
 
 **Voortgangsgesprek - Feedback**
+
+- Deepdives moet je nog doen, het is een verplicht onderdeel en moet verwerkt worden in je learning log
 
 - Je cookies moet je nog duidelijker maken: wat voor informatie is er op je website te vinden?
 
@@ -337,7 +292,7 @@ Ik vond het lastig om alle typografische begrippen goed toe te passen en tegelij
 
 ### Wat heb ik geleerd?
 
-Ik heb geleerd dat feedback niet alleen over het uiterlijk van mijn website gaat, maar ook over duidelijkheid, privacy en toegankelijkheid
+Ik heb geleerd dat feedback niet alleen over het uiterlijk van mijn website gaat, maar ook over duidelijkheid, privacy en toegankelijkheid. Ik kreeg concrete punten over mijn consent component en mijn volgende verbeteringen.
 
 ### Wat ging goed?
 
@@ -345,7 +300,11 @@ Het ging goed omdat ik nu duidelijker weet welke onderdelen van mijn Digital Gar
 
 ### Wat vond ik lastig?
 
-Ik vind het lastig om alle feedback te vertalen naar veranderingen in mijn ontwerp en code.
+Ik vind het lastig om alle feedback te vertalen naar concrete veranderingen in mijn ontwerp en code.
+
+### Volgende stap
+
+Ik ga mijn Human Consent Component verder uitwerken, de deepdives bijwerken en mijn website opnieuw controleren op toegankelijkheid.
 
 <a id="dag-30-sept"></a>
 
@@ -381,7 +340,7 @@ Focusvolgorde met tab: Wanneer ik mijn pagina probeer te navigeren met alleen TA
 
 **3. 3. WCAG checklist**
 
-<img src="assets/images-voor-readme/WCAG_checklijst.pdf" alt="Opdracht" width="500">
+kon het niet voeren.
 
 ## CHECKOUT
 
@@ -415,7 +374,11 @@ Het ging goed dat ik de toegankelijkheidstest thuis alsnog heb uitgevoerd nadat 
 
 ### Wat vond ik lastig?
 
-Ik vond vooral de screenreader lastig, omdat er veel informatie wordt voorgelezen en niet alles meteen duidelijk is en soms verward ben wat er gebeurd.
+Ik vond vooral de screenreader lastig, omdat er veel informatie wordt voorgelezen en niet alles meteen duidelijk is.
+
+### Volgende stap
+
+Ik ga de problemen met mijn interactieve elementen oplossen en daarna opnieuw testen met toetsenbord en screenreader.
 
 <a id="dag-28-sept"></a>
 
@@ -475,6 +438,10 @@ De oefeningen met alleen het toetsenbord en een screenreader waren leerzaam, omd
 
 Het was lastig om te merken dat sommige onderdelen die visueel duidelijk zijn, voor een screenreader minder duidelijk zijn.
 
+### Volgende stap
+
+Ik ga mijn interactieve elementen en headingstructuur verbeteren en daarna opnieuw testen.
+
 <a id="dag-25-sept"></a>
 
 ## 25 sept - WS3 + VOORTGANG
@@ -529,7 +496,7 @@ Persoonlijke feedback:
 
 ### Wat heb ik geleerd?
 
-Ik heb geleerd hoe ik mijn HTML kan controleren met een validator en waarom alt-teksten belangrijk zijn voor afbeeldingen. Ook kreeg ik meer feedback over mijn Human Consent Component.
+Ik heb geleerd hoe ik mijn HTML kan controleren met een validator en waarom correcte alt-teksten belangrijk zijn voor afbeeldingen. Ook kreeg ik meer feedback over mijn Human Consent Component.
 
 ### Wat ging goed?
 
@@ -537,17 +504,21 @@ Het ging goed dat ik mijn oude en nieuwe versie naast elkaar kon controleren. Da
 
 ### Wat vond ik lastig?
 
-Ik was vergeten om alt-teksten toe te voegen aan mijn afbeeldingen. Ook vind ik het lastig om privacy informatie duidelijk te maken voor mijn bezoekers. Maar dat komt wel goed.
+Ik was vergeten om alt-teksten toe te voegen aan mijn afbeeldingen. Ook vind ik het lastig om privacy-informatie duidelijk te maken zonder mijn ontwerp te ingewikkeld te maken.
+
+### Volgende stap
+
+Ik ga mijn alt-teksten blijven controleren en mijn consent component verder uitwerken met duidelijke keuzes voor de gebruiker.
 
 <a id="dag-23-sept"></a>
 
 ## 23 sept - WS2 + CHECKOUT
 
-**Opdracht: Dark Pattern Herontwerp**
+Opdracht: Dark Pattern Herontwerp
 
 <img src="assets/images-voor-readme/temu.jpg" alt="Opdracht" width="500">
 
-**Opdracht: Hoe teken je wireflows**
+Opdracht: Hoe teken je wireflows
 
 <img src="assets/images-voor-readme/wireflow.jpg" alt="Opdracht" width="500">
 
@@ -649,6 +620,10 @@ Het ging goed met het herontwerpen van een darkpattern en van wireflows maken me
 
 ik vond het lastig om te bepalen welke informatie ik precies aan de gebruiker moet geven. Ik wist bijvoorbeeld al dat ik GitHub Pages en de Digitaaltuintje Webring gebruik, maar ik moest verder nadenken over wat dit betekent voor de privacy van de gebruikers voor mijn website.
 
+### Volgende stap
+
+Mijn volgende stap is om de schets verder uit te werken en de HTML structuur van mijn Human Consent Component te maken op mijn garden (als het lukt en tijd voor heb..)
+
 <a id="dag-21-sept"></a>
 
 ## 21 sept - Sprintplanning 2 + WS1
@@ -671,7 +646,7 @@ Ik lees nooit de cookies en klik snel op "accepteer" omdat het me allemaal niet 
 
 ### Wat heb ik geleerd?
 
-Ik heb geleerd wat HTML landmarks en headings zijn en waarom een logische structuur belangrijk is voor een website. Ook ben ik meer gaan nadenken over hoe ik met cookies en privacy om ga.
+Ik heb geleerd wat HTML landmarks en headings zijn en waarom een logische structuur belangrijk is voor een website. Ook ben ik meer gaan nadenken over hoe ik met cookies en privacy omga.
 
 ### Wat ging goed?
 
@@ -681,20 +656,53 @@ Het ging goed dat ik mijn eigen houding tegenover cookies heb kunnen vergelijken
 
 Ik vond het lastig om precies te begrijpen welke informatie een gebruiker over cookies en externe diensten moet krijgen.
 
+### Volgende stap
+
+Ik ga onderzoeken welke informatie mijn website en gebruikte diensten verwerken en dit duidelijk verwerken in mijn Human Consent Component.
+
 <a id="dag-18-sept"></a>
 
 ## 18 sept - Voortgang + Retrospect
 
-Helaas ben ik ziek en was ik niet aanwezig in de les.., maar heb de retrospectief
-zelfstandig uitgevoerd.
+Helaas ben ik ziek en was ik niet aanwezig in de les.., deze stof ga ik inhalen.
+
+### Wat heb ik geleerd?
+
+Ik was niet aanwezig bij deze les, maar ik heb genoteerd dat ik de gemiste stof nog moet inhalen. Daardoor weet ik dat ik deze dag nog moet aanvullen in mijn eigen leerproces.
+
+### Wat ging goed?
+
+Ik heb de les zelf niet kunnen volgen, dus ik kan nog niet goed beoordelen hoe de les ging.
+
+### Wat vond ik lastig?
+
+Het nadeel was dat ik hierdoor de uitleg en opdrachten van deze dag heb gemist.
+
+### Volgende stap
+
+Ik ga de gemiste stof inhalen en de opdrachten toevoegen aan mijn learning log.
 
 <a id="dag-16-sept"></a>
 
 ## 16 sept - OntwerpTheorie
 
-Helaas ben ik ziek en was ik niet aanwezig in de les.., maar heb illustraties gemaakt in Adobe illustrator. In deze afbeelding heb ik een aantal onderdelen van mijn ontwerp bij elkaar gezet: de icoontjes, de Light en Dark theme en de achtergronden. Ik wilde dat de verschillende onderdelen bij dezelfde stijl passen. Daarom heb ik gekeken naar vormen, kleuren en hoe de Light theme verandert naar de Dark theme. Dit hielp mij om tijdens het bouwen van de website steeds dezelfde visuele stijl aan te houden.
+Helaas ben ik ziek en was ik niet aanwezig in de les.., deze stof ga ik inhalen.
 
-<img src="assets/images-voor-readme/stijl.jpg" alt="Overzicht van mijn ontwerpproces met icoontjes, Light en Dark theme en achtergronden" width="500">
+### Wat heb ik geleerd?
+
+Ik was niet aanwezig bij deze les. Ik heb daarom nog niet kunnen vastleggen wat ik precies uit de les heb geleerd.
+
+### Wat ging goed?
+
+Ik kan het verloop van deze les nog niet goed beoordelen omdat ik niet aanwezig was.
+
+### Wat vond ik lastig?
+
+Het minder goede was dat ik de lesstof en uitleg heb gemist.
+
+### Volgende stap
+
+Ik ga de stof inhalen en mijn learning log aanvullen zodra ik de inhoud heb doorgenomen.
 
 <a id="dag-14-sept"></a>
 
@@ -735,6 +743,10 @@ Ik heb een duidelijker idee gekregen van hoe ik mijn tekeningen op mijn website 
 ### Wat vond ik lastig?
 
 Vooral het nadenken over wat er gebeurt wanneer een gebruiker ergens op klikt en hoe dit op verschillende schermformaten moet werken, zijn dingen waar ik nog mee moet oefenen
+
+### Volgende stap
+
+ik ga mijn website responsive maken en testen op verschillende schermformaten
 
 <a id="dag-11-sept"></a>
 
@@ -832,6 +844,10 @@ Ik vond het fijn om verschillende ideeen snel op papier te kunnen zetten. Hierdo
 
 Ik vond het soms lastig om te bepalen welk idee ik verder wilde uitwerken. Ook moet ik nog uitzoeken hoe ik mijn idee technisch kan uitvoeren met HTML en CSS.
 
+### Volgende stap
+
+Ik wil mijn gekozen Crazy 8 idee verder uitwerken en onderzoeken hoe ik het tekenproces op een interactieve manier kan laten zien in mijn digital Garden
+
 <a id="dag-7-sept"></a>
 
 ## 7 sept - Sprintplanning - WS1 + Checkout
@@ -878,11 +894,31 @@ Ik vond het leuk om verschillende websites te bekijken en inspiratie op te doen.
 
 Ik vond het lastig om meteen te bepalen hoe mijn digital garden er precies uit moet gaan zien. Ik heb wel ideeen over het onderwerp en de content, maar de uiteindelijke vormgeving en interactie moeten nog verder worden uitgewerkt. Ook om te bepalen of de websites die we in les hadden behandeld webby zijn volgens het lijstje
 
+### Volgende stap
+
+ik wil mijn ideeen voor de digital garden verder uitwerken en onderzoeken welke stijl, illustraties en interacties goed bij het onderwerp tekenen passen
+
 <a id="dag-4-sept"></a>
 
 ## 4 sept - Deepdive
 
 Was er helaas niet bij de les.
+
+### Wat heb ik geleerd?
+
+Ik was niet aanwezig bij deze Deepdive. Daardoor heb ik de inhoud van deze les nog niet kunnen verwerken in mijn learning log.
+
+### Wat ging goed?
+
+Ik kan de les niet goed beoordelen omdat ik hem heb gemist.
+
+### Wat vond ik lastig?
+
+Het minder goede is dat ik hierdoor een deel van de stof heb gemist.
+
+### Volgende stap
+
+Ik ga de gemiste Deepdive inhalen en de belangrijkste dingen die ik leer toevoegen aan mijn learning log.
 
 <a id="dag-2-sept"></a>
 
@@ -907,6 +943,10 @@ Het ging goed dat ik met de opdracht kon nadenken over de context van een gebrui
 ### Wat vond ik lastig?
 
 Ik vond het lastig om meteen te bepalen welke micro-interacties echt iets toevoegen en welke alleen voor versiering zijn.
+
+### Volgende stap
+
+Ik ga de opdracht verder uitwerken en beter kijken naar hoe interactie de gebruiker kan helpen.
 
 <a id="dag-31-aug"></a>
 
@@ -938,6 +978,8 @@ Nog echt te begrijpen waar het project over gaat en wat er van ons verwacht word
 
 ### DEEPDIVES
 
+Je kunt de document van de notites hier vinden:
+
 **SPRINT 0 - CSS: fonts met kleur en effecten**
 
 Oefening 1 - font properties
@@ -947,14 +989,6 @@ Oefening 1 - font properties
 Oefening 2 - fonts, kleur en effecten
 
 [Oefening-2](assets/Deepdives/oefening-2/)
-
-Oefening 3 - mini-posters
-
-Heb ik niet af kunnen maken, ben er mee bezig!
-
-Oefening 4 - transitions
-
-Heb ik niet af kunnen maken, ben er mee bezig!
 
 **SPRINT 1 - Light & Dark theme**
 
@@ -966,9 +1000,8 @@ Oefening 2 - Twee thema's
 
 [Oefening-2](assets/Deepdives/Oefening-2-Twee-themas/)
 
-Oefening 3 - Responsive afbeelding
-
-Heb ik niet af kunnen maken, ben er mee bezig!
+<img src="assets/images-voor-readme/not1.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik met CSS-variabelen en radio buttons een light en dark theme kan maken en hoe ik afbeeldingen kan aanpassen aan het thema en schermformaat
 
 **SPRINT 1 - Mooie kleuren en gradients**
 
@@ -982,37 +1015,40 @@ Oefening 2 - Vlaggen en co
 
 [Oefening-2](assets/Deepdives/Oefening-2-Vlaggen-en-Co/)
 
-Oefening 3 - Gradients animeren
-
-Heb ik niet af kunnen maken, ben er mee bezig!
+<img src="assets/images-voor-readme/not2.png" alt="Opdracht" width="500">
+Ik heb geleerd welke verschillende kleurcodes er zijn en hoe ik met CSS gradients kleurverlopen en patronen kan maken en animeren!
 
 **SPRINT 1 - Grid 101 + Media queries**
-
-Ben er mee bezig!
+<img src="assets/images-voor-readme/not3.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik CSS Grid gebruik om elementen in rijen en kolommen te plaatsen en met media queries de layout aan verschillende schermgroottes aanpas
 
 **SPRINT 1 - Responsive grid + Grid-areas**
-
-Ben er mee bezig!
+<img src="assets/images-voor-readme/not4.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik met grid-template-areas een duidelijke indeling maakt en deze met media queries verander voor mobiele schermen en pc
 
 **SPRINT 2 - Buttons, states en selectors**
 
 [button](assets/Deepdives/sprint_2/Basic-button-states)
+<img src="assets/images-voor-readme/not5.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik buttons en andere interactieve elementen verschillende stijlen kan geven met states zoals :hover, :focus en :active.
 
 **SPRINT 2 - Buttons + Dialogs**
-
-Ben er mee bezig!
+<img src="assets/images-voor-readme/not6.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik met HTML, CSS en JavaScript knoppen interactief maak, bijvoorbeeld door een class toe te voegen of te verwijderen
 
 **SPRINT 2 - Position + Dialogs**
-
-Ben er mee bezig!
+<img src="assets/images-voor-readme/not7.png" alt="Opdracht" width="500">
+Ik heb geleerd wat de verschillende soorten position doen en hoe ik dialogvensters kan positioneren en animaties kan geven
 
 **SPRINT 2 - meer interactie met HTML en CSS**
-
-Ben er mee bezig!
+<img src="assets/images-voor-readme/not8.png" alt="Opdracht" width="500">
+ik heb geleerd hoe ik links, formulieren en invoervelden gebruik en hoe ik met labels, focus-states en validatie een website toegankelijker etc kan maken
 
 **SPRINT 3 - Interessantere layouts**
 
 [layouts](assets/Deepdives/sprint_3/Interessantere-layouts/)
+<img src="assets/images-voor-readme/not9.png" alt="Opdracht" width="500">
+ik heb geleerd hoe ik tekst laat meeschalen met het scherm of een container en hoe ik met onder andere clamp(), writing-mode en position: sticky interessantere layouts kan maken
 
 **SPRINT 3 - Variabele fonts**
 
@@ -1021,113 +1057,21 @@ Ben er mee bezig!
 [2. transitions](assets/Deepdives/sprint_3/Variabele-fonts/Oefening2-transitions)
 
 [3. staggered](assets/Deepdives/sprint_3/Variabele-fonts/Oefening3-staggered)
+<img src="assets/images-voor-readme/not10.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik variabele lettertypes gebruik en hoe ik eigenschappen zoals de dikte en breedte van letters kan aanpassen voor meer vrijheid in mijn typografie
 
 ## CODE UITLEG VOOR MIJN WEBSITE + BRONNEN
 
-**Code uitleg voor Javascript**
+Voor mijn index.html pagina:
+Ik noteer voor mezelf gedetaileerd alles, zodat ik het kan begrijpen. wanneer ik het teruglees. Dit is een navigatiemenu. De gebruiker kan hiermee naar drie verschillende plekken gaan: de homepage, het logboek en
+de experimentpagina. Bron: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nav
 
-ik heb gebruik gemaakt van javascript in mijn website, omdat ik het belangrijk vind dat er eenn interactie aanwezig is
+<img src="assets/images-voor-readme/cod1.png" alt="Opdracht" width="500">
 
-dat ik de gebruikers ermee kan entertainen. Met deze script zorgt het ervoor dat de gebruike kan tekenen op het canvas en het schetsboek kan gebruiken.
+dit gedeelte is de thema keuze en CSS bepaalt wat er met de gekozen optie gebeurt.
+met form kan de gebruiker kiezen tussen dark en light thema. label gebruik ik om duidelijk te
+maken welke tekst bij welke radio button hoort. Omdat de input binnen het label staat, kan de
+gebruiker ook op de tekst klikken. <,input> maakt een invoerveld/interactief element. Met type
+bepaal ik welk soort invoerveld het is, wat dus een radiobutton is. Bronnen: -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio
 
-<img src="assets/images-voor-readme/js1.png" alt="Opdracht" width="500">
-
-**Wat doet het?**
-
-Het zoekt het canvas element op via zijn ID (drawCanvas) en vraagt de 2D-tekencontext (getContext("2d")) op.
-
-Dit wordt dan je soort digitale teken doekje. Daarna wordt er bij te houden of de muis is ingedrukt (isDrawing).
-
-De strokeStyle, lineWidth, lineCap en lineJoin bepalen hoe dik, zwart en mooi afgerond je lijnen zijn.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
-
-<img src="assets/images-voor-readme/js2.png" alt="Opdracht" width="500">
-
-**Wat doet het?**
-
-Dit zijn de tekenfuncties. startDrawing: Wordt geactiveerd zodra je de muis indrukt of het scherm aanraakt.
-
-isDrawing op false staat, gebeurt er niets. als je gaat tekenen, dan trekt JavaScript met beginPath(), moveTo(), lineTo() en stroke() een lijn vanaf het vorige punt naar het huidige punt. stopDrawing: Stopt het tekenen zodra je de muis loslaat of buiten het canvas komt.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/Touch_events en https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event
-
-<img src="assets/images-voor-readme/js3.png" alt="Opdracht" width="500">
-
-**Wat doet het?**
-
-Dit berekent de coordinaten van je muis en touchscreen. (clientX/clientY) is voor muisklikt
-
-en (e.touches). is het aanraken met je vingers. Daarna berekent hij met (rect.left en rect.top)
-
-of de lijn precies onder je muis of vinger wordt getekent.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
-
-<img src="assets/images-voor-readme/js4.png" alt="Opdracht" width="500">
-
-**Wat doet het?**
-
-De Event Listeners luisteren steeds naar acties van de gebruiker, zoals klikken of vegen en koppelen dat aan de juiste functies. het verwijderen knop (clearBtn) gebruikt ctx.clearRect() om alles van het scherm te verwijderen. De Sluit knop zoekt de sluit knop op en zorgt ervoor dat het vinkje van de sketchbook toggle checkbox wordt uitgezet, waardoor de pop-up sluit.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/clearRect en https://www.w3schools.com/tags/canvas_clearrect.asp
-
-**Code uitleg voor HTML**
-
-figcaption> = Dit hoort altijd binnen een figure> tag en dient als een beschrijvend bijschrift bij een afbeelding of logo. Het helpt ook voor toegankelijkheid zoals screenreaders.
-
-label> = wordt gebruikt voor formuliervelden, zoals een tekstvak of vinkje. In mijn code heb ik het gebruikt voor mijn pop-ups
-
-input type="checkbox"> = Dit maakt een selectievakje (vinkje) aan. het wordt in webdesign vaak gebruikt in combinatie met de zogenaamde checkbox hack om pop-ups te openen en sluiten zonder dat je daar ingewikkelde JavaScript voor nodig hebt.
-
-button> = Maakt een klikbare knop aan
-
-span> = Een neutraal, inline element dat geen eigen opmaak heeft. Het wordt gebruikt om een klein stukje tekst of een specifiek woord binnen een zin te groeperen zodat je het via CSS kunt stylen
-
-**Ik heb wel in mijn code gebruik gemaakt van classes en ids, maar waarom? Nou:**
-
-ik heb gebruik gemaakt van JavaScript. En bij javascript moet hij weten welke knop het moet wissen (clearBtn) of waar er getekend moet worden (drawCanvas) daarom moet JavaScript dat element kunnen opzoeken in de HTML. Dit gebeurt in mijn script met document.getElementById("drawCanvas"). Een id moet uniek zijn op de pagina. Voor classes wil ik dat als iemand op het schetsboek icoon klikt, er een pop-up op scherm komt. Omdat ik dit zonder zware JavaScript wilt oplossen, gebruik ik de checkbox hack door: een verborgen input type="checkbox"> in een label> te verstoppen. Als de gebruiker op het label klikt, verandert de aan/uit status van de checkbox. Via CSS kan je dan zeggen: "Als de checkbox aangevinkt is, maak de pop-up dan zichtbaar (display: block)". Hiervoor heb ik classes (class="sketchbook-trigger", class="sketchbook-popup") nodig, omdat ik deze stijlregels op meerdere plekken wil kunnen toepassen.
-
-**Bronvermeldingen:** -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure,
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input,
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label,
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button,
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/span,
-
-https://www.w3schools.com/TAGS/default.ASP
-
-**Code uitleg voor CSS**
-
-<img src="assets/images-voor-readme/cs1.png" alt="Opdracht" width="500">
-
-**Grid**
-
-Dit is de CSS grid lay-out. je verdeelt de hele webpagina in een raster. Met grid-template-areas geef je elk HTML element (header>, main>, aside>, etc.) een eigen naam en plek in dat raster. Dit maakt het mogelijk om je website volledig flexibel te maken. Voor mobiel onder elkaar en in je @media (min-width: 48em) query maak je het raster in een keer naar een brede desktop layout met zijbalken (left-colum header right-colum), zonder dat je HTML code hoeft te veranderen.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout
-
-**Checkbox hack voor pop-up**
-
-<img src="assets/images-voor-readme/cs2.png" alt="Opdracht" width="500">
-
-Je verbergt de standaard checkbox (display: none). Je zegt dan eigenlijk: Als dit vinkje aan staat, verander dan de weergave van het gekoppelde pop-up gedeelte van display: none naar display: flex". Hiermee kan ik interactieve pop-ups gebruiken zonder dat ik daar ingewikkelde JavaScript voor nodig hebt.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:checked
-
-**Responsive voor web**
-
-<img src="assets/images-voor-readme/cs3.png" alt="Opdracht" width="500">
-
-Dit is een media query. Regels die hierin staan worden alleen toegepast op schermen die breder zijn dan 48em voor tablets en desktops.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using
-
-**andere gebruikte bronnen voor css:**
-
-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Child_combinator
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside
+<img src="assets/images-voor-readme/cod2.png" alt="Opdracht" width="500">
