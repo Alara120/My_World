@@ -1,67 +1,46 @@
-@font-face {
-  font-family: "Quantico";
-  src: url("../type/Quantico-Bold.ttf") format("truetype");
-  font-weight: 700; /* Zorg dat dit overeenkomt met de dikte van het bestand */
-  font-style: normal;
-}
-
-/* MARK: Light en dark theme*/
-html {
-  color-scheme: light dark;
-}
-
-/* MARK: styling van de body */
 body {
+  font-family: var(--font-title);
+  color: var(--color-ink);
+  background-color: var(--color-page); /* achtervang als de afbeelding niet laadt */
   background-image: url("../images/achtergrond.jpg");
   background-size: 100%;
-
-  /* MARK: Body gebruiken als CSS Grid */
   display: grid;
-
-  /* MARK: Grid indeling voor kleine schermen */
   grid-template-areas:
     "header"
     "left-colum"
     "middle-colum"
     "right-colum"
     "footer";
-
   grid-template-columns: 1fr;
-
-  gap: 1rem; /* Ruimte tussen de grid onderdelen */
-
-  max-width: 95rem; /* Vergroot naar 95rem zodat de 4 kolommen extra breed worden */
+  gap: 1rem;
+  max-width: 95rem;
   min-height: 100vh;
-  margin: 0 auto; /*Website horizontaal centreren */
-  padding: 0 1em 0 1em;
+  margin: 0 auto;
+  padding: 0 1em;
 }
 
-/* MARK: Header styling */
 body > header {
   grid-area: header;
-  border: 0.2rem solid black;
+  border: var(--border);
   border-radius: 0.5rem;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 0 -1rem 1rem -1rem;
-  background-color: #dce7f8;
+  background-color: var(--color-blue-light);
   margin-top: 4rem;
   margin-bottom: 3rem;
 }
 
 body > header > header {
-  /*blauwe balk bovenkant*/
   width: calc(100% + 1.5rem);
   height: 2rem;
-  background-color: #b2c2e5;
-  border-bottom: 0.2rem solid black;
+  background-color: var(--color-blue);
+  border-bottom: var(--border);
   margin: 0 -1rem 1rem -1rem;
 }
 
-/*bloem logo*/
 body > header figure {
   width: 4rem;
   margin: 0;
@@ -75,7 +54,7 @@ body > header figure img {
 }
 
 header h1 {
-  font-family: "Quantico";
+  font-family: var(--font-title);
   font-size: 1.5rem;
   width: auto;
   text-align: left;
@@ -83,35 +62,61 @@ header h1 {
   white-space: nowrap;
 }
 
-/* MARK: Navigatie als Flexbox */
 nav {
-  text-decoration: none;
-  gap: 1rem;
   width: 100%;
-  justify-content: center;
+}
+
+nav ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 0 2rem;
+  padding: 0;
+  list-style: none;
 }
 
-/* MARK: Styling van de navigatielinks */
 nav a {
-  font-family: "Quantico";
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: var(--border);
+  border-radius: 2rem;
+  background-color: var(--color-blue);
+  color: inherit;
+  text-decoration: none;
+  font-family: var(--font-title);
   font-weight: 700;
-  border: 0.2em solid black; /* Zwarte rand om de links */
-  border-radius: 2rem; /* Ronde hoeken */
-  padding: 0.5rem 1rem; /* Ruimte binnen de link */
-  background-color: #b2c2e5; /* Achtergrondkleur van de link */
-  text-decoration: none; /* Onderstreping van de link verwijderen */
-  color: black; /* Tekstkleur */
   text-align: center;
-  margin-bottom: 2rem;
+  transition: transform 0.2s ease-in-out;
 }
 
-/* MARK: Hover-effect voor navigatielinks */
-nav a:hover {
-  background-color: #dce7f8;
+nav a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: var(--color-blue-light);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  transform: translateY(100%);
+  transition:
+    transform 0.5s ease-in-out,
+    border-radius 0.5s ease-in-out;
 }
 
-/* MARK: Main Grid voor tekeningen, stapel vibesss) */
+nav a:hover,
+nav a:focus-visible {
+  transform: translateY(-0.2rem) scale(1.05);
+}
+
+nav a:hover::before,
+nav a:focus-visible::before {
+  transform: translateY(0);
+  border-radius: 0;
+}
+
 main {
   grid-area: middle-colum;
   border-radius: 0.5rem;
@@ -122,9 +127,9 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
-/* Styling van de losse vierkante tekeningen binnen main */
+
 main > figure {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   margin: 0;
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -135,12 +140,13 @@ main > figure {
     transform 0.3s ease,
     box-shadow 0.3s ease;
 }
+
 /*--------------------------------------------------------*/
 
-/* Ik gebruik nth-child() om bepaalde foto's op van hun positie te selecteren. 
-Met rotate() draai ik ze een klein beetje naar links of rechts. Daardoor staan 
-de foto's niet allemaal recht en krijgt mijn pagina een meer een speels effect
-en maakt het niet zo saai. Bronnen:
+/* Ik gebruik nth-child() om bepaalde foto's op hun positie te selecteren.
+Met rotate() draai ik ze een klein beetje naar links of rechts. Daardoor staan
+de foto's niet allemaal recht en krijgt mijn pagina een speels effect.
+Bronnen:
 -https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:nth-child
 -https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform
 -https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/transform-function/rotate */
@@ -157,7 +163,6 @@ main > figure:nth-child(5n) {
 
 /*--------------------------------------------------------*/
 
-/* MARK: Vierkant formaat voor de afbeelding zodat vierkante tekeningen perfect passen */
 main > figure img {
   width: 105%;
   object-fit: contain; /* Zorgt dat de hele tekening zichtbaar blijft zonder te croppen */
@@ -170,7 +175,6 @@ main > figure:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
 }
 
-/* HTMLs koppelen aan grid areas */
 aside:first-of-type {
   grid-area: left-colum;
 }
@@ -187,7 +191,6 @@ footer {
   font-size: 0.9rem;
 }
 
-/* MARK: Responsive design */
 @media (min-width: 48em) {
   body {
     grid-template-areas:
@@ -216,16 +219,13 @@ footer {
   }
 
   nav {
-    display: flex;
     width: auto;
     margin-left: auto;
-    justify-content: flex-end;
-    gap: 1rem;
   }
 
-  nav a {
-    margin-right: 1rem;
-    margin-bottom: 0;
+  nav ul {
+    justify-content: flex-end;
+    margin: 0 1rem 0 0;
   }
 
   /* MARK: Desktop Grid: 4 kolommen */

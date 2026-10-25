@@ -1,4 +1,6 @@
-/* Custom properties > alle kleuren en vaste waardes together */
+/* Custom properties > alle kleuren en vaste waardes together
+met :root kan je vaak om CSS-variabelen maken die je later op meerdere plekken in je CSS kunt gebruiken. 
+bron: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:root */
 :root {
   /* Kleuren */
   --color-ink: black;
@@ -10,6 +12,9 @@
   --color-white: #fff;
   --color-canvas-border: #333;
   --color-danger: #e74c3c;
+
+  --border: 0.2rem solid var(--color-ink);
+  --shadow-popup: 0 10px 25px rgba(0, 0, 0, 0.3);
 
   /* Achtergrondkleur als achtervang als de afbeelding niet laadt */
   --color-page: #bff0fd;
@@ -37,4 +42,11 @@
 
   /* Verdere vaste waardes */
   --font-title: "Quantico", sans-serif;
+
+  @font-face {
+  font-family: "Outfit";
+  src: url("../type/Outfit-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
 }
