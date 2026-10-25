@@ -26,11 +26,10 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 - [11 sept - WS3 + Voortgang](#dag-11-sept)
 - [9 sept - WS2 + Checkout](#dag-9-sept)
 - [7 sept - Sprintplanning - WS1 + Checkout](#dag-7-sept)
-- [4 sept - Deepdive](#dag-4-sept)
 - [2 sept - Deepdive](#dag-2-sept)
 - [31 aug - Kickoff + Checkout](#dag-31-aug)
 - [deepdives](#deepdives)
-- [code uitleg en bronnen](code uitleg en bronnen)
+- [uitlegenbronnen](#uitleg en bronnen)
 
 <a id="dag-23-okt"></a>
 
@@ -887,12 +886,6 @@ Ik vond het leuk om verschillende websites te bekijken en inspiratie op te doen.
 
 Ik vond het lastig om meteen te bepalen hoe mijn digital garden er precies uit moet gaan zien. Ik heb wel ideeen over het onderwerp en de content, maar de uiteindelijke vormgeving en interactie moeten nog verder worden uitgewerkt. Ook om te bepalen of de websites die we in les hadden behandeld webby zijn volgens het lijstje
 
-<a id="dag-4-sept"></a>
-
-## 4 sept - Deepdive
-
-Was er helaas niet bij de les.
-
 <a id="dag-2-sept"></a>
 
 ## 2 sept - Deepdive
@@ -949,7 +942,7 @@ Nog echt te begrijpen waar het project over gaat en wat er van ons verwacht word
 
 ### DEEPDIVES
 
-Mijn notities kan je hier vinden: [Notities](assets/images-voor-readme/Notities_van_deepdive)
+Mijn notities kan je hier vinden: [Notities](assets/images-voor-readme/Notities_van_deepdive.docx)
 
 **SPRINT 0 - CSS: fonts met kleur en effecten**
 
@@ -961,32 +954,67 @@ Oefening 2 - fonts, kleur en effecten
 
 [Oefening-2](assets/Deepdives/oefening-2/)
 
+**SPRINT 1 - Light & Dark theme**
+<img src="assets/images-voor-readme/not1.png" alt="Opdracht" width="500">
+
+Ik heb geleerd hoe ik met CSS-variabelen en radio buttons een light en dark theme kan maken en hoe ik afbeeldingen kan aanpassen aan het thema en schermformaat.
+
+Oefening 1 - Light & Dark 101
+[Oefening-1](assets/Deepdives/Oefening-1-Light-Dark-101/)
+
+Oefening 2 - Twee thema's
+[Oefening-2](assets/Deepdives/Oefening-2-Twee-themas/)
+
+**SPRINT 1 - Mooie kleuren en gradients**
+
+<img src="assets/images-voor-readme/spelletje.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/not2.png" alt="Opdracht" width="500">
+
+Oefening 1 - De zes gradients
+[Oefening-1](assets/Deepdives/Oefening1-De-zes-gradients/)
+
+Oefening 2 - Vlaggen en co
+[Oefening-2](assets/Deepdives/Oefening-2-Vlaggen-en-Co/)
+
+Ik heb geleerd welke verschillende kleurcodes er zijn en hoe ik met CSS-gradients kleurverlopen en patronen kan maken en animeren!
+
+**SPRINT 1 - Grid 101 + Media queries**
+<img src="assets/images-voor-readme/not3.png" alt="Opdracht" width="500">
+
+Ik heb geleerd hoe ik CSS Grid gebruik om elementen in rijen en kolommen te plaatsen en met media queries de layout aan verschillende schermgroottes aanpas
+
 **SPRINT 1 - Responsive grid + Grid-areas**
 <img src="assets/images-voor-readme/not4.png" alt="Opdracht" width="500">
+
 Ik heb geleerd hoe ik met grid-template-areas een duidelijke indeling maakt en deze met media queries verander voor mobiele schermen en pc
 
 **SPRINT 2 - Buttons, states en selectors**
 
 [button](assets/Deepdives/sprint_2/Basic-button-states)
 <img src="assets/images-voor-readme/not5.png" alt="Opdracht" width="500">
+
 Ik heb geleerd hoe ik buttons en andere interactieve elementen verschillende stijlen kan geven met states zoals :hover, :focus en :active.
 
 **SPRINT 2 - Buttons + Dialogs**
 <img src="assets/images-voor-readme/not6.png" alt="Opdracht" width="500">
+
 Ik heb geleerd hoe ik met HTML, CSS en JavaScript knoppen interactief maak, bijvoorbeeld door een class toe te voegen of te verwijderen
 
 **SPRINT 2 - Position + Dialogs**
 <img src="assets/images-voor-readme/not7.png" alt="Opdracht" width="500">
+
 Ik heb geleerd wat de verschillende soorten position doen en hoe ik dialogvensters kan positioneren en animaties kan geven
 
 **SPRINT 2 - meer interactie met HTML en CSS**
 <img src="assets/images-voor-readme/not8.png" alt="Opdracht" width="500">
+
 ik heb geleerd hoe ik links, formulieren en invoervelden gebruik en hoe ik met labels, focus-states en validatie een website toegankelijker etc kan maken
 
 **SPRINT 3 - Interessantere layouts**
 
 [layouts](assets/Deepdives/sprint_3/Interessantere-layouts/)
 <img src="assets/images-voor-readme/not9.png" alt="Opdracht" width="500">
+
 ik heb geleerd hoe ik tekst laat meeschalen met het scherm of een container en hoe ik met onder andere clamp(), writing-mode en position: sticky interessantere layouts kan maken
 
 **SPRINT 3 - Variabele fonts**
@@ -996,10 +1024,11 @@ ik heb geleerd hoe ik tekst laat meeschalen met het scherm of een container en h
 [2. transitions](assets/Deepdives/sprint_3/Variabele-fonts/Oefening2-transitions)
 
 [3. staggered](assets/Deepdives/sprint_3/Variabele-fonts/Oefening3-staggered)
+
 <img src="assets/images-voor-readme/not10.png" alt="Opdracht" width="500">
 Ik heb geleerd hoe ik variabele lettertypes gebruik en hoe ik eigenschappen zoals de dikte en breedte van letters kan aanpassen voor meer vrijheid in mijn typografie
 
-<a id="uitleg en bronnen"></a>
+<a id="uitlegenbronnen"></a>
 
 ## CODE UITLEG VOOR MIJN WEBSITE + BRONNEN
 
