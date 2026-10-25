@@ -976,11 +976,9 @@ Ik heb mijn domeinnaam kunnen koppelen en mijn website online kunnen zetten. Ook
 
 Nog echt te begrijpen waar het project over gaat en wat er van ons verwacht wordt.
 
-### Volgende stap
-
-Mij verdiepen in het project en informatie uit halen.
-
 ### DEEPDIVES
+
+Je kunt de document van de notites hier vinden:
 
 **SPRINT 0 - CSS: fonts met kleur en effecten**
 
@@ -992,14 +990,6 @@ Oefening 2 - fonts, kleur en effecten
 
 [Oefening-2](assets/Deepdives/oefening-2/)
 
-Oefening 3 - mini-posters
-
-Heb ik niet af kunnen maken, ben er mee bezig!
-
-Oefening 4 - transitions
-
-Heb ik niet af kunnen maken, ben er mee bezig!
-
 **SPRINT 1 - Light & Dark theme**
 
 Oefening 1 - Light & Dark 101
@@ -1010,9 +1000,8 @@ Oefening 2 - Twee thema's
 
 [Oefening-2](assets/Deepdives/Oefening-2-Twee-themas/)
 
-Oefening 3 - Responsive afbeelding
-
-Heb ik niet af kunnen maken, ben er mee bezig!
+<img src="assets/images-voor-readme/not1.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik met CSS-variabelen en radio buttons een light en dark theme kan maken en hoe ik afbeeldingen kan aanpassen aan het thema en schermformaat
 
 **SPRINT 1 - Mooie kleuren en gradients**
 
@@ -1026,37 +1015,40 @@ Oefening 2 - Vlaggen en co
 
 [Oefening-2](assets/Deepdives/Oefening-2-Vlaggen-en-Co/)
 
-Oefening 3 - Gradients animeren
-
-Heb ik niet af kunnen maken, ben er mee bezig!
+<img src="assets/images-voor-readme/not2.png" alt="Opdracht" width="500">
+Ik heb geleerd welke verschillende kleurcodes er zijn en hoe ik met CSS gradients kleurverlopen en patronen kan maken en animeren!
 
 **SPRINT 1 - Grid 101 + Media queries**
-
-Ben er mee bezig!
+<img src="assets/images-voor-readme/not3.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik CSS Grid gebruik om elementen in rijen en kolommen te plaatsen en met media queries de layout aan verschillende schermgroottes aanpas
 
 **SPRINT 1 - Responsive grid + Grid-areas**
-
-Ben er mee bezig!
+<img src="assets/images-voor-readme/not4.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik met grid-template-areas een duidelijke indeling maakt en deze met media queries verander voor mobiele schermen en pc
 
 **SPRINT 2 - Buttons, states en selectors**
 
 [button](assets/Deepdives/sprint_2/Basic-button-states)
+<img src="assets/images-voor-readme/not5.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik buttons en andere interactieve elementen verschillende stijlen kan geven met states zoals :hover, :focus en :active.
 
 **SPRINT 2 - Buttons + Dialogs**
-
-Ben er mee bezig!
+<img src="assets/images-voor-readme/not6.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik met HTML, CSS en JavaScript knoppen interactief maak, bijvoorbeeld door een class toe te voegen of te verwijderen
 
 **SPRINT 2 - Position + Dialogs**
-
-Ben er mee bezig!
+<img src="assets/images-voor-readme/not7.png" alt="Opdracht" width="500">
+Ik heb geleerd wat de verschillende soorten position doen en hoe ik dialogvensters kan positioneren en animaties kan geven
 
 **SPRINT 2 - meer interactie met HTML en CSS**
-
-Ben er mee bezig!
+<img src="assets/images-voor-readme/not8.png" alt="Opdracht" width="500">
+ik heb geleerd hoe ik links, formulieren en invoervelden gebruik en hoe ik met labels, focus-states en validatie een website toegankelijker etc kan maken
 
 **SPRINT 3 - Interessantere layouts**
 
 [layouts](assets/Deepdives/sprint_3/Interessantere-layouts/)
+<img src="assets/images-voor-readme/not9.png" alt="Opdracht" width="500">
+ik heb geleerd hoe ik tekst laat meeschalen met het scherm of een container en hoe ik met onder andere clamp(), writing-mode en position: sticky interessantere layouts kan maken
 
 **SPRINT 3 - Variabele fonts**
 
@@ -1065,113 +1057,21 @@ Ben er mee bezig!
 [2. transitions](assets/Deepdives/sprint_3/Variabele-fonts/Oefening2-transitions)
 
 [3. staggered](assets/Deepdives/sprint_3/Variabele-fonts/Oefening3-staggered)
+<img src="assets/images-voor-readme/not10.png" alt="Opdracht" width="500">
+Ik heb geleerd hoe ik variabele lettertypes gebruik en hoe ik eigenschappen zoals de dikte en breedte van letters kan aanpassen voor meer vrijheid in mijn typografie
 
 ## CODE UITLEG VOOR MIJN WEBSITE + BRONNEN
 
-**Code uitleg voor Javascript**
+Voor mijn index.html pagina:
+Ik noteer voor mezelf gedetaileerd alles, zodat ik het kan begrijpen. wanneer ik het teruglees. Dit is een navigatiemenu. De gebruiker kan hiermee naar drie verschillende plekken gaan: de homepage, het logboek en
+de experimentpagina. Bron: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nav
 
-ik heb gebruik gemaakt van javascript in mijn website, omdat ik het belangrijk vind dat er eenn interactie aanwezig is
+<img src="assets/images-voor-readme/cod1.png" alt="Opdracht" width="500">
 
-dat ik de gebruikers ermee kan entertainen. Met deze script zorgt het ervoor dat de gebruike kan tekenen op het canvas en het schetsboek kan gebruiken.
+dit gedeelte is de thema keuze en CSS bepaalt wat er met de gekozen optie gebeurt.
+met form kan de gebruiker kiezen tussen dark en light thema. label gebruik ik om duidelijk te
+maken welke tekst bij welke radio button hoort. Omdat de input binnen het label staat, kan de
+gebruiker ook op de tekst klikken. <,input> maakt een invoerveld/interactief element. Met type
+bepaal ik welk soort invoerveld het is, wat dus een radiobutton is. Bronnen: -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/form -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input/radio
 
-<img src="assets/images-voor-readme/js1.png" alt="Opdracht" width="500">
-
-**Wat doet het?**
-
-Het zoekt het canvas element op via zijn ID (drawCanvas) en vraagt de 2D-tekencontext (getContext("2d")) op.
-
-Dit wordt dan je soort digitale teken doekje. Daarna wordt er bij te houden of de muis is ingedrukt (isDrawing).
-
-De strokeStyle, lineWidth, lineCap en lineJoin bepalen hoe dik, zwart en mooi afgerond je lijnen zijn.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API
-
-<img src="assets/images-voor-readme/js2.png" alt="Opdracht" width="500">
-
-**Wat doet het?**
-
-Dit zijn de tekenfuncties. startDrawing: Wordt geactiveerd zodra je de muis indrukt of het scherm aanraakt.
-
-isDrawing op false staat, gebeurt er niets. als je gaat tekenen, dan trekt JavaScript met beginPath(), moveTo(), lineTo() en stroke() een lijn vanaf het vorige punt naar het huidige punt. stopDrawing: Stopt het tekenen zodra je de muis loslaat of buiten het canvas komt.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/Touch_events en https://developer.mozilla.org/en-US/docs/Web/API/Element/mousemove_event
-
-<img src="assets/images-voor-readme/js3.png" alt="Opdracht" width="500">
-
-**Wat doet het?**
-
-Dit berekent de coordinaten van je muis en touchscreen. (clientX/clientY) is voor muisklikt
-
-en (e.touches). is het aanraken met je vingers. Daarna berekent hij met (rect.left en rect.top)
-
-of de lijn precies onder je muis of vinger wordt getekent.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect
-
-<img src="assets/images-voor-readme/js4.png" alt="Opdracht" width="500">
-
-**Wat doet het?**
-
-De Event Listeners luisteren steeds naar acties van de gebruiker, zoals klikken of vegen en koppelen dat aan de juiste functies. het verwijderen knop (clearBtn) gebruikt ctx.clearRect() om alles van het scherm te verwijderen. De Sluit knop zoekt de sluit knop op en zorgt ervoor dat het vinkje van de sketchbook toggle checkbox wordt uitgezet, waardoor de pop-up sluit.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/clearRect en https://www.w3schools.com/tags/canvas_clearrect.asp
-
-**Code uitleg voor HTML**
-
-figcaption> = Dit hoort altijd binnen een figure> tag en dient als een beschrijvend bijschrift bij een afbeelding of logo. Het helpt ook voor toegankelijkheid zoals screenreaders.
-
-label> = wordt gebruikt voor formuliervelden, zoals een tekstvak of vinkje. In mijn code heb ik het gebruikt voor mijn pop-ups
-
-input type="checkbox"> = Dit maakt een selectievakje (vinkje) aan. het wordt in webdesign vaak gebruikt in combinatie met de zogenaamde checkbox hack om pop-ups te openen en sluiten zonder dat je daar ingewikkelde JavaScript voor nodig hebt.
-
-button> = Maakt een klikbare knop aan
-
-span> = Een neutraal, inline element dat geen eigen opmaak heeft. Het wordt gebruikt om een klein stukje tekst of een specifiek woord binnen een zin te groeperen zodat je het via CSS kunt stylen
-
-**Ik heb wel in mijn code gebruik gemaakt van classes en ids, maar waarom? Nou:**
-
-ik heb gebruik gemaakt van JavaScript. En bij javascript moet hij weten welke knop het moet wissen (clearBtn) of waar er getekend moet worden (drawCanvas) daarom moet JavaScript dat element kunnen opzoeken in de HTML. Dit gebeurt in mijn script met document.getElementById("drawCanvas"). Een id moet uniek zijn op de pagina. Voor classes wil ik dat als iemand op het schetsboek icoon klikt, er een pop-up op scherm komt. Omdat ik dit zonder zware JavaScript wilt oplossen, gebruik ik de checkbox hack door: een verborgen input type="checkbox"> in een label> te verstoppen. Als de gebruiker op het label klikt, verandert de aan/uit status van de checkbox. Via CSS kan je dan zeggen: "Als de checkbox aangevinkt is, maak de pop-up dan zichtbaar (display: block)". Hiervoor heb ik classes (class="sketchbook-trigger", class="sketchbook-popup") nodig, omdat ik deze stijlregels op meerdere plekken wil kunnen toepassen.
-
-**Bronvermeldingen:** -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/figure,
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input,
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label,
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/button,
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/span,
-
-https://www.w3schools.com/TAGS/default.ASP
-
-**Code uitleg voor CSS**
-
-<img src="assets/images-voor-readme/cs1.png" alt="Opdracht" width="500">
-
-**Grid**
-
-Dit is de CSS grid lay-out. je verdeelt de hele webpagina in een raster. Met grid-template-areas geef je elk HTML element (header>, main>, aside>, etc.) een eigen naam en plek in dat raster. Dit maakt het mogelijk om je website volledig flexibel te maken. Voor mobiel onder elkaar en in je @media (min-width: 48em) query maak je het raster in een keer naar een brede desktop layout met zijbalken (left-colum header right-colum), zonder dat je HTML code hoeft te veranderen.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout
-
-**Checkbox hack voor pop-up**
-
-<img src="assets/images-voor-readme/cs2.png" alt="Opdracht" width="500">
-
-Je verbergt de standaard checkbox (display: none). Je zegt dan eigenlijk: Als dit vinkje aan staat, verander dan de weergave van het gekoppelde pop-up gedeelte van display: none naar display: flex". Hiermee kan ik interactieve pop-ups gebruiken zonder dat ik daar ingewikkelde JavaScript voor nodig hebt.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:checked
-
-**Responsive voor web**
-
-<img src="assets/images-voor-readme/cs3.png" alt="Opdracht" width="500">
-
-Dit is een media query. Regels die hierin staan worden alleen toegepast op schermen die breder zijn dan 48em voor tablets en desktops.
-
-**Bronvermelding:** https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using
-
-**andere gebruikte bronnen voor css:**
-
-https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Child_combinator
-
-https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/aside
+<img src="assets/images-voor-readme/cod2.png" alt="Opdracht" width="500">
