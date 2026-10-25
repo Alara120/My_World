@@ -1,7 +1,9 @@
 body {
   font-family: "Outfit", sans-serif;
   color: var(--color-ink);
-  background-color: var(--color-page); /* achtervang als de afbeelding niet laadt */
+  background-color: var(
+    --color-page
+  ); /* achtervang als de afbeelding niet laadt */
   background-image: url("../images/achtergrond.jpg");
   background-size: 100%;
   max-width: 80rem;
@@ -167,7 +169,7 @@ main > nav.stappen-nav label:hover {
 
 /* Met :checked controleer ik welke radiobutton geselecteerd is. Daarna gebruik
 ik ~ om het bijbehorende label te selecteren. Dat label krijgt de inktkleur als
-achtergrond en de crèmekleur als tekst, zodat de gebruiker kan zien welke stap actief is. Bronnen:
+achtergrond en de cremekleur als tekst, zodat de gebruiker kan zien welke stap actief is. Bronnen:
 -https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:checked
 -https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Subsequent-sibling_combinator */
 
