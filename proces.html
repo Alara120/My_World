@@ -1,43 +1,42 @@
 <!doctype html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Process - My Doodle Garden</title>
-    <link rel="stylesheet" href="./assets/style/proces.css" />
-    <link rel="stylesheet" href="./assets/style/main.css" />
-  </head>
 
-  <body>
-    <header>
-      <header></header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Process - My Doodle Garden</title>
+  <link rel="stylesheet" href="./assets/style/proces.css" />
+  <link rel="stylesheet" href="./assets/style/main.css" />
+</head>
 
-      <!-- Bloem logo -->
-      <figure>
-        <img src="assets/images/doodlegarden.svg" alt="Bloem logo" />
-      </figure>
+<body>
+  <header>
+    <header></header>
 
-      <h1>Het proces</h1>
+    <!-- Bloem logo -->
+    <figure>
+      <img src="assets/images/doodlegarden.svg" alt="Bloem logo" />
+    </figure>
 
-      <!-- Navigatie -->
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <a href="https://github.com/Alara120/My_World#mijn-learning-log"
-              >Logboek</a
-            >
-          </li>
-          <li>
-            <a href="assets/Experiment/cannonball.html">Experiment</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <h1>Het proces</h1>
 
-    <!--************************************************************************************************************-->
+    <!-- Navigatie -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="https://github.com/Alara120/My_World#mijn-learning-log">Logboek</a>
+        </li>
+        <li>
+          <a href="assets/Experiment/cannonball.html">Experiment</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Ik gebruik vijf radiobuttons om bij te houden welke stap van mijn proces geselecteerd 
+  <!--************************************************************************************************************-->
+
+  <!-- Ik gebruik vijf radiobuttons om bij te houden welke stap van mijn proces geselecteerd 
  is. Ze hebben allemaal dezelfde name, zodat er maar 1 tegelijk geselecteerd kan worden. 
  De labels met de nummers 1 tot en met 5 zijn gekoppeld aan de radiobuttons. De radiobuttons 
  zijn verborgen met CSS, zodat de gebruiker alleen de stappenlijn ziet. Bronnen:
@@ -45,85 +44,86 @@
  -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/label
  -https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input -->
 
-    <main>
-      <input type="radio" name="proces-stap" id="stap1" checked />
-      <input type="radio" name="proces-stap" id="stap2" />
-      <input type="radio" name="proces-stap" id="stap3" />
-      <input type="radio" name="proces-stap" id="stap4" />
-      <input type="radio" name="proces-stap" id="stap5" />
+  <main>
+    <input type="radio" name="proces-stap" id="stap1" checked />
+    <input type="radio" name="proces-stap" id="stap2" />
+    <input type="radio" name="proces-stap" id="stap3" />
+    <input type="radio" name="proces-stap" id="stap4" />
+    <input type="radio" name="proces-stap" id="stap5" />
 
-      <!-- De interactieve stappenlijn bovenin -->
-      <nav class="stappen-nav">
-        <label for="stap1">1</label>
-        <label for="stap2">2</label>
-        <label for="stap3">3</label>
-        <label for="stap4">4</label>
-        <label for="stap5">5</label>
-      </nav>
-
-      <!--************************************************************************************************************-->
-
-      <section>
-        <!-- Inhoud Stap 1 -->
-        <article>
-          <h2>1. Schets</h2>
-          <p>Alles begint met een idee. Met lichte, losse lijnen geef je de tekening vorm.
-            Niet alles hoeft nog perfecto te zijn.
-          </p>
-          <label for="stap2">Volgende</label>
-        </article>
-
-        <!-- Inhoud Stap 2 -->
-        <article>
-          <h2>2. Lineart</h2>
-          <p>Je trekt de belangrijkste lijnen over en geeft de vormen steeds meer karakter.</p>
-          <label for="stap3">Volgende</label>
-        </article>
-
-        <!-- Inhoud Stap 3 -->
-        <article>
-          <h2>3. Achtergrond</h2>
-          <p>Lets not forget the background! dat brengt de tekening meer naar voren
-            en geeft een leuke sfeer. 
-          </p>
-          <label for="stap4"Vvolgende</label>
-        </article>
-
-        <!-- Inhoud Stap 4 -->
-        <article>
-          <h2>4. Dikke lijnen</h2>
-          <p>Komt nog tekst</p>
-          <label for="stap5">Volgende</label>
-        </article>
-
-        <!-- Inhoud Stap 5 -->
-        <article>
-          <h2>5. Resultaat</h2>
-          <p>Komt nog tekst</p>
-          <label for="stap1">Terug</label>
-        </article>
-
-        <!-- Afbeeldingen per stap -->
-        <figure>
-          <img src="assets/images/sketch1.jpg" alt="Idee fase" />
-        </figure>
-        <figure>
-          <img src="assets/images/lineart.jpg" alt="Schets fase" />
-        </figure>
-        <figure>
-          <img src="assets/images/lineart2.jpg" alt="Lineart fase" />
-        </figure>
-        <figure>
-          <img src="assets/images/color.jpg" alt="Shading fase" />
-        </figure>
-        <figure>
-          <img src="assets/images/final.jpg" alt="Eindresultaat" />
-        </figure>
-      </section>
-    </main>
+    <!-- De interactieve stappenlijn bovenin -->
+    <nav class="stappen-nav">
+      <label for="stap1">1</label>
+      <label for="stap2">2</label>
+      <label for="stap3">3</label>
+      <label for="stap4">4</label>
+      <label for="stap5">5</label>
+    </nav>
 
     <!--************************************************************************************************************-->
 
-    <footer>&copy; 2026 My Doodle Garden</footer>
-  </body>
+    <section>
+      <!-- Inhoud Stap 1 -->
+      <article>
+        <h2>1. Schets</h2>
+        <p>Alles begint met een idee. Met lichte, losse lijnen geef je de tekening vorm.
+          Niet alles hoeft nog perfecto te zijn.
+        </p>
+        <label for="stap2">Volgende</label>
+      </article>
+
+      <!-- Inhoud Stap 2 -->
+      <article>
+        <h2>2. Lineart</h2>
+        <p>Je trekt de belangrijkste lijnen over en geeft de vormen steeds meer karakter.</p>
+        <label for="stap3">Volgende</label>
+      </article>
+
+      <!-- Inhoud Stap 3 -->
+      <article>
+        <h2>3. Achtergrond</h2>
+        <p>Lets not forget the background! dat brengt de tekening meer naar voren
+          en geeft een leuke sfeer.
+        </p>
+        <label for="stap4">Volgende</label>
+      </article>
+
+      <!-- Inhoud Stap 4 -->
+      <article>
+        <h2>4. Dikke lijnen</h2>
+        <p>Komt nog tekst</p>
+        <label for="stap5">Volgende</label>
+      </article>
+
+      <!-- Inhoud Stap 5 -->
+      <article>
+        <h2>5. Resultaat</h2>
+        <p>Komt nog tekst</p>
+        <label for="stap1">Terug</label>
+      </article>
+
+      <!-- Afbeeldingen per stap -->
+      <figure>
+        <img src="assets/images/sketch1.jpg" alt="Idee fase" />
+      </figure>
+      <figure>
+        <img src="assets/images/lineart.jpg" alt="Schets fase" />
+      </figure>
+      <figure>
+        <img src="assets/images/lineart2.jpg" alt="Lineart fase" />
+      </figure>
+      <figure>
+        <img src="assets/images/color.jpg" alt="Shading fase" />
+      </figure>
+      <figure>
+        <img src="assets/images/final.jpg" alt="Eindresultaat" />
+      </figure>
+    </section>
+  </main>
+
+  <!--************************************************************************************************************-->
+
+  <footer>&copy; 2026 My Doodle Garden</footer>
+</body>
+
 </html>

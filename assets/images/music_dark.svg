@@ -3,12 +3,12 @@
 <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 470.53 468.53" style="enable-background:new 0 0 470.53 468.53;" xml:space="preserve">
 <g id="Laag_4">
-	<path style="fill:#32437E;stroke:#1D1D1B;stroke-width:4;stroke-miterlimit:10;" d="M50.6,56.78h373.05
+	<path style="fill:#57739E;stroke:#1D1D1B;stroke-width:4;stroke-miterlimit:10;" d="M50.6,56.78h373.05
 		c5.28,0,9.56,5.02,9.56,11.22v332.23c0,6.2-4.28,11.22-9.56,11.22H50.6c-5.28,0-9.56-5.02-9.56-11.22V68
 		C41.04,61.8,45.32,56.78,50.6,56.78z"/>
 </g>
 <g id="Laag_3">
-	<path style="fill:#32437E;stroke:#1D1D1B;stroke-width:3;stroke-miterlimit:10;" d="M46.68,56.78h380.9c3.12,0,5.64,2.96,5.64,6.62
+	<path style="fill:#57739E;stroke:#1D1D1B;stroke-width:3;stroke-miterlimit:10;" d="M46.68,56.78h380.9c3.12,0,5.64,2.96,5.64,6.62
 		v24.51c0,3.66-2.53,6.62-5.64,6.62H46.68c-3.12,0-5.64-2.96-5.64-6.62V63.4C41.04,59.74,43.57,56.78,46.68,56.78z"/>
 </g>
 <path style="fill:#FFFFFF;stroke:#010101;stroke-width:2;stroke-miterlimit:10;" d="M335.55,67.58h14.05c1.06,0,1.92,0.86,1.92,1.92
@@ -52,9 +52,9 @@
 <path style="fill:#FAF6ED;stroke:#010101;stroke-width:2;stroke-miterlimit:10;" d="M148.57,208.09c1-0.26,3.59-1.07,5.67-3.52
 	c1.43-1.68,2-3.42,2.25-4.41c0.16,0.88,0.63,2.75,2.16,4.49c2.16,2.46,4.96,2.96,5.76,3.08c-1.06,0.37-2.53,1.04-3.94,2.3
 	c-3.24,2.88-3.84,6.71-3.98,7.9c0.02-0.65,0.06-4.52-2.95-7.38c-1.89-1.79-4.04-2.29-4.97-2.45V208.09z"/>
-<path style="fill:#4B5A9C;" d="M91.54,256.85h310.75c6.865,0,12.43,5.565,12.43,12.43v104.69c0,6.865-5.565,12.43-12.43,12.43H91.54
+<path style="fill:#8896D0;" d="M91.54,256.85h310.75c6.865,0,12.43,5.565,12.43,12.43v104.69c0,6.865-5.565,12.43-12.43,12.43H91.54
 	c-6.865,0-12.43-5.565-12.43-12.43V269.28C79.11,262.415,84.675,256.85,91.54,256.85z"/>
-<path style="fill:#4B5A9C;" d="M91.54,234.26h93.67c6.865,0,12.43,5.565,12.43,12.43v127.28c0,6.865-5.565,12.43-12.43,12.43H91.54
+<path style="fill:#8896D0;" d="M91.54,234.26h93.67c6.865,0,12.43,5.565,12.43,12.43v127.28c0,6.865-5.565,12.43-12.43,12.43H91.54
 	c-6.865,0-12.43-5.565-12.43-12.43V246.69C79.11,239.825,84.675,234.26,91.54,234.26z"/>
 <circle style="fill:#D6ADFD;stroke:#1D1D1B;stroke-width:3;stroke-miterlimit:10;" cx="133.75" cy="287.8" r="35.19"/>
 <polygon style="stroke:#010101;stroke-width:2;stroke-miterlimit:10;" points="124.18,304.9 124.18,270.69 152.32,287.8 "/>
@@ -62,8 +62,8 @@
 	311.38,353.5 "/>
 <polygon style="fill:#D6ADFD;stroke:#1D1D1B;stroke-width:3;stroke-miterlimit:10;" points="197.64,364.22 197.64,342.78 
 	181.37,353.5 "/>
-<line style="fill:#D6ADFD;stroke:#1D1D1B;stroke-width:3;stroke-miterlimit:10;" x1="181.24" y1="342.78" x2="181.24" y2="364.22"/>
-<line style="fill:#D6ADFD;stroke:#1D1D1B;stroke-width:3;stroke-miterlimit:10;" x1="311.96" y1="342.78" x2="311.96" y2="364.22"/>
+<line style="fill:none;stroke:#1D1D1B;stroke-width:3;stroke-miterlimit:10;" x1="181.24" y1="342.78" x2="181.24" y2="364.22"/>
+<line style="fill:none;stroke:#1D1D1B;stroke-width:3;stroke-miterlimit:10;" x1="311.96" y1="342.78" x2="311.96" y2="364.22"/>
 <path style="fill:#D6ADFD;stroke:#1D1D1B;stroke-width:3;stroke-miterlimit:10;" d="M239.07,365.59v-25.06l8.67,6.56
 	c2.73-2.26,5.47-4.52,8.2-6.77v25.28c-2.81-1.87-5.62-3.75-8.43-5.62c-2.81,1.87-5.62,3.75-8.43,5.62L239.07,365.59z"/>
 <rect x="196.95" y="281.71" style="fill:#D6ADFD;stroke:#1D1D1B;stroke-width:3;stroke-miterlimit:10;" width="109.95" height="12.63"/>

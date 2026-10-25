@@ -2,8 +2,8 @@
 <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 9.03 Build 0)  -->
 <svg version="1.1" id="Laag_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 284 380" style="enable-background:new 0 0 284 380;" xml:space="preserve">
-<path style="fill:#32437D;" d="M26.259,14.8h230.44c3.441,0,6.23,2.789,6.23,6.23v342.19c0,3.441-2.789,6.23-6.23,6.23H26.259
-	c-3.441,0-6.23-2.789-6.23-6.23V21.03C20.029,17.589,22.818,14.8,26.259,14.8z"/>
+<path style="opacity:0.8;fill:#284E84;" d="M26.259,14.8h230.44c3.441,0,6.23,2.789,6.23,6.23v342.19c0,3.441-2.789,6.23-6.23,6.23
+	H26.259c-3.441,0-6.23-2.789-6.23-6.23V21.03C20.029,17.589,22.818,14.8,26.259,14.8z"/>
 <g id="Laag_3_00000082361929929061878400000005117503201898153105_">
 	<path style="fill:#FAF3EA;stroke:#1D1D1B;stroke-width:3;stroke-miterlimit:10;" d="M139.001,291.808
 		c-1.789-1.332-5.006-4.117-7.17-8.769c-0.791-1.7-2.88-6.352-1.947-12.392c0.586-3.791,2.123-6.586,3.145-8.147
@@ -118,8 +118,8 @@
 	c0.721,0.585,2.346,2.076,2.821,4.432c0.702,3.483-1.241,8.196-5.658,9.106c-3.988,0.822-8.106-1.845-8.943-5.993
 	c-0.145,0.365-1.399,3.379-4.725,4.313c-2.86,0.803-5.962-0.296-7.442-2.307c-2.201-2.99-1.165-8.472,3.555-11.383
 	c-3.013-0.403-5.541-2.255-6.504-4.827c-1.423-3.803,0.884-8.362,4.729-9.682C69.009,247.614,72.106,248.365,74.37,250.432z"/>
-<ellipse transform="matrix(0.1702 -0.9854 0.9854 0.1702 -165.9631 232.0166)" style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:9.9997;" cx="54.782" cy="214.551" rx="2.816" ry="2.852"/>
-<ellipse transform="matrix(0.1702 -0.9854 0.9854 0.1702 -191.1307 293.6702)" style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:9.9997;" cx="78.806" cy="260.322" rx="2.816" ry="2.852"/>
+<ellipse transform="matrix(0.1702 -0.9854 0.9854 0.1702 -165.9647 232.0141)" style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:9.9996;" cx="54.779" cy="214.551" rx="2.816" ry="2.852"/>
+<ellipse transform="matrix(0.1702 -0.9854 0.9854 0.1702 -191.1324 293.668)" style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:9.9996;" cx="78.803" cy="260.322" rx="2.816" ry="2.852"/>
 <circle style="fill:none;stroke:#000000;stroke-miterlimit:10;" cx="207.129" cy="339.958" r="2.626"/>
 <g id="Laag_4_00000179646566517735142040000008708878743996856963_">
 	
@@ -138,7 +138,7 @@
 	<circle style="stroke:#000000;stroke-miterlimit:10;" cx="147.564" cy="274.547" r="2.432"/>
 	<circle style="stroke:#000000;stroke-miterlimit:10;" cx="168.121" cy="271.005" r="2.432"/>
 	
-		<ellipse transform="matrix(0.985 -0.1726 0.1726 0.985 -45.148 31.4381)" style="stroke:#000000;stroke-width:1;stroke-miterlimit:10.0003;" cx="158.205" cy="275.334" rx="1.844" ry="0.785"/>
+		<ellipse transform="matrix(0.985 -0.1726 0.1726 0.985 -45.1483 31.4384)" style="stroke:#000000;stroke-width:1;stroke-miterlimit:10.0004;" cx="158.207" cy="275.336" rx="1.844" ry="0.785"/>
 	<path style="fill:none;stroke:#000000;stroke-miterlimit:10;" d="M153.735,279.013c0.668,1.387,1.997,2.148,3.029,1.928
 		c1.34-0.286,2.494-2.289,1.646-4.396c-0.098,2.316,1.711,3.846,3.082,3.662c1.123-0.151,2.223-1.488,2.249-3.227"/>
 </g>
