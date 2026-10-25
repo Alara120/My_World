@@ -29,7 +29,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 - [2 sept - Deepdive](#dag-2-sept)
 - [31 aug - Kickoff + Checkout](#dag-31-aug)
 - [deepdives](#deepdives)
-- [uitlegenbronnen](#uitleg en bronnen)
+- [bronnen](#bronnen)
 
 <a id="dag-23-okt"></a>
 
@@ -1028,7 +1028,7 @@ ik heb geleerd hoe ik tekst laat meeschalen met het scherm of een container en h
 <img src="assets/images-voor-readme/not10.png" alt="Opdracht" width="500">
 Ik heb geleerd hoe ik variabele lettertypes gebruik en hoe ik eigenschappen zoals de dikte en breedte van letters kan aanpassen voor meer vrijheid in mijn typografie
 
-<a id="uitlegenbronnen"></a>
+<a id="bronnen"></a>
 
 ## CODE UITLEG VOOR MIJN WEBSITE + BRONNEN
 
