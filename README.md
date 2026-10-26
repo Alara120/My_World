@@ -60,7 +60,7 @@ Inspiratie van verschillende hovers (gevonden op tiktok)
 <img src="assets/images-voor-readme/hover.png" alt="Opdracht" width="500">
 </p>
 <p align="left">
-<img src="assets/images-voor-readme/hover2.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/hover22.png" alt="Opdracht" width="500">
 </p>
 
 Mijn tab aangepast en mijn hover!
