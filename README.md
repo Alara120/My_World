@@ -36,19 +36,14 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## 26 okt - Expo en Outro 
 Vandaag hebben we met de gehele klassen samen onze werk bekeken en beoordeeld met de hand van stickertjes. 
-<img src="assets/images-voor-readme/f1.png" alt="Opdracht" width="500">
-<img src="assets/images-voor-readme/f2.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/feedbackrondes.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/mijnformulier.png" alt="Opdracht" width="500">
 
+**Webby formulier**
+<img src="assets/images-voor-readme/webbyeind.png" alt="Opdracht" width="500">
 
-
-
-
-
-
-
-
-
-
+**Learning Log formulier**
+<img src="assets/images-voor-readme/learninglog.png" alt="Opdracht" width="500">
 
 <a id="dag-23-okt"></a>
 
@@ -408,7 +403,11 @@ Focusvolgorde met tab: Wanneer ik mijn pagina probeer te navigeren met alleen TA
 
 **3. 3. WCAG checklist**
 
-<img src="assets/images-voor-readme/WCAG_checklijst.pdf" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/checklist1.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/checklist2.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/checklist3.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/checklist4.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/checklist5.png" alt="Opdracht" width="500">
 
 ## CHECKOUT
 
@@ -447,7 +446,10 @@ Ik vond vooral de screenreader lastig, omdat er veel informatie wordt voorgeleze
 <a id="dag-28-sept"></a>
 
 ## 28 sept - WS 4 + Bi-weekly geek 2
+**Aantekeningen van artiekelen**
+<img src="assets/images-voor-readme/geeknot2.png" alt="Opdracht" width="500">
 
+**Bi-weekly geek 2**
 <img src="assets/images-voor-readme/bigeek2.png" alt="Opdracht" width="500">
 
 <img src="assets/images-voor-readme/bigeek22.png" alt="Opdracht" width="500">
@@ -727,6 +729,11 @@ Helaas ben ik ziek en was ik niet aanwezig in de les.., maar heb illustraties ge
 
 ## 14 sept - WS4 + Bi-weekly geek 1
 
+
+**2. Aantekeningen van artiekelen.**
+<img src="assets/images-voor-readme/binotes.png" alt="Opdracht" width="500"> 
+
+**2. Bi-weekly geek 1.**
 <img src="assets/images-voor-readme/geek1.png" alt="Opdracht" width="500"> <img src="assets/images-voor-readme/geek2.png" alt="Opdracht" width="500">
 
 Feedback van Barbara:
@@ -830,6 +837,11 @@ Deze les werd online uitgevoerd.
 <img src="assets/images-voor-readme/Stap2.png" alt="Opdracht" width="500"> <img src="assets/images-voor-readme/Stap3.png" alt="Opdracht" width="500">
 
 <img src="assets/images-voor-readme/Crazy8.png" alt="Opdracht" width="500"> <img src="assets/images-voor-readme/Crazy8-beoordelen.png" alt="Opdracht" width="500">
+
+
+**1. Inspiratie moodboard**
+<img src="assets/images-voor-readme/inspiratie_web.png" alt="Opdracht" width="500">
+
 
 # CHECKOUT:
 
@@ -974,7 +986,7 @@ Oefening 2 - fonts, kleur en effecten
 [Oefening-2](assets/Deepdives/oefening-2/)
 
 **SPRINT 1 - Light & Dark theme**
-<img src="assets/images-voor-readme/not1.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/not1.png" alt="Opdracht" width="300">
 
 Ik heb geleerd hoe ik met CSS-variabelen en radio buttons een light en dark theme kan maken en hoe ik afbeeldingen kan aanpassen aan het thema en schermformaat.
 
@@ -986,8 +998,8 @@ Oefening 2 - Twee thema's
 
 **SPRINT 1 - Mooie kleuren en gradients**
 
-<img src="assets/images-voor-readme/spelletje.png" alt="Opdracht" width="500">
-<img src="assets/images-voor-readme/not2.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/spelletje.png" alt="Opdracht" width="300">
+<img src="assets/images-voor-readme/not2.png" alt="Opdracht" width="300">
 
 Oefening 1 - De zes gradients
 [Oefening-1](assets/Deepdives/Oefening1-De-zes-gradients/)
@@ -998,41 +1010,41 @@ Oefening 2 - Vlaggen en co
 Ik heb geleerd welke verschillende kleurcodes er zijn en hoe ik met CSS-gradients kleurverlopen en patronen kan maken en animeren!
 
 **SPRINT 1 - Grid 101 + Media queries**
-<img src="assets/images-voor-readme/not3.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/not3.png" alt="Opdracht" width="300">
 
 Ik heb geleerd hoe ik CSS Grid gebruik om elementen in rijen en kolommen te plaatsen en met media queries de layout aan verschillende schermgroottes aanpas
 
 **SPRINT 1 - Responsive grid + Grid-areas**
-<img src="assets/images-voor-readme/not4.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/not4.png" alt="Opdracht" width="300">
 
 Ik heb geleerd hoe ik met grid-template-areas een duidelijke indeling maakt en deze met media queries verander voor mobiele schermen en pc
 
 **SPRINT 2 - Buttons, states en selectors**
 
 [button](assets/Deepdives/sprint_2/Basic-button-states)
-<img src="assets/images-voor-readme/not5.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/not5.png" alt="Opdracht" width="300">
 
 Ik heb geleerd hoe ik buttons en andere interactieve elementen verschillende stijlen kan geven met states zoals :hover, :focus en :active.
 
 **SPRINT 2 - Buttons + Dialogs**
-<img src="assets/images-voor-readme/not6.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/not6.png" alt="Opdracht" width="300">
 
 Ik heb geleerd hoe ik met HTML, CSS en JavaScript knoppen interactief maak, bijvoorbeeld door een class toe te voegen of te verwijderen
 
 **SPRINT 2 - Position + Dialogs**
-<img src="assets/images-voor-readme/not7.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/not7.png" alt="Opdracht" width="300">
 
 Ik heb geleerd wat de verschillende soorten position doen en hoe ik dialogvensters kan positioneren en animaties kan geven
 
 **SPRINT 2 - meer interactie met HTML en CSS**
-<img src="assets/images-voor-readme/not8.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/not8.png" alt="Opdracht" width="300">
 
 ik heb geleerd hoe ik links, formulieren en invoervelden gebruik en hoe ik met labels, focus-states en validatie een website toegankelijker etc kan maken
 
 **SPRINT 3 - Interessantere layouts**
 
 [layouts](assets/Deepdives/sprint_3/Interessantere-layouts/)
-<img src="assets/images-voor-readme/not9.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/not9.png" alt="Opdracht" width="300">
 
 ik heb geleerd hoe ik tekst laat meeschalen met het scherm of een container en hoe ik met onder andere clamp(), writing-mode en position: sticky interessantere layouts kan maken
 
@@ -1044,7 +1056,7 @@ ik heb geleerd hoe ik tekst laat meeschalen met het scherm of een container en h
 
 [3. staggered](assets/Deepdives/sprint_3/Variabele-fonts/Oefening3-staggered)
 
-<img src="assets/images-voor-readme/not10.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/not10.png" alt="Opdracht" width="300">
 Ik heb geleerd hoe ik variabele lettertypes gebruik en hoe ik eigenschappen zoals de dikte en breedte van letters kan aanpassen voor meer vrijheid in mijn typografie
 
 <a id="bronnen"></a>
