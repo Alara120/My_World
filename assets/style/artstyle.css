@@ -19,26 +19,34 @@ body {
   padding: 0 1em;
 }
 
+/* Hoofd header */
 body > header {
   grid-area: header;
-  border: var(--border);
-  border-radius: 0.5rem;
-  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin: 4rem 0 3rem;
+  border: var(--border);
+  border-radius: 1rem;
+  overflow: hidden;
   background-color: var(--color-blue-light);
-  margin-top: 4rem;
-  margin-bottom: 3rem;
 }
 
-body > header > header {
-  width: calc(100% + 1.5rem);
+/*--------------------------------------------------------*/
+
+/* Deze code maakt met ::before een blauw balkje bovenaan de header. Met content: "" 
+maak ik een lege vorm, width: 100% maakt het balkje even breed als de header en 
+height: 2rem bepaalt de hoogte. margin-bottom: 1rem zorgt voor ruimte onder het
+balkje en background-color: var(--color-blue) geeft het de blauwe kleur uit mijn CSS-variabele.
+Bron: https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/::before  */
+
+body > header::before {
+  content: "";
+  width: 100%;
   height: 2rem;
+  margin-bottom: 1rem;
   background-color: var(--color-blue);
-  border-bottom: var(--border);
-  margin: 0 -1rem 1rem -1rem;
 }
 
 body > header figure {
@@ -189,6 +197,13 @@ footer {
   text-align: center;
   padding: 0.1rem 0;
   font-size: 0.9rem;
+}
+
+  @media (prefers-color-scheme: dark) {
+  /* Achtergrond en vlakken */
+  :root:not(:has(input[value="light"]:checked)) body {
+    background-image: url("../images/achtergrond_dark.jpg");
+  }
 }
 
 @media (min-width: 48em) {

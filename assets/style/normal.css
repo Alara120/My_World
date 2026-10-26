@@ -9,6 +9,23 @@ img {
   height: auto;
 }
 
+.skip-link {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  z-index: 1000;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  padding: 0.75rem 1rem;
+  background-color: var(--color-blue-light);
+  border: var(--border);
+  border-radius: 0.5rem;
+  outline: 0.2rem solid var(--color-ink);
+}
+
 figure {
   margin: 0;
 }
@@ -260,6 +277,7 @@ nav a::before {
 nav a:hover,
 nav a:focus-visible {
   transform: translateY(-0.2rem) scale(1.05);
+  
 }
 
 nav a:hover::before,
@@ -673,6 +691,7 @@ transition: transform 0.5s ease-in-out;
   aside li > button:focus {
     transform: scale(1.2);
     outline: none;
+    filter: drop-shadow(0 0 1em var(--color-pink));
   }
 
   /* Verschuiving van de zijbalken */
