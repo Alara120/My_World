@@ -8,6 +8,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Inhoudsopgave
 
+- [26 okt - Expo en Outro](#dag-26-okt)
 - [23 okt - Voortgang + Retrospect](#dag-23-okt)
 - [21 okt - Dotting the i's + Bi geekly week 3 ](#dag-21-okt)
 - [19 okt - Plan voor afronding](#dag-19-okt)
@@ -30,6 +31,24 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 - [31 aug - Kickoff + Checkout](#dag-31-aug)
 - [deepdives](#deepdives)
 - [bronnen](#bronnen)
+
+
+
+## 26 okt - Expo en Outro 
+Vandaag hebben we met de gehele klassen samen onze werk bekeken en beoordeeld met de hand van stickertjes. 
+<img src="assets/images-voor-readme/f1.png" alt="Opdracht" width="500">
+<img src="assets/images-voor-readme/f2.png" alt="Opdracht" width="500">
+
+
+
+
+
+
+
+
+
+
+
 
 <a id="dag-23-okt"></a>
 
