@@ -4,7 +4,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Mijn Learning Log
 
-(De deepdives en de code-uitleg met de bronnenlijst staan helemaal onderaan dit document.)
+(De deepdives en de code uitleg met de bronnenlijst staan helemaal onderaan dit document.)
 
 ## Inhoudsopgave
 
@@ -32,10 +32,14 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 - [deepdives](#deepdives)
 - [bronnen](#bronnen)
 
+## 26 okt - Expo en Outro
 
+**Reflectie**
+Als ik terugkijk naar dit hele blok, heb ik het gevoel dat ik veel heb geleerd. Vooral op het gebied van HTML en CSS ben ik vooruit gegaan. Aan het begin stelde ik code soms uit omdat ik het lastig vond, maar uiteindelijk ben ik er steeds meer mee gaan oefenen. Tijdens het maken van mijn Digital Garden heb ik geleerd om eerst goed onderzoek te doen en verschillende ideeen te bekijken voordat ik iets uit ga werken.. Door de deepdives heb ik veel nieuwe dingen geleerd, zoals Grid, media queries, responsive design, light/dark mode, dialogs, animaties en variable fonts etc. etc. Wat super leerzaam was! Ook heb ik meer geleerd over toegankelijkheid en privacy. Door dit te testen ben ik beter gaan nadenken over hoe andere mensen mijn website gebruiken. De feedback van docenten en klasgenoten heeft mij daarbij geholpen. Soms vond ik het lastig om alle feedback om te zetten naar veranderingen, maar uiteindelijk zag ik hierdoor beter wat er nog verbeterd kon worden. Ik ben vooral blij dat ik minder bang ben geworden om nieuwe dingen uit te proberen. Ik hoef niet alles meteen te kunnen. Door te oefenen, fouten te maken en feedback te krijgen, leer ik steeds meer en meer. Ik vond dit een leuke blok en kan met tevredenheid dit sluiten :D
 
-## 26 okt - Expo en Outro 
-Vandaag hebben we met de gehele klassen samen onze werk bekeken en beoordeeld met de hand van stickertjes. 
+**Expo**
+\*\*Vandaag hebben we met de gehele klassen samen onze werk bekeken en beoordeeld met de hand van stickertjes.
+
 <p align="left">
 <img src="assets/images-voor-readme/feedbackrondes.png" alt="Opdracht" width="500">
 </p>
@@ -44,18 +48,23 @@ Vandaag hebben we met de gehele klassen samen onze werk bekeken en beoordeeld me
 </p>
 
 **Webby formulier**
+
 <p align="left">
 <img src="assets/images-voor-readme/webbyeind.png" alt="Opdracht" width="500">
 </p>
 
 **Learning Log formulier**
+
 <p align="left">
 <img src="assets/images-voor-readme/learninglog.png" alt="Opdracht" width="500">
 </p>
 
 <a id="dag-23-okt"></a>
 
-Inspiratie van verschillende hovers (gevonden op tiktok)
+**Inspiratie**
+Als feedback had ik meegekregen dat mijn hovers te saai zijn en met tab alleen maar een lelijke blauwe lijn eromheen zit.
+Op tiktok had ik inspiratie van verschillende hovers gevonden. Ik ben voor de liquid fill gegaan, die leuk zou passen bij mijn navigatie bar. Voor mijn hovers heb ik ease-in-and-out gebruikt zodat het hoveren wat "smoother" gaat en een filter effect gebruikt, dat het een leuke roze gloed geeft aan de icoontjes
+
 <p align="left">
 <img src="assets/images-voor-readme/hover.png" alt="Opdracht" width="500">
 </p>
@@ -64,8 +73,13 @@ Inspiratie van verschillende hovers (gevonden op tiktok)
 </p>
 
 Mijn tab aangepast en mijn hover!
+
 <p align="left">
 <img src="assets/images-voor-readme/v.png" alt="Opdracht" width="500">
+</p>
+
+<p align="left">
+<img src="assets/images-voor-readme/filter.png" alt="Opdracht" width="500">
 </p>
 
 ## 23 okt - Voortgang + Retrospect
@@ -89,6 +103,7 @@ Feedback van Vasilis:
 </p>
 
 **Retrospect sprint 3**
+
 <p align="left">
 <img src="assets/images-voor-readme/retro1.jpg" alt="Opdracht" width="500">
 </p>
@@ -115,6 +130,7 @@ Ik merkte dat er nog kleine punten zijn die ik makkelijk kan vergeten wanneer ik
 <a id="dag-21-okt"></a>
 
 ## 21 okt - Dotting the i's + Bi geekly week3
+
 <p align="left">
 <img src="assets/images-voor-readme/geek3.jpg" alt="Opdracht" width="500">
 </p>
@@ -122,6 +138,7 @@ Ik merkte dat er nog kleine punten zijn die ik makkelijk kan vergeten wanneer ik
 Vandaag hebben we feedbackrondes gedaan met mijn medestudenten. Ik zat met Tuya, Susanne en een hulpstudent. Samen hebben we gekeken naar elkaars website en beoordeeld met de hand van het formulier. Ik heb wel kleie tips hier en daar gekregen waardoor ik verder kan werken met het verbeteren van mijn website
 
 **Gegeven feedback**
+
 <p align="left">
 <img src="assets/images-voor-readme/feedback1.png" alt="Opdracht" width="500">
 </p>
@@ -130,6 +147,7 @@ Vandaag hebben we feedbackrondes gedaan met mijn medestudenten. Ik zat met Tuya,
 </p>
 
 **Ontvangen feedback**
+
 <p align="left">
 <img src="assets/images-voor-readme/feedback3.png" alt="Opdracht" width="500">
 </p>
@@ -154,6 +172,7 @@ Het was soms lastig om feedback duidelijk en goed mogelijk te formuleren zonder 
 ## 19 okt - Plan voor afronding
 
 Vandaag zijn we in duo's met de randominazor ingedeeld. Je gaat met zn 2 kijken naar elkaars website en het webby formulier invullen
+
 <p align="left">
 <img src="assets/images-voor-readme/webby.png" alt="Opdracht" width="500">
 </p>
@@ -244,6 +263,7 @@ Het was lastig om alle feedback tegelijk te verwerken en te bepalen welke verbet
 ## 7 okt - WS2
 
 **Experimentjes met de songtekst**
+
 <p align="left">
 <img src="assets/images-voor-readme/peri1.png" alt="Opdracht" width="500">
 </p>
@@ -290,6 +310,7 @@ Wat ik lastig vond is spelen met het grid en wat echt past bij je songtekst.
 Deze dag was ik afwezig, dus heb ik de opdrachten thuis doorgenomen en uitgevoerd. Ik heb voor Cannonball The Breeders gekozen, omdat ik denk ik wel bepaalde woorden beter kan uitdrukken met deze songtekst. Ik heb 10 schetsen gemaakt op mijn ipad en ga hier verder mee experimenteren in HTML en CSS
 
 **Opdracht: Songtekst analyseren**
+
 <p align="left">
 <img src="assets/images-voor-readme/typoschetsen.jpg" alt="Opdracht" width="500">
 </p>
@@ -385,6 +406,7 @@ Ik vond het lastig om alle typografische begrippen goed toe te passen en tegelij
 - valideer je lijst opnieuw en neem de toegankelijkheidstest nog is goed door
 
 **Retrospect sprint 2**
+
 <p align="left">
 <img src="assets/images-voor-readme/r1.jpg" alt="Opdracht" width="500">
 </p>
@@ -440,6 +462,7 @@ Ik merk dat als ik naar de icoon: "schetsboek" ga en hij opent de popup sluit hi
 Focusvolgorde met tab: Wanneer ik mijn pagina probeer te navigeren met alleen TAB, merk ik dat hij gelijk naar boven de website gaat. De volgorde klopt. hij gaat eerst naar doodle garden, daarna door naar de navigatie knoppen zoals home, logboek en story. Daarna door naar de mappen. Mijn art, het proces, schetsboek, prullenbakje en muziekspeler. Wat me wel opvalt is dat hij niet doorgaat naar het cookie button. Wat ik merk met mijn toetsenbord vooral is dat ik normaal een "hover" effect heb als je met de muis eroverheen gaat maar met het toetsenbord heb je dat niet, dus je kan niet echt merken op welke specifiek je knop je staat.
 
 **3. 3. WCAG checklist**
+
 <p align="left">
 <img src="assets/images-voor-readme/checklist1.png" alt="Opdracht" width="500">
 </p>
@@ -493,12 +516,15 @@ Ik vond vooral de screenreader lastig, omdat er veel informatie wordt voorgeleze
 <a id="dag-28-sept"></a>
 
 ## 28 sept - WS 4 + Bi-weekly geek 2
+
 **Aantekeningen van artiekelen**
+
 <p align="left">
 <img src="assets/images-voor-readme/geeknot2.png" alt="Opdracht" width="500">
 </p>
 
 **Bi-weekly geek 2**
+
 <p align="left">
 <img src="assets/images-voor-readme/bigeek2.png" alt="Opdracht" width="500">
 </p>
@@ -516,6 +542,7 @@ Ik vond vooral de screenreader lastig, omdat er veel informatie wordt voorgeleze
 </p>
 
 **Opdracht: werken met alleen-het-toetsenbord en screenreader**
+
 <p align="left">
 <img src="assets/images-voor-readme/nsstap1.png" alt="Opdracht" width="500">
 </p>
@@ -573,6 +600,7 @@ Het was lastig om te merken dat sommige onderdelen die visueel duidelijk zijn, v
 Ik heb 2 mappen voor mijn website: een oude versie (Hier heb ik niet volgende de richtlijnen gewerkt van het coderen) en een nieuwe versie (Hier werk ik met correcte code volgens de voorwaardes dat wordt gevraagd: waar ik nu mee bezig ben) Ik heb besloten om beide mappen te checken.
 
 **Oude versie map**
+
 <p align="left">
 <img src="assets/images-voor-readme/error1.png" alt="Opdracht" width="500">
 </p>
@@ -584,6 +612,7 @@ Ik heb 2 mappen voor mijn website: een oude versie (Hier heb ik niet volgende de
 </p>
 
 **Nieuwe versie map**
+
 <p align="left">
 <img src="assets/images-voor-readme/error4.png" alt="Opdracht" width="500">
 </p>
@@ -596,6 +625,7 @@ Ik ben hier vergeten om ALTS toe te voegen bij mijn images
 **Verbetering**
 
 Voor mijn nieuwe map heb ik de ALTS toegevoegd in mijn code.
+
 <p align="left">
 <img src="assets/images-voor-readme/alt.png" alt="Opdracht" width="500">
 </p>
@@ -639,11 +669,13 @@ Ik was vergeten om alt-teksten toe te voegen aan mijn afbeeldingen. Ook vind ik 
 ## 23 sept - WS2 + CHECKOUT
 
 **Opdracht: Dark Pattern Herontwerp**
+
 <p align="left">
 <img src="assets/images-voor-readme/temu.jpg" alt="Opdracht" width="500">
 </p>
 
 **Opdracht: Hoe teken je wireflows**
+
 <p align="left">
 <img src="assets/images-voor-readme/wireflow.jpg" alt="Opdracht" width="500">
 </p>
@@ -731,6 +763,7 @@ Bij een human consent component moet je ervoor zorgen dat de gebruiker begrijpt 
 Wanneer je op de button klikt, verschijnt er een kleine informatiekaart met uitleg over privacy en gegevensverwerking. Vanuit deze kaart kan je doorklikken naar meer informatie.
 
 Ik kies voor deze vorm omdat ik het kort en krachtig wil houden. Dus je kan zelf kiezen om de informatie te openen + de privacy informatie is ook makkelijk te vinden!
+
 <p align="left">
 <img src="assets/images-voor-readme/humanschets.jpg" alt="Opdracht" width="500">
 </p>
@@ -750,6 +783,7 @@ ik vond het lastig om te bepalen welke informatie ik precies aan de gebruiker mo
 <a id="dag-21-sept"></a>
 
 ## 21 sept - Sprintplanning 2 + WS1
+
 <p align="left">
 <img src="assets/images-voor-readme/cookie-consent.png" alt="Opdracht" width="500">
 </p>
@@ -787,11 +821,16 @@ Ik vond het lastig om precies te begrijpen welke informatie een gebruiker over c
 Helaas ben ik ziek en was ik niet aanwezig in de les.., maar heb de retrospectief
 zelfstandig uitgevoerd.
 
+<p align="left">
+<img src="assets/images-voor-readme/retro1.png" alt="Overzicht van mijn ontwerpproces met icoontjes, Light en Dark theme en achtergronden" width="500">
+</p>
+
 <a id="dag-16-sept"></a>
 
 ## 16 sept - OntwerpTheorie
 
 Helaas ben ik ziek en was ik niet aanwezig in de les.., maar heb illustraties gemaakt in Adobe illustrator. In deze afbeelding heb ik een aantal onderdelen van mijn ontwerp bij elkaar gezet: de icoontjes, de Light en Dark theme en de achtergronden. Ik wilde dat de verschillende onderdelen bij dezelfde stijl passen. Daarom heb ik gekeken naar vormen, kleuren en hoe de Light theme verandert naar de Dark theme. Dit hielp mij om tijdens het bouwen van de website steeds dezelfde visuele stijl aan te houden.
+
 <p align="left">
 <img src="assets/images-voor-readme/stijl.jpg" alt="Overzicht van mijn ontwerpproces met icoontjes, Light en Dark theme en achtergronden" width="500">
 </p>
@@ -800,13 +839,14 @@ Helaas ben ik ziek en was ik niet aanwezig in de les.., maar heb illustraties ge
 
 ## 14 sept - WS4 + Bi-weekly geek 1
 
-
 **2. Aantekeningen van artiekelen.**
+
 <p align="left">
 <img src="assets/images-voor-readme/binotes.png" alt="Opdracht" width="500"> 
 </p>
 
 **2. Bi-weekly geek 1.**
+
 <p align="left">
 <img src="assets/images-voor-readme/geek1.png" alt="Opdracht" width="500"> <img src="assets/images-voor-readme/geek2.png" alt="Opdracht" width="500">
 </p>
@@ -880,6 +920,7 @@ Probeer ook veel meer feedback te vragen,
 Omdat je met feedback het via iemand ander hun ogen ziet. Van die onverwachtse dingen kan je veel nieuwe dingen krijgen en leren. De genen die heel erg veel beweegt of interacteerdt zijn belangrijk.
 
 # Huiswerk voor 11 sept
+
 <p align="left">
 <img src="assets/images-voor-readme/mobile-schets.jpg" alt="Opdracht" width="500">
 </p>
@@ -907,6 +948,7 @@ Ik ga mijn werk vaker in kleine stappen doen, feedback vragen en mijn README dir
 Deze les werd online uitgevoerd.
 
 # Visual research
+
 <p align="left">
 <img src="assets/images-voor-readme/visuele-research.png" alt="Opdracht" width="500"> <img src="assets/images-voor-readme/Stap1.png" alt="Opdracht" width="500">
 </p>
@@ -917,12 +959,11 @@ Deze les werd online uitgevoerd.
 <img src="assets/images-voor-readme/Crazy8.png" alt="Opdracht" width="500"> <img src="assets/images-voor-readme/Crazy8-beoordelen.png" alt="Opdracht" width="500">
 </p>
 
-
 **1. Inspiratie moodboard**
+
 <p align="left">
 <img src="assets/images-voor-readme/inspiratie_web.png" alt="Opdracht" width="500">
 </p>
-
 
 # CHECKOUT:
 
@@ -959,6 +1000,7 @@ Ik vond het soms lastig om te bepalen welk idee ik verder wilde uitwerken. Ook m
 # OPDRACHT 1: RANGSCHIKKEN
 
 Bij deze werkgroep gingen we in groepjes van 4 kijken naar verschillende websites en het was leuk om te zien dat elke website zijn eigen thema heeft
+
 <p align="left">
 <img src="assets/images-voor-readme/Werkvel1.png" alt="Opdracht 1" width="500"> 
 </p>
@@ -1011,6 +1053,7 @@ S0 - Interactie: MMD, micro-interacties, forms (Nicky)
 Opdracht/ Huiswerk (\~ 2 uur):
 
 Maak een bruikbaar, online formulier van het Wok to Walk menu voor middelgrote schermen (laptop/tablet). Denk hierbij aan de context (waarom kijken mensen er naar?), de verdeling van de content, en mogelijke toepassingen van micro-interacties.
+
 <p align="left">
 <img src="assets/images-voor-readme/MMDfolder.png" alt="DeepDive folder" width="500">
 </p>
@@ -1072,6 +1115,7 @@ Oefening 2 - fonts, kleur en effecten
 [Oefening-2](assets/Deepdives/oefening-2/)
 
 **SPRINT 1 - Light & Dark theme**
+
 <p align="left">
 <img src="assets/images-voor-readme/not1.png" alt="Opdracht" width="300">
 </p>
@@ -1085,6 +1129,7 @@ Oefening 2 - Twee thema's
 [Oefening-2](assets/Deepdives/Oefening-2-Twee-themas/)
 
 **SPRINT 1 - Mooie kleuren en gradients**
+
 <p align="left">
 <img src="assets/images-voor-readme/spelletje.png" alt="Opdracht" width="300">
 </p>
@@ -1101,6 +1146,7 @@ Oefening 2 - Vlaggen en co
 Ik heb geleerd welke verschillende kleurcodes er zijn en hoe ik met CSS-gradients kleurverlopen en patronen kan maken en animeren!
 
 **SPRINT 1 - Grid 101 + Media queries**
+
 <p align="left">
 <img src="assets/images-voor-readme/not3.png" alt="Opdracht" width="300">
 </p>
@@ -1108,6 +1154,7 @@ Ik heb geleerd welke verschillende kleurcodes er zijn en hoe ik met CSS-gradient
 Ik heb geleerd hoe ik CSS Grid gebruik om elementen in rijen en kolommen te plaatsen en met media queries de layout aan verschillende schermgroottes aanpas
 
 **SPRINT 1 - Responsive grid + Grid-areas**
+
 <p align="left">
 <img src="assets/images-voor-readme/not4.png" alt="Opdracht" width="300">
 </p>
@@ -1117,6 +1164,7 @@ Ik heb geleerd hoe ik met grid-template-areas een duidelijke indeling maakt en d
 **SPRINT 2 - Buttons, states en selectors**
 
 [button](assets/Deepdives/sprint_2/Basic-button-states)
+
 <p align="left">
 <img src="assets/images-voor-readme/not5.png" alt="Opdracht" width="300">
 </p>
@@ -1124,6 +1172,7 @@ Ik heb geleerd hoe ik met grid-template-areas een duidelijke indeling maakt en d
 Ik heb geleerd hoe ik buttons en andere interactieve elementen verschillende stijlen kan geven met states zoals :hover, :focus en :active.
 
 **SPRINT 2 - Buttons + Dialogs**
+
 <p align="left">
 <img src="assets/images-voor-readme/not6.png" alt="Opdracht" width="300">
 </p>
@@ -1131,6 +1180,7 @@ Ik heb geleerd hoe ik buttons en andere interactieve elementen verschillende sti
 Ik heb geleerd hoe ik met HTML, CSS en JavaScript knoppen interactief maak, bijvoorbeeld door een class toe te voegen of te verwijderen
 
 **SPRINT 2 - Position + Dialogs**
+
 <p align="left">
 <img src="assets/images-voor-readme/not7.png" alt="Opdracht" width="300">
 </p>
@@ -1138,6 +1188,7 @@ Ik heb geleerd hoe ik met HTML, CSS en JavaScript knoppen interactief maak, bijv
 Ik heb geleerd wat de verschillende soorten position doen en hoe ik dialogvensters kan positioneren en animaties kan geven
 
 **SPRINT 2 - meer interactie met HTML en CSS**
+
 <p align="left">
 <img src="assets/images-voor-readme/not8.png" alt="Opdracht" width="300">
 </p>
@@ -1147,6 +1198,7 @@ ik heb geleerd hoe ik links, formulieren en invoervelden gebruik en hoe ik met l
 **SPRINT 3 - Interessantere layouts**
 
 [layouts](assets/Deepdives/sprint_3/Interessantere-layouts/)
+
 <p align="left">
 <img src="assets/images-voor-readme/not9.png" alt="Opdracht" width="300">
 </p>
@@ -1173,6 +1225,7 @@ Ik heb geleerd hoe ik variabele lettertypes gebruik en hoe ik eigenschappen zoal
 **Code uitleg voor Javascript**
 
 ik heb gebruik gemaakt van javascript in mijn website, omdat ik het belangrijk vind dat er eenn interactie aanwezig is. dat ik de gebruikers ermee kan entertainen. Met deze script zorgt het ervoor dat de gebruike kan tekenen op het canvas en het schetsboek kan gebruiken. Voor dit heb ik AI gebruikt (ik heb de docenten hierop ten hoogte gesteld en gevraagd of het mocht. Meneer Vasilis vond het juist leuk dat het erin stond), maar toch wil ik er stap voor stap nog even doorheen om het te begrijpen.
+
 <p align="left">
 <img src="assets/images-voor-readme/js1.png" alt="Opdracht" width="500">
 </p>
