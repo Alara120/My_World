@@ -38,7 +38,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 Als ik terugkijk naar dit hele blok, heb ik het gevoel dat ik veel heb geleerd. Vooral op het gebied van HTML en CSS ben ik vooruit gegaan. Aan het begin stelde ik code soms uit omdat ik het lastig vond, maar uiteindelijk ben ik er steeds meer mee gaan oefenen. Tijdens het maken van mijn Digital Garden heb ik geleerd om eerst goed onderzoek te doen en verschillende ideeen te bekijken voordat ik iets uit ga werken.. Door de deepdives heb ik veel nieuwe dingen geleerd, zoals Grid, media queries, responsive design, light/dark mode, dialogs, animaties en variable fonts etc. etc. Wat super leerzaam was! Ook heb ik meer geleerd over toegankelijkheid en privacy. Door dit te testen ben ik beter gaan nadenken over hoe andere mensen mijn website gebruiken. De feedback van docenten en klasgenoten heeft mij daarbij geholpen. Soms vond ik het lastig om alle feedback om te zetten naar veranderingen, maar uiteindelijk zag ik hierdoor beter wat er nog verbeterd kon worden. Ik ben vooral blij dat ik minder bang ben geworden om nieuwe dingen uit te proberen. Ik hoef niet alles meteen te kunnen. Door te oefenen, fouten te maken en feedback te krijgen, leer ik steeds meer en meer. Ik vond dit een leuke blok en kan met tevredenheid dit sluiten :D
 
 **Expo**
-\*\*Vandaag hebben we met de gehele klassen samen onze werk bekeken en beoordeeld met de hand van stickertjes.
+Vandaag hebben we met de gehele klassen samen onze werk bekeken en beoordeeld met de hand van stickertjes.
 
 <p align="left">
 <img src="assets/images-voor-readme/feedbackrondes.png" alt="Opdracht" width="500">
@@ -80,6 +80,18 @@ Mijn tab aangepast en mijn hover!
 
 <p align="left">
 <img src="assets/images-voor-readme/filter.png" alt="Opdracht" width="500">
+</p>
+
+Ik heb geprobeerd om meer een "levendige" gevoel te geven op mijn webiste door een animatie op het achtegrond
+toe te voegen. Maar ik realiseerde me dat het niet zo leuk staat en best wel drukte geeft, sinds het raster
+achtergrond al best druk is..., dus heb ik het maar zo gelatem
+
+<p align="left">
+<img src="assets/images-voor-readme/ster.png" alt="Opdracht" width="500">
+</p>
+
+<p align="left">
+<img src="assets/images-voor-readme/stercode.png" alt="Opdracht" width="500">
 </p>
 
 ## 23 okt - Voortgang + Retrospect
@@ -264,6 +276,8 @@ Het was lastig om alle feedback tegelijk te verwerken en te bepalen welke verbet
 
 **Experimentjes met de songtekst**
 
+Ik heb zitten spelen met de songtekst, wat leuk kan zijn qua kleur en de plaatsingen van de lyrics
+
 <p align="left">
 <img src="assets/images-voor-readme/peri1.png" alt="Opdracht" width="500">
 </p>
@@ -310,6 +324,7 @@ Wat ik lastig vond is spelen met het grid en wat echt past bij je songtekst.
 Deze dag was ik afwezig, dus heb ik de opdrachten thuis doorgenomen en uitgevoerd. Ik heb voor Cannonball The Breeders gekozen, omdat ik denk ik wel bepaalde woorden beter kan uitdrukken met deze songtekst. Ik heb 10 schetsen gemaakt op mijn ipad en ga hier verder mee experimenteren in HTML en CSS
 
 **Opdracht: Songtekst analyseren**
+iK heb op mijn ipad 10 schetsen gemaakt van Cannonball The breeders. Ik zat vooral te kijken naar woorden die zich uitdrukken, zoals: splash, wishing, crash, in the shade etc.
 
 <p align="left">
 <img src="assets/images-voor-readme/typoschetsen.jpg" alt="Opdracht" width="500">
@@ -406,6 +421,7 @@ Ik vond het lastig om alle typografische begrippen goed toe te passen en tegelij
 - valideer je lijst opnieuw en neem de toegankelijkheidstest nog is goed door
 
 **Retrospect sprint 2**
+Tijdens de retrospectief hebben we oefeningen uitgevoerd en een metafoor uitgewerkt. Als we kijken naar mijn metafoor gaat het vooral erom dat ik ben gegroeid de afgelopen sprint. Van onzeker naar zeker
 
 <p align="left">
 <img src="assets/images-voor-readme/r1.jpg" alt="Opdracht" width="500">
@@ -542,6 +558,7 @@ Ik vond vooral de screenreader lastig, omdat er veel informatie wordt voorgeleze
 </p>
 
 **Opdracht: werken met alleen-het-toetsenbord en screenreader**
+Tijdens de les hebben we een opdracht gekregen om te werken met een screenreader. Ik wist oprecht niet dat zoiets bestond en vond het interessant om ervan te leren
 
 <p align="left">
 <img src="assets/images-voor-readme/nsstap1.png" alt="Opdracht" width="500">
@@ -669,6 +686,7 @@ Ik was vergeten om alt-teksten toe te voegen aan mijn afbeeldingen. Ook vind ik 
 ## 23 sept - WS2 + CHECKOUT
 
 **Opdracht: Dark Pattern Herontwerp**
+Samen met mijn groepje hebben we gekeken naar een darkpattern in Temu. We merken vooral dat er fake product beoordelingen zijn en een tijdslimit zodat je een gevoel van FOMO hebt
 
 <p align="left">
 <img src="assets/images-voor-readme/temu.jpg" alt="Opdracht" width="500">
@@ -1292,3 +1310,14 @@ decoratieve onderdeel overslaan, want dat is niet nodig. Bronnen: -https://devel
 </p>
 
 De rest van de uitleg kan je vinden in mijn codes. Anders kan ik nog lang doorgaan...
+Gebruikte bronnen in het algemeen voor mijn webiste:
+
+-MDN Web Docs: Meest gebruikt voor mijn website
+-ChatGPT: gebruikt als hulpmiddel om mijn code te controleren, fouten te begrijpen en het bedenken van oplossingen
+-W3Schools: Doorheen gekeken om informatie te verzamelen en vergeleken met andere hulpbronnen
+-CSS-Tricks: Doorheen gekeken om informatie te verzamelen en vergeleken met andere hulpbronnen
+-Hulp gekregen van een vriend als ik iets niet begreep
+
+<p align="left">
+<img src="assets/images-voor-readme/text.jpg" alt="Opdracht" width="400">
+</p>

@@ -270,14 +270,14 @@ nav a::before {
   background-color: var(--color-blue-light);
   border-radius: 50% 50% 0 0 / 100% 100% 0 0; /* bolle bovenkant, als een golf */
   transform: translateY(100%);
-  transition: transform 0.5s ease-in-out,
-  border-radius 0.5s ease-in-out;
+  transition:
+    transform 0.5s ease-in-out,
+    border-radius 0.5s ease-in-out;
 }
 
 nav a:hover,
 nav a:focus-visible {
   transform: translateY(-0.2rem) scale(1.05);
-  
 }
 
 nav a:hover::before,
@@ -679,10 +679,10 @@ footer {
     font-size: 1.2rem;
   }
 
-aside li > a,
-aside li > button{
-transition: transform 0.5s ease-in-out;
-}
+  aside li > a,
+  aside li > button {
+    transition: transform 0.5s ease-in-out;
+  }
 
   /* Zoom-effect bij het hoveren/focussen over de asides */
   aside li > a:hover,
