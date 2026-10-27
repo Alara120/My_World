@@ -84,7 +84,7 @@ Mijn tab aangepast en mijn hover!
 
 Ik heb geprobeerd om meer een "levendige" gevoel te geven op mijn webiste door een animatie op het achtegrond
 toe te voegen. Maar ik realiseerde me dat het niet zo leuk staat en best wel drukte geeft, sinds het raster
-achtergrond al best druk is..., dus heb ik het maar zo gelatem
+achtergrond al best druk is..., dus heb ik het verwijderd en gelaten hoe het was
 
 <p align="left">
 <img src="assets/images-voor-readme/ster.png" alt="Opdracht" width="500">
@@ -1312,11 +1312,11 @@ decoratieve onderdeel overslaan, want dat is niet nodig. Bronnen: -https://devel
 De rest van de uitleg kan je vinden in mijn codes. Anders kan ik nog lang doorgaan...
 Gebruikte bronnen in het algemeen voor mijn webiste:
 
--MDN Web Docs: Meest gebruikt voor mijn website
--ChatGPT: gebruikt als hulpmiddel om mijn code te controleren, fouten te begrijpen en het bedenken van oplossingen
--W3Schools: Doorheen gekeken om informatie te verzamelen en vergeleken met andere hulpbronnen
--CSS-Tricks: Doorheen gekeken om informatie te verzamelen en vergeleken met andere hulpbronnen
--Hulp gekregen van een vriend als ik iets niet begreep
+- MDN Web Docs: Meest gebruikt voor mijn website
+- ChatGPT: gebruikt als hulpmiddel om mijn code te controleren, fouten te begrijpen en het bedenken van oplossingen
+- W3Schools: Doorheen gekeken om informatie te verzamelen en vergeleken met andere hulpbronnen
+- CSS-Tricks: Doorheen gekeken om informatie te verzamelen en vergeleken met andere hulpbronnen
+- Hulp gekregen van een vriend als ik iets niet begreep
 
 <p align="left">
 <img src="assets/images-voor-readme/text.jpg" alt="Opdracht" width="400">
